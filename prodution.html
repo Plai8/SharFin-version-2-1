@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品 | SharFin</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/3912594fe4.js" crossorigin="anonymous"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="CSS/production.css">
+    <link rel="stylesheet" href="CSS/head-footer.css">
+    <link rel="stylesheet" href="CSS/production.css">
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @media screen and (min-width:768px) {
+            header {
+                background-position: center;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            header {
+                background-position: center;
+                height: 400px;
+                max-height: 900px;
+            }
+
+            .navbar a {
+                font-size: 15px;
+            }
+
+            .banner-title {
+                font-size: 60px;
+            }
+
+            @media screen and (min-width:1800px) {
+                header {
+                    background-position: center;
+                    height: 600px;
+                }
+
+                .navbar a {
+                    font-size: 22px;
+                }
+
+                .banner-title {
+                    font-size: 90px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- burger menu  -->
+            <div class="navtop">
+                <div id="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>首頁</li>
+                        </a>
+                        <a href="#">
+                            <li>商品</li>
+                        </a>
+                        <a href="./Course-carousel.html">
+                            <li>衝浪課程</li>
+                        </a>
+                        <a href="#">
+                            <li>住宿</li>
+                        </a>
+                        <a href="#">
+                            <li>租板</li>
+                        </a>
+                        <a href="#">
+                            <li>關於我們</li>
+                        </a>
+                        <a href="#">
+                            <li>聯絡我們</li>
+                        </a>
+                        <a href="#">
+                            <li>商家資訊</li>
+                        </a>
+                        <a href="#">
+                            <li>最新消息</li>
+                        </a>
+                        <li class="burg-social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navbar">
+                <li><a href="prodution.html">商品</a></li>
+                <li class="drop-down-menu"><a href="#">服務項目</a>
+                    <ul class="drop-down-menu-items">
+                        <li><a href="/Course-carousel.html">衝浪課程</a></li>
+                        <li><a href="Hotel.html">住宿</a></li>
+                        <li><a href="#">租板</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact-us.html">關於我們</a></li>
+                <a class="logo-home-link" href="/index.html">
+                    <img class="logo-image" src="images/index-images/footer-logo.svg" alt="">
+                </a>
+                <li class='contact-us-item'><a href="prodution.html">聯絡我們</a></li>
+                <li><a href="News.html">商家資訊</a></li>
+                <li><a href="about-us.html">最新消息</a></li>
+            </ul>
+            <div class="cart-user-icon">
+                <a href=""><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i><span id="cart-amount">0</span></a>
+                <a href="Login-page.html#login-field-section">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+            </div>
+        </nav>
+        <h2 class="header-title">商品</h2>
+    </header>
+    <!-- production display field -->
+    <section class="main-container">
+        <div class="tab-navbar">
+            <div class="tab-navigation">
+                <span class="material-symbols-outlined left-btn">
+                    chevron_left
+                </span>
+                <ul class="tab-menu">
+                    <li class="tab-btn actived">
+                        長板
+                    </li>
+                    <li class="tab-btn">
+                        短板
+                    </li>
+                    <li class="tab-btn">
+                        兒童板
+                    </li>
+                    <li class="tab-btn">
+                        男生配件
+                    </li>
+                    <li class="tab-btn">
+                        女生配件
+                    </li>
+                    <li class="tab-btn">
+                        滑板
+                    </li>
+                    <li class="tab-btn">
+                        其他配件
+                    </li>
+                </ul>
+                <span class="material-symbols-outlined right-btn">
+                    navigate_next
+                </span>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="long-board-section actived-section card-container">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/BING_DERRINGER_LONGBOARD_SURFBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">BING DERRINGERLONGBOARD SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$20,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/RICKY_CARROLL_RICKY_RETRO_LONGBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <div class="good-name">RICKY CARROLL RICKY RETRO LONGBOARD</h5>
+                            <div class="add-cart-field">
+                                <p class="price">NT$23,000</p>
+                                <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                        style="color: #000;"></i>加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/SURF_STATION_HOT_DOGGER_SURFBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">SURF STATION HOT DOGGER SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$23,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/SURF_STATION_MOOVOVER_SOFT_SURFBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">WSURF STATION MOOVOVER SOFT SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$32,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/TORQ_DELPERO_TEC_CLASSIC_LONGBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">TORQ_DELPERO TEC CLASSIC LONGBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$23,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/short-board/WARRIOR_LONGBOARD_SURFBOARD-transformed.webp"
+                            alt="長板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">WARRIOR LONGBOARD SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$23,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="short-board-section card-container">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/FIREWIRE_FLEXFIRE_6_10_CONSIGNMENT_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">FIREWIRE FLEXFIRE 6'10 CONSIGNMENT SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$12,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping
+                            fa-xmark 
+                        add-cart-icon" style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/Channel_Islands_CI_2.Pro_Squash_ECT_Surfboard_-_FCS_II-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">Channel_Islands CI Pro Squash ECT Surfboard-FCS II</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$12,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/FIREWIRE_FRK_6_2_USED_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">FIREWIRE_FRK 6 2 USED SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$12,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/FIREWIRE_MASHUP_6__USED_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">FIREWIREMASHUP 6 USED SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$12,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/FIREWIRE_MASHUP_6__USED_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">FIREWIREMASHUP 6 USED SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$12,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/JS_PSYCHO_NITRO_5_6_USED_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">JS PSYCHO NITRO 5 6 USED SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$9,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/LOST_STUB_DRIVER_3.0_5_8_USED_SURFBOARD-transformed.webp"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">LOST STUB DRIVER 3.0 5 8 USED SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$8,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/LOST_SUB_DRIVER_2.0_DOUBLE_DART_EPS_ROUND_SURFBOARD_-_FUTURES-transformed.webp"
+                            alt="短板衝浪板">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">LOST SUB DRIVER 2.0 DOUBLE DART EPS ROUND SURFBOARD-FUTURES</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$19,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/LOST_SUB_DRIVER_2.0_SURFBOARD_-_FCS_II-transformed.webp"
+                            alt="短板衝浪板">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">OST SUB DRIVER 2.0 SURFBOARD-FCS II</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$10,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/LOST_SUB_SCORCHER_5_6_CONSIGNMENT_SURFBOARD-transformed.webp"
+                            alt="短板衝浪板">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">LOST SUB SCORCHER 5 6 CONSIGNMENT SURFBOARD-transformed.webp</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$22,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/QuiverKiller_5000x-transformed.webp" alt="短板衝浪板">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">QuiverKiller 5000x</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$9,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/production-images/long-board/WRV_6_2_CONSIGNMENT_SURFBOARD-transformed.webp"
+                            alt="短板衝浪板商品圖片">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="good-name">WRV 6 2 CONSIGNMENT SURFBOARD</h5>
+                        <div class="add-cart-field">
+                            <p class="price">NT$13,000</p>
+                            <button class="add-cart-btn"><i class="fa-solid fa-cart-shopping add-cart-icon"
+                                    style="color: #000;"></i>加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <a href="#">
+                <img src="images/index-images/footer-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="social-icon-subtitle">
+            <div class="social-icon">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="subtitle">
+                <a href="">關於我們</a>
+                <a href="">常見問題</a>
+                <a href="">購買須知</a>
+                <a href="">連絡電話</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h6>© SharFin</h6>
+        </div>
+    </footer>
+    <script srC='js/production.js'></script>
+</body>
+
+</html>
