@@ -174,7 +174,7 @@ nav {
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    z-index: 2; 
+    z-index: 1000; 
 }
 #menu-toggle span {
     display: block;

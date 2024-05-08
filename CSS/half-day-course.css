@@ -1,5 +1,6 @@
 body {
     background-color: #eee;
+    font-size: 13px;
 }
 header {
     position: relative;
@@ -20,6 +21,7 @@ header {
     align-items: center;
     padding: 80px 100px;
     height: 500px;
+    box-sizing: border-box;
 }
 .container {
     width: 100%;
@@ -34,6 +36,7 @@ header {
     max-width: 1150px;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     }
 .main-title {
     font-size: 2rem;
@@ -59,7 +62,7 @@ header {
 .text-box {
     color: #fff;
     z-index: 222;
-    background:rgba(3,25,45, 0.2) ;
+    background:rgb(3,25,45) ;
     backdrop-filter: blur(20px);
     padding: 50px;
     max-width: 500px;
@@ -68,14 +71,20 @@ header {
     transform: translate(30px,-10px);
     line-height: 1.5;
 }
+.text-box > p {
+    font-size: 13px;
+}
 .price-tag {
+    font-size: 13px;
     width: 150px;
-    padding: 20px;
-    background-color: #26a69a;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #26a69a ;
     margin-top: 20px;
+    color: #26a69a;
 }
 .banner-img {
-    background-image: url(/images/halfday-courses-image/banner-img.jpg);
+    background-image: url(../images/halfday-courses-image/banner-img.jpg);
     background-repeat: no-repeat;
     width: 100vw;
     height: 200px;
@@ -107,7 +116,7 @@ header {
 .course-content {
     color: #fff;
     z-index: 222;
-    background:rgba(3,25,45, 0.2) ;
+    background:rgb(3,25,45) ;
     backdrop-filter: blur(20px);
     padding: 30px;
     max-width: 600px;
