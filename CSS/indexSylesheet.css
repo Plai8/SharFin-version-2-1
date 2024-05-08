@@ -302,7 +302,7 @@ opacity 0.55s ease;
 }
 @media screen and (min-width:768px) {
   header{
-    background-image: url(/images/index-images/banner-background-tc.png);
+    background-image: url(images/index-images/banner-background-tc.png);
     background-position:center;
   }
   .navtop {
@@ -314,7 +314,7 @@ opacity 0.55s ease;
 }
 @media screen and (min-width:1024px) {
   header{
-    background-image: url(/images/index-images/header-bgi-pc.png);
+    background-image: url(images/index-images/header-bgi-pc.png);
     background-position:center;
     height: 700px;
     max-height:900px;
@@ -333,7 +333,7 @@ opacity 0.55s ease;
 }
 @media screen and (min-width:1800px) {
   header{
-    background-image: url(/images/index-images/header-bgi.png);
+    background-image: url(images/index-images/header-bgi.png);
     background-position:center;
     height: 900px;
     max-height:1000px;
@@ -507,7 +507,7 @@ opacity 0.55s ease;
 .surf-course {
   width: 90vw;
   padding: 5% 5vw;
-  background-image: url(/images/index-images/surfing\ -course-bgi-m.png);
+  background-image: url(images/index-images/surfing\ -course-bgi-m.png);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: center;
@@ -625,7 +625,7 @@ position: absolute;
 }
 @media  screen and (min-width:1200px) {
   .surf-course {
-    background-image: url(/images/index-images/-course-bgi.png);
+    background-image: url(images/index-images/-course-bgi.png);
   }
   #surf-title {
     font-size: 30px;
@@ -1024,7 +1024,7 @@ position: absolute;
 }
 @media screen and (min-width:768px) {
   .news {
-    background-image: url(/images/index-images/news-bgi.jpg);
+    background-image: url(images/index-images/news-bgi.jpg);
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(101%);
@@ -1118,7 +1118,7 @@ position: absolute;
 }
 @media screen and (min-width:768px) {
   .about-us-section {
-    background-image: url(/images/index-images/about-us-img-tc.jpg);
+    background-image: url(images/index-images/about-us-img-tc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 5% 5vw;
@@ -1170,7 +1170,7 @@ position: absolute;
 }
 @media screen and (min-width:1200px) {
   .about-us-section  {
-    background-image: url(/images/index-images/about-us-bgi-pc.jpg);
+    background-image: url(images/index-images/about-us-bgi-pc.jpg);
     height: 1000px;
   }
   .about-us-wrapper {
@@ -1213,7 +1213,7 @@ position: absolute;
 }
 @media screen and (min-width:1920px) {
   .about-us-section {
-    background-image: url(/images/index-images/about-us-bgi-pc-max.jpg);
+    background-image: url(images/index-images/about-us-bgi-pc-max.jpg);
   
   }
   .about-us-content p  {
