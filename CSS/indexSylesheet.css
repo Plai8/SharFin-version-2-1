@@ -38,7 +38,7 @@ ol, ul {
 header {
   width: 100%;
   height: 500px;
-  background-image: url(/images/index-images/banner-background-m.png);
+  background-image: url(images/index-images/banner-background-m.png);
   background-position: center center;
   background-repeat: no-repeat;
   box-sizing: border-box;
