@@ -8,7 +8,7 @@
     <!-- fontawesome icon -->
     <script src="https://kit.fontawesome.com/3912594fe4.js" crossorigin="anonymous"></script>
     <!-- css file -->
-    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/head-footer.css">
     <link rel="stylesheet" href="CSS/login.css">
     <!-- 字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,46 +19,72 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav><a class="logo-img" href="index.html"><img src="images/footer-logo.svg" alt=""></a></nav>
+    <nav style="background-color: transparent;position:relative;"><a class="logo-img" href="index.html"><img src="images/index-images/footer-logo.svg" alt="logo圖片" style="width: 100px;"></a></nav>
     <section class="login-field-section" id="login-field-section">
-        <div class="login-field">
-            <h2>登入</h2>
-            <label for="login-account">
-                <input type="email" id="login-account" placeholder="Email">
-                <i class="fa-solid fa-envelope" style="color: #ccc;"></i>
-            </label>
-            <label for="login-password">
-                <input type="password" id="login-password" placeholder="Password" maxlength="50" minlength="10">
-                <i class="fa-solid fa-lock" style="color: #ccc;"></i>
-            </label>
-            <a href="">忘記密碼?</a>
-            <div class="login-alter-way">
-                <a href=""><img src="images/login-image/devicon_google.png" alt=""></a>
-                <a href=""><img src="images/login-image/logos_facebook.png" alt=""></a>
+        <div class="login-field ">
+            <h2 id='title'>登入</h2>
+            <div class="account-field creat-account-item">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name" maxlength="50" id="user-name">
+                <span id="login-message-user-name">
+                    x 姓名格式錯誤!!
+                </span>
             </div>
-            <div class="login-btn-field">
-                <a href="#">Sign in</a>
+            <div class="account-field">
+                <input type="email" id="login-account" placeholder="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span id="login-message-account">x 帳號錯誤!!</span>
+                </div>
+                <div class="account-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="login-password" placeholder="Password" maxlength="50" minlength="10">
+                <span id="login-message-password">x 密碼錯誤!!</span>
+            </div>
+            <div class="account-field creat-account-item">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="comfirm-Password"
+                placeholder="Comfirm password">
+                <span id="login-message-confirm-password">x 密碼不相符!!</span>
+            </div>
+            <div class="container"> <a class="forget-password"  href="#">忘記密碼?
+            </a>
+            <button class="login-btn disable">
+                Login
+            </button>
+        </div>
+           
+            <div class="login-alter-way">
+                <a href=""><img src="images/login-images/devicon_google.png" alt="Google logo 圖片"></a>
+                <a href=""><img src="images/login-images/logos_facebook.png" alt="Facebook logo 圖片"></a>
             </div>
         </div>
         <div class="login-aside-bar">
             <h2>歡迎回來!</h2>
             <p>登入後開始探索更多新品與有趣課程!</p>
-            <div class="sign-up-btn-field">
-                <a href="">Sign up</a>
+                <button class="sign-up-btn-field">Sign up</button>
+        </div>
+    </section>
+    <section class="login-succ-box">
+        <div class="login-succ-card">
+            <img src="images/login-images/accept.png" alt="打勾圖片">
+            <div class="card-content">
+                <h2>登入成功!</h2>
+                <p>開始探索更多SharFin!!</p>
             </div>
+            <button class="go-home-page-btn"><a href="index.html">開始探索</a></button>
         </div>
     </section>
     <footer class="footer-section">
         <div class="footer-logo">
             <a href="#">
-            <img src="images/footer-logo.svg" alt="">
+            <img src="images/index-images/footer-logo.svg" alt="">
         </a>
         </div>
         <div class="social-icon-subtitle">
             <div class="social-icon">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
             </div>
             <div class="subtitle">
                 <a href="">關於我們</a>
@@ -71,5 +97,185 @@
             <h6>© SharFin</h6>
         </div>
     </footer> 
+    <script>
+        //登入
+        let account = document.querySelector('#login-account');
+        let password = document.querySelector('#login-password');
+        let errorAcc = document.querySelector('#login-message-account')
+        let errorpassword = document.querySelector('#login-message-password')
+        let loginBtn = document.querySelector('.login-btn');
+        const existAcc = {
+            address:'a123@gmail.com',
+            password:'1233',
+            username:'Peter',
+        } 
+        // test account is exist?
+        function testAcc () {
+            if ( account.value != existAcc.address &&  account.value != '') {
+                errorAcc.style.display ='block'; 
+                document.querySelector('input').style.outline = '2px solid red';
+            }else {
+                errorAcc.style.display ='none';
+            }
+            if (password.value != existAcc.password ) {
+                errorpassword.style.display = 'block';
+                document.querySelector('input[type="password"]').style.outline = '2px solid red';
+            }else {
+                errorpassword.style.display = 'none';
+            }
+            //login successful lightbox show up
+             if (account.value == existAcc.address && password.value == existAcc.password) {
+                    document.querySelector('.login-succ-box').style.display = 'block';
+                    document.querySelector('body').style.overflow = 'hidden';
+                    document.querySelector(".card-contne h2").textContent = "登入成功";
+                document.querySelector('.card-contne p').textContent = "開始探索更多SharFin!!";
+                document.querySelector('.go-home-page-btn').textContent = "開始探索"
+                document.querySelector('.go-home-page-btn a').href = "index.html";
+                 }
+            }
+        account.addEventListener('focus',()=> {
+            if(errorAcc.style.display = 'block') {
+                errorAcc.style.display = 'none'
+                document.querySelector('input[type="email"]').style.outline = 'initial';
+                account.value = ''
+            }
+        }) 
+        password.addEventListener('focus',()=> {
+            if(errorpassword.style.display = 'block') {
+                errorpassword.style.display = 'none'
+                document.querySelector('input[type="password"]').style.outline = 'none';
+                password.value = ''
+            }
+        }) 
+        let logoImg = document.querySelector('.logo-img img');
+        let changeLogo = function () {
+            if (window.innerWidth > 768) {
+            logoImg.src = "images/index-images/ShaFin-Logo.svg"
+        }if (window.innerWidth <= 768) {
+            logoImg.src = "images/index-images/footer-logo.svg"
+        }
+        }
+        window.addEventListener('resize',changeLogo)
+        window.addEventListener('load',changeLogo)
+        //create account
+        let signUpBtn = document.querySelector('.sign-up-btn-field');
+        let creatACCItems = document.querySelectorAll('.creat-account-item') 
+        let title = document.getElementById('title');
+        let loginIcons = document.querySelectorAll('.login-alter-way img')
+        let inputs =document.querySelectorAll('input');
+        //sign in and sign up btn switch
+        signUpBtn.addEventListener('click',()=> {
+            inputs.forEach((input) => {
+                input.value = '';
+            })
+            signUpBtn.classList.toggle('actived')
+            if (!signUpBtn.classList.contains('actived')) {
+                creatACCItems.forEach((creatACCItem)=>{
+                    creatACCItem.style.display = 'none'
+                    })
+                    signUpBtn.textContent = "Sign up";
+                    title.textContent = '登入'
+                    loginIcons.forEach((loginIcon) => {
+                        loginIcon.style.display = 'block'
+                })
+                loginBtn.textContent = 'Login';
+                loginBtn.classList.remove('Comfirm-btn')
+                
+            }else {
+                creatACCItems.forEach((creatACCItem)=>{
+                    creatACCItem.style.display = 'block';
+                    })
+                    signUpBtn.textContent = "Sign in"
+                    title.textContent = '註冊';
+                    loginIcons.forEach((loginIcon) => {
+                        loginIcon.style.display = 'none'
+                })
+                loginBtn.textContent = 'Comfirm'
+                loginBtn.classList.add('comfirm-btn')
+            }
+        })
+        //test the validation of  create  an acccount
+        let userName = document.querySelector('#user-name')
+        let errorName = document.querySelector('#login-message-user-name');
+        let comfirmPassword = document.querySelector('#comfirm-Password')
+        let errorPassword = document.querySelector('#login-message-confirm-password')
+        let comfirmBtn = document.querySelector('.comfirm-btn')
+        function testName () {
+            if(parseInt(userName.value)|| userName.value == '') {
+                errorName.style.display = 'block';
+                errorName.textContent ='x 姓名格式錯誤!!'
+                document.querySelector('input[type="text"]').style.outline = '2px solid red';
+            }else {
+                errorName.style.display = 'none';
+                document.querySelector('input[type="text"]').style.outline = 'initial';
+            }
+        }
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        function testComfirmPassword () {
+            if (comfirmPassword.value !== password.value || comfirmPassword.value == '') {
+                errorPassword.style.display = "block"
+                document.querySelector('#comfirm-Password').style.outline = '2px solid red';
+
+            }else {
+                errorName.style.display = 'none';
+                document.querySelector('input[type="password"]').style.outline = 'initial';
+            }
+        }
+        //sign up check for exist?
+        // function testSignUpExist () {
+        //     if ( account.value == existAcc.address){
+        //     errorAcc.style.display = 'block';
+        //     errorAcc.textContent = "x 該帳好已存在!!"}
+        //     else{
+        //         errorAcc.style.display = 'none';
+        //     }
+        // }
+        //sign up succ
+        function signUpSucc () {
+        if (errorName.style.display != 'block' && errorAcc.style.display != 'block' && errorPassword.style.display != 'block' && errorpassword.style.display != 'block'){
+            document.querySelector('.login-succ-box').style.display = "block";
+            document.querySelector(".card-content h2").textContent = "註冊成功";
+            document.querySelector('.card-content p').textContent = "登入探索更多SharFin!!";
+            document.querySelector('.go-home-page-btn a').href = "Login-page.html";
+            document.querySelector('.go-home-page-btn').innerHTML = "<a href='Login-page.html'>登入</a>"
+            }
+        }
+        loginBtn.addEventListener('click',() => {
+            if(loginBtn.classList.contains("comfirm-btn")){
+            testName();
+            testComfirmPassword();
+            //check email form
+            if (!validateEmail(account.value)) {
+                errorAcc.style.display ='block'; 
+                errorAcc.textContent = 'x email格式錯誤'
+                document.querySelector('input[ type=email]').style.outline = '2px solid red';
+            }else {
+                errorAcc.style.display ='none';
+                document.querySelector('input[ type=email]').style.outline = 'initial';
+            }
+            // testSignUpExist ()
+            signUpSucc();
+            }else {
+                testAcc();
+            }
+        })
+        comfirmPassword.addEventListener('focus',()=> {
+            if(errorPassword.style.display = 'block') {
+                errorPassword.style.display = 'none'
+                document.querySelector("#comfirm-Password").style.outline = 'initial';
+                comfirmPassword.value = ''
+            }
+        }) 
+        userName.addEventListener('focus',()=> {
+            if(errorName.style.display = 'block') {
+                errorName.style.display = 'none'
+                document.querySelector('input[type="text"]').style.outline = 'initial';
+                userName.value = ''
+            }
+        })
+    </script>
 </body>
 </html>
