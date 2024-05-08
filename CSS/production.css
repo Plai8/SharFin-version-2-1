@@ -7,7 +7,7 @@
 }
 
 header {
-    background-image: url(images/production-images/product-img-m.jpg);
+    background-image: url(../images/production-images/product-img-m.jpg);
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -251,7 +251,7 @@ i {
 
 @media screen and (min-width:768px) {
     header {
-        background-image: url(/images/production-images/product-img-tc.jpg);
+        background-image: url(images/production-images/product-img-tc.jpg);
         background-repeat: no-repeat;
         background-position: center;
         width: 100vw;
@@ -285,7 +285,7 @@ i {
 
 @media screen and (min-width:1200px) {
     header {
-        background-image: url(/images/production-images/product-img-pc.jpg);
+        background-image: url(images/production-images/product-img-pc.jpg);
         height: 500px;
     }
 
