@@ -1,76 +1,102 @@
-
 /* css slider */
 .slider {
     height: 100vh;
     position: relative;
     color: #fff;
-
+    max-width: 2000px;
+    margin: 0 auto;
 }
+
+.header,
+.main-area {
+    width: 100%;
+    max-width: 1898px;
+    margin:0 auto;
+}
+
 .slider .list .item {
     position: absolute;
     inset: 0 0 0 0;
     overflow: hidden;
     opacity: 0;
+    max-width: 2000px;
+    margin: 0 auto;
     transition: .5s;
 }
-.slider .list .item img{
+
+.slider .list .item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-} 
+}
+
 .slider .list .item::after {
-    content:"";
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top,#000 40%,transparent);
+    background-image: linear-gradient(to top, #000 40%, transparent);
 }
+
 .slider .list .item .content {
     position: absolute;
-    left:10%;
-    top:20%;
+    left: 10%;
+    top: 20%;
     width: 600px;
     max-width: 80%;
     z-index: 1;
 }
+
 .slider .list .item .content p:nth-child(1) {
     text-transform: uppercase;
     letter-spacing: 10px;
 }
+
 .slider .list .item .content p:last-child {
     line-height: 1.2;
 }
-.slider .list .item .content h2{
+
+.slider .list .item .content h2 {
     font-size: 60px;
     margin: 20px 0;
 }
+
 .slider .list .item.active {
     opacity: 1;
     z-index: 10;
 }
+
 .learn-more-btn {
-    width: 200px;
+    font-size:14px;
+    display: inline-block;
     background-color: #26a69a;
-    padding:20px ;
+    padding: 20px 25px;
     border-radius: 10px;
     box-sizing: border-box;
     margin-top: 15px;
     border: none;
     cursor: pointer;
+    color: #fff
 }
+
 .learn-more-btn a {
     color: #fff;
     cursor: pointer;
+}
+
+.fa-arrow-right {
+    margin-left: 5px;
 }
 @keyframes showContent {
     to {
         transform: translateY(0);
         filter: blur(0);
-        opacity:1;
+        opacity: 1;
     }
 }
+
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
 .slider .list .item.active p:nth-child(3),
@@ -84,12 +110,15 @@
 .slider .list .item.active h2 {
     animation-delay: 1s;
 }
+
 .slider .list .item.active p:nth-child(3) {
-    animation-duration:1.3s ;
+    animation-duration: 1.3s;
 }
+
 .learn-more-btn {
-    animation-delay:1.5s ;
+    animation-delay: 1.5s;
 }
+
 /* arrows css */
 .arrows {
     position: absolute;
@@ -97,9 +126,10 @@
     right: 50px;
     z-index: 30;
 }
+
 .arrows button {
     background-color: #eee5;
-    border:none;
+    border: none;
     font-family: monospace;
     width: 35px;
     height: 35px;
@@ -108,16 +138,18 @@
     color: #eee;
     transition: .5s;
 }
+
 .arrows button:hover {
     background-color: #eee;
-    color:#000
+    color: #000
 }
+
 .thumbnail {
     position: absolute;
     bottom: 50px;
     z-index: 100;
     display: flex;
-    gap:10px;
+    gap: 10px;
     width: 100%;
     height: 250px;
     padding: 0 50px;
@@ -127,9 +159,11 @@
     justify-content: center;
 
 }
+
 .thumbnail::-webkit-scrollbar {
     width: 0;
 }
+
 .thumbnail .item {
     width: 220px;
     height: 150px;
@@ -137,28 +171,38 @@
     transition: .5s;
     flex-shrink: 0;
 }
+
 .thumbnail .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .thumbnail .item.active {
     filter: brightness(.9);
 }
+
 .thumbnail .item .content {
     position: absolute;
-    inset:auto 10px 10px 10px;
+    inset: auto 10px 10px 10px;
     font-size: 12px;
 }
+
+.content p {
+    line-height: 1.6;
+}
+
 @media screen and (max-width:678px) {
     .thumbnail {
         justify-content: start;
         bottom: 0;
     }
+
     .slider .list .item .content h2 {
         font-size: 40px;
     }
+
     .arrows {
         top: 20%;
         right: 10%;

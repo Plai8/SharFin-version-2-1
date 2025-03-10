@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 5px;
+}
+section {
+    width: 100%;
+    max-width: 1898px;
+    margin: 0 auto;
+    padding: 5% 10%;
+}
+header {
+    width: 100%;
+    max-width: 1898px;
+    margin: 0 auto;
+    background-color:#000;
+    height: 40vh;
+    position: relative;
+}
+#header-title {
+    font-size:3rem;
+    color:#fff;
+    position:absolute;
+    top:70%;
+    left:10%;
+}
+
+main {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.about-surfboard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    gap:0%
+}
+.about-surfboard-img {
+    width: 40%;
+}
+.about-surfboard-content {
+    width: 60%;
+    padding: 3% 5%;
+}
+.about-surfboard-img img{
+    width: 100%;
+}
+.about-surfboard-content h2{
+    font-size:1.5rem;
+    margin-bottom: 3%;
+    position:relative;
+    margin-left: 1%;
+}
+.about-surfboard-content h2::before {
+    content:'';
+    height: 110%;
+    border: 1px solid #26a69a;
+    position: absolute;
+    left:-1%;
+}
+.about-surfboard-content p {
+    font-size: .9rem;
+}
+/* surfboard fee area */
+.surfboard-fee {
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    background-image: url(../images/surfboard-rental-images/rental-fee-bgi.jpg);
+    background-position: 30% 45%;
+}
+.surfboard-fee h2{
+    display: inline-block;
+    margin: 0 auto 5% auto;
+    font-size: 1.9rem;
+    text-align: center;
+    color:#26a69a;
+    position:relative;
+    z-index: 2;
+}
+.surfboard-fee h2::before {
+    content:'';
+    width: 100%;
+    position:absolute;
+    border: 10px solid #fff;
+    z-index: -1;
+    bottom: -45%;
+    right: -5%;
+}
+.surfboard-card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.surfboard-card {
+    width: 50%;
+    text-align: center;
+}
+.surfboard-card:first-child {
+    border-right:5px solid #26a69a;
+}
+.surfboard-card img {
+    margin-bottom: 5%;
+}
+.surfboard-card p {
+    font-size:1.5rem;
+    color:#fff;
+    margin-top: 5%;
+    position: relative;
+}
+.surfboard-card p:nth-child(3){
+    font-size:1.3rem;
+    color:#26a69a;
+    font-weight: 700;
+}
+/* 租板服務項目 */
+.surfboard-rental-conten {
+    background-color: #FAFAFA;
+}
+.surfboard-rental-content h2{
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.rental-content-cards-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rental-content-card {
+    width: 50%;
+    display: flex;
+   
+}
+.rental-content,.rental-img {
+    width: 50%;
+    overflow: hidden;
+}
+.rental-img img {
+    width: 130%;
+    vertical-align: bottom;
+}
+.rental-content {
+    padding:5% 3%;
+}
+.rental-content h3,.rental-content p {
+    color:#fff;
+}
+.rental-content h3{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    
+}
+.rental-content p {
+    font-size: .9rem;
+    line-height: 20px;
+}
+.card-1 {
+    background-color: #26A69A;
+}
+.card-2 {
+    background-color: #27262B;
+}
+.card-3{
+    background-color: #F8BD00;
+}
+.card-4 {
+    background-color:#a94f34
+}
+
+
+/* 租板表單區 */
+.rental-input-area {
+    width: 100%;
+    background-image: url(../images/surfboard-rental-images/rental-input-area-bgi.jpg);
+    background-position: 20% 60%;
+    padding: 10%;
+}
+.rental-input-area h2 {
+    color:#26a69a;
+    font-size:1.9rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius:10px;
+    padding:10%;
+}
+.rental-item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.rental-item:first-child {
+    border-right: 5px solid #26a69a;
+}
+.reservation-date-area {
+    width: 100%;
+    text-align: center;
+}
+.rental-item-amount {
+    margin: 5% 0;
+}
+input[type=number] {
+    width: 35px;
+    margin: 0 2%;
+    border:none;
+    color:#26a69a;
+    letter-spacing: normal;
+}
+.rental-item-amount button:first-child {
+    border: 1px solid #26a69a;
+    background-color: #fff;
+    border-radius: 5px;
+    color:#26a69a;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+.rental-item-amount button:last-child{
+    border: none;
+    background-color: #26a69a;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reservation-date-area {
+    width: 100%;
+    padding: 3% 5%;
+    background-color: #BFBDBD;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+}
+.rental-total-fee{
+    color:#26a69a;
+    justify-self: center;
+}
+label {
+    color:#26a69a;
+    cursor: pointer;
+    position: relative;
+}
+#warning-msg {
+    font-size: .78rem;
+    width: 100%;
+    display: none;
+    color:red;
+    position: absolute;
+    left: 35%;
+    top: 95%;
+}
+.reservation-date-area p {
+    color: #26a69a;
+}
+input[type="date"] {
+    color:#26a69a;
+    border:1px solid #26a69a;
+    padding: 5px 10px;
+    cursor: pointer;
+    letter-spacing: normal;
+}
+.addcart-btn {
+    border:none;
+    background-color: #26a69a;
+    border-radius: 20px;
+    color:#fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.addcart-btn:hover {
+    background-color: #128175;
+}
+/* 租板訂單確認alert */
+.alert-light-box-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: rgba(135, 135, 135, 0.4);
+    z-index: 2;
+}
+
+.alert-info,
+.alert-info-reservation-success {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 35%;
+    padding: 3% 0;
+    border-radius: 10px;
+    border: none;
+    border-top: 20px solid #FABF5E;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.alert-info-reservation-success {
+    border-top: 20px solid #0B8C63;
+    z-index: 999;
+}
+
+.alert-shutdown-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer
+}
+
+.alert-shutdown-btn:hover {
+    color: #aaa;
+}
+
+.warning-sign,
+.success-reservation  {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to right, #FFDA78, #FCCA67, #FABF5E);
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto 5% auto;
+}
+
+.warning-sign::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 10px;
+    height: 30px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.warning-sign::before {
+    content: '';
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.alert-info h3 {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    margin: 5% auto 0% auto;
+    letter-spacing: 5px;
+}
+.btns-wrapper {
+    width: 100%;
+    padding: 0 5%;
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+}
+.btns-wrapper button {
+    display: inline-block;
+}
+.cancel-btn {
+    color: #86AEC5;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding-top: 2%;
+    border-bottom: 2px solid #86AEC5;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.cancel-btn:hover {
+    color: #26A69A;
+    border-bottom: 1px solid #26A69A;
+}
+
+.alert-info button:last-child {
+    background: linear-gradient(to right, #FFDA78, #FCCA67, #FABF5E);
+    border: none;
+    width: 40%;
+    padding: 2%;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.alert-info button:last-child:hover {
+    background: linear-gradient(to right, #fbd365, #f6b83e, #faa317);
+}
+.order-contnet {
+    width: 100%;
+    padding: 5% 10%;
+
+}
+.order-contnet p {
+    margin-bottom: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+.error-Msg {
+    color:red;
+    font-size: .9rem;
+}
+
+/* 確認購買lightbox */
+.alert-info-reservation-success {
+    display: none;
+}
+
+.success-reservation {
+    background: linear-gradient(to right, #009469, #039F75, #05B68C);
+}
+
+.success-title {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    margin: 5% auto 10% 5%;
+    letter-spacing: 5px;
+}
+
+.success-reservation::after {
+    content: '';
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: rotate(-45deg);
+    top: 35%;
+    right: 15%;
+    z-index: 1000
+}
+
+.success-reservation::before {
+    content: '';
+    width: 20px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 54.4%;
+    right: 59%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.go-back-index-btn {
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(to right, #009469, #039F75, #05B68C);
+    padding: 2% 10%;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.go-back-index-btn:hover {
+    background: linear-gradient(to right, #017b59, #058f6a, #0ab48c);
+}
+
+@media screen and (max-width:1035px) {
+    .rental-content-card {
+        width: 100%;
+    }
+    .rental-content-card:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+    .rental-img img {
+        width: 100%;
+    }
+    .surfboard-rental-content {
+        padding: 5% 15%;
+    }
+    .surfboard-rental-content h2 {
+        margin-bottom: 5%;
+    }
+    .card-2 {
+        order:3;
+    }
+    .card-3 {
+        order:2;
+    }
+    .card-4 {
+        order:4;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .rental-input-area {
+        padding: 10% 5%;
+    }
+    .input-field  {
+        padding: 5%;
+    }
+    .reservation-date-area {
+        text-align: start;
+
+    }
+    label {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .reservation-date-area p{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .addcart-btn {
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+    input[type="date"] {
+        width: 50%;
+    }
+    .alert-info,
+    .alert-info-reservation-success {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .about-surfboard-img,.about-surfboard-content {
+        width: 100%;
+    }
+    .about-surfboard-img{
+        order: 2;
+    }
+    .about-surfboard {
+        padding: 5%;
+    }
+    .about-surfboard-content {
+        order: 1;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 3%;
+    }
+    .surfboard-fee {
+        background-image: url(../images/surfboard-rental-images/rental-fee-bgi-md.jpg);
+        padding: 5%;
+    }
+    .surfboard-fee h2 {
+        margin-bottom: 6%;
+    }
+    .surfboard-card-wrapper {
+        width: 100%;
+
+    }
+    .rental-input-area {
+        background-image: url(../images/surfboard-rental-images/rental-input-area-bgi-md.jpg);
+    }
+} 
+@media screen and (max-width:800px) {
+    .surfboard-rental-content {
+        padding: 5%;
+    }
+} 
+
+@media screen and (max-width:678px) {
+    .rental-item {
+        width: 100%;
+    }
+    .surfboard-card {
+        width: 100%;
+    }   
+    .surfboard-card:first-child  {
+        border:none;
+    }
+    .rental-item:first-child {
+        border-right: none;
+    }
+    .alert-info,
+    .alert-info-reservation-success {
+        width: 80%;
+    }
+    .rental-content-card {
+        flex-direction: column;
+    }
+    .rental-content,.rental-img {
+        width: 100%;
+    }
+    .rental-content-card:first-child {
+        flex-direction: column-reverse;
+    }
+    .rental-content-card:nth-child(3) {
+        flex-direction: column;
+    }
+
+}

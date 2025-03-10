@@ -1,0 +1,290 @@
+.signUp-section {
+    width: 100%;
+    max-width: 1898px;
+    margin: 0 auto;
+    padding: 5%;
+    padding-top: 10%;
+    box-sizing: border-box;
+    background-image: url(../images/login-images/login-bgi.jpg);
+    background-position: center center;
+    position: relative
+}
+
+header {
+    max-width: 1898px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+.switch-btns {
+    width: 60%;
+    margin: 4% auto 0 auto;
+    text-align: center;
+    display: flex;
+    gap: 0;
+}
+
+.switch-btn {
+    display: none;
+    font-size: 1.05rem;
+    color: #d8d8d8;
+    width: 50%;
+    padding: 5% 8%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #d8d8d8;
+    cursor: pointer;
+}
+
+.btn-actived {
+    border-bottom: 3px solid #09A99B;
+    color: #09A99B;
+}
+
+.logo-img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.signUp-wrapper {
+    width: 80%;
+    max-width: 1028px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signUp-field {
+    width: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5%;
+}
+
+.signUp-field h2 {
+    font-size: 1.8rem;
+    color: #09A99B;
+    margin-bottom: 10%;
+    font-weight: 600;
+
+}
+
+input {
+    display: block;
+    margin: 4% auto 10% auto;
+    width: 100%;
+    padding: 5% 6%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: #EAEEED;
+}
+
+.input-icon-container>i {
+    position: absolute;
+    top: 48%;
+    left: 2%;
+}
+
+.input-icon-container {
+    width: 100%;
+    position: relative;
+}
+
+.fa-user-icon {
+    padding: 0;
+}
+
+.divider {
+    width: 80%;
+    margin: 5% auto;
+    letter-spacing: normal;
+    position: relative;
+    color: #211f1d;
+    font-size: 0.8rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    width: 50%;
+    height: 0;
+    border-bottom: .1px solid #31302f;
+    position: absolute;
+}
+
+.divider::before {
+    top: 60%;
+    right: 60%;
+}
+
+.divider::after {
+    top: 60%;
+    left: 60%;
+}
+
+.alt-login-btn {
+    width: 70%;
+    margin: 5% auto;
+    text-align: start;
+    border-radius: 50px;
+    padding: 2.8% 5%;
+    cursor: pointer
+}
+
+.alt-login-btn:first-child {
+    background-color: #4DC664;
+}
+
+.alt-login-btn:nth-child(2) {
+    background-color: #1977f2;
+}
+
+.google-icon-img {
+    width: 12px;
+    height: 12px;
+}
+
+.google-login {
+    border: 1px solid #D8D8D8;
+    padding: 2.5% 5%;
+}
+
+.alt-login-btn-title {
+    width: 80%;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: normal;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.google-login>p {
+    color: #000;
+}
+
+.submit-btn {
+    width: 60%;
+    padding: 3%;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #09A99B;
+    color: #fff;
+    cursor: pointer
+}
+
+.submit-btn:hover {
+    background-color: #6eb1ab;
+}
+
+/* login page field */
+.login-field {
+    width: 50%;
+    padding: 6% 8%;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../images/sign-up-images/signup-bgi.jpg);
+    object-fit: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.login-field h2 {
+    font: 2.1em sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 30%;
+}
+
+.login-field p {
+    width: 50%;
+    color: #fff;
+    margin: 15% auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.login-btn {
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    padding: 2.5% 3%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* 斷點1024px */
+@media screen and (max-width:1024px) {
+    .switch-btn {
+        display: inline-block;
+
+    }
+
+    .signUp-section {
+        background-image: none;
+    }
+
+    .signUp-field {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .login-field {
+        width: 100%;
+        background-image: none;
+        padding: 5%;
+        margin-bottom: 20%;
+        display: none;
+    }
+
+    .login-field h2 {
+        color: #09A99B;
+        margin-top: 15%;
+    }
+
+    .login-field p {
+        color: #09A99B;
+        margin: 5% auto;
+    }
+
+    .login-btn {
+        background-color: #09A99B;
+        margin-top: 10%;
+    }
+
+    .login-btn:hover {
+        background-color: #6eb1ab;
+    }
+
+    input {
+        padding: 4% 5%;
+    }
+
+    @media screen and (max-width:600px) {
+        .input-icon-container>i {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .signUp-wrapper {
+        width: 100%;
+    }
+}

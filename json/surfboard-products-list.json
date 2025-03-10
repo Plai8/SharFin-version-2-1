@@ -1,0 +1,628 @@
+[
+    {
+        "id": 1,
+        "name": "AQSS Soulstice Longboard 9'0 - Aqua",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$769.00",
+        "productTag": "最新商品",
+        "price": 769,
+        "mainImage": "../images/production-images/surfboard/SOULSTICE_LONGBOARD-Teal_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/SOULSTICE_LONGBOARD-Teal_1000x.webp",
+            "../images/production-preview-images/surfboard/001__00475.1522986157.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/002__69153.1522986158.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'0"
+        ],
+        "publishDate": "2024-03-02",
+        "describe": "Entry-level longboard designed with beginners in mind One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. Not to mention the price!"
+    },
+    {
+        "id": 2,
+        "name": "AQSS Boulevard Longboard - 9'0 Blue Stripe",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$699.00",
+        "productTag": "最新商品",
+        "price": 699,
+        "mainImage": "../images/production-images/surfboard/boulevard-22_3up_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/boulevard-22_3up_1000x.webp",
+            "../images/production-preview-images/surfboard/Boulevard_Lifestyle_1000x.webp",
+            "../images/production-preview-images/surfboard/Boulevard_Lifestyle2_1000x.webp",
+            "../images/production-preview-images/surfboard/Boulevard_Lifestyle3_1000x.webp"
+        ],
+        "size": [
+            "9'0"
+        ],
+        "publishDate": "2024-03-04",
+        "describe": "Mini Mal Design: The Funster Blueberry features a Mini Mal shape, ideal for beginner to intermediate surfers looking to catch waves effortlessly and have fun in a variety of conditions.Thruster Twin Tab Setup: Equipped with a versatile thruster twin tab setup, the Funster allows for customizable fin configurations to suit different wave conditions and surfing styles.Increase Your Wave Count: Designed to increase your wave count, the Funster offers enhanced paddle power and maneuverability, making it easier to catch waves and enjoy longer rides.Durable Construction: Built for durability, the Funster boasts a PU core and robust glassing with added tail patch for strength and longevity, ensuring reliability in critical surf conditions.Enhanced Performance Features: Features like extra nose rocker for steep take-offs, continuous rocker for smooth transitions, and a single-to-double concave for improved rail-to-rail maneuverability enhance the board's performance in various wave types."
+    },
+    {
+        "id": 3,
+        "name": "Funster Pine Lime - Mini Mal",
+        "brand": "AQSS",
+        "type": "Mini Mal",
+        "priceTag": "$699.00",
+        "productTag": "最新商品",
+        "price": 659,
+        "mainImage": "../images/production-images/surfboard/Funster-Yellow-3-UP_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Funster-Yellow-3-UP_1000x.webp",
+            "../images/production-preview-images/surfboard/funster1_d727fbeb-e8e7-48d6-8314-f896dd5d1bec_1000x.webp",
+            "../images/production-preview-images/surfboard/funster2_0a2756b8-e11f-4a89-99d1-d0a1d2edae76_1000x.webp",
+            "../images/production-preview-images/surfboard/funster3_7c9bb1fa-62d8-4eb0-8fdb-c1ea44aceac7_1000x.webp"
+        ],
+        "size": [
+            "6'8",
+            "7'0",
+            "7'2",
+            "7'4",
+            "7'6",
+            "7'8",
+            "8'0"
+        ],
+        "publishDate": "2024-03-12",
+        "describe": "Mini Mal Design: The Funster Blueberry features a Mini Mal shape, ideal for beginner to intermediate surfers looking to catch waves effortlessly and have fun in a variety of conditions.Thruster Twin Tab Setup: Equipped with a versatile thruster twin tab setup, the Funster allows for customizable fin configurations to suit different wave conditions and surfing styles.Increase Your Wave Count: Designed to increase your wave count, the Funster offers enhanced paddle power and maneuverability, making it easier to catch waves and enjoy longer rides.Durable Construction: Built for durability, the Funster boasts a PU core and robust glassing with added tail patch for strength and longevity, ensuring reliability in critical surf conditions.Enhanced Performance Features: Features like extra nose rocker for steep take-offs, continuous rocker for smooth transitions, and a single-to-double concave for improved rail-to-rail maneuverability enhance the board's performance in various wave types."
+    },
+    {
+        "id": 4,
+        "name": "Vintage Log Longboard 9'6",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$939.00",
+        "productTag": "最新商品",
+        "price": 939,
+        "mainImage": "../images/production-images/surfboard/VintageLog-Teal3up_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/VintageLog-Teal3up_900x.webp",
+            "../images/production-preview-images/surfboard/IMG_3551_1000x.webp",
+            "../images/production-preview-images/surfboard/IMG_3702_1000x.webp",
+            "../images/production-preview-images/surfboard/IMG_4128_1000x.webp"
+        ],
+        "size": [
+            "9'6"
+        ],
+        "publishDate": "2024-03-20",
+        "describe": "The AQSS Vintage Log in teal is the epitome of a traditional nose rider.This board features classic elements like a timber eco chock tail, single fin with vee bottom, knee patch, and a double layer of 6-ounce cloth on the deck. The unique teal color, coupled with a fabric inlay, ensures you stand out on the waves.Designed for stability, it boasts 50/50 rails and a streamlined outline, holding well in the wave's face. With low nose rocker, accentuated tail kick, and traditional design, it's perfect for perfecting your cross step or enjoying maximum nose time.Ideal for beginners to experienced riders seeking a forgiving, stable, and solid-performing longboard, the AQSS Vintage Log in teal will spark the curiosity of surf enthusiasts at every level.Best suited for Beginners to Experienced users who want a forgiving, stable and solid performing longboard.Fins not included"
+    },
+    {
+        "id": 5,
+        "name": "AQSS Boulevard Longboard 9'0",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$699.00",
+        "productTag": "最新商品",
+        "price": 699,
+        "mainImage": "../images/production-images/surfboard/Web001__60769.1520474364.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Web001__60769.1520474364.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Web002__96045.1520474364.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Web02__10079.1520474364.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/002__69153.1522986158.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'0"
+        ],
+        "publishDate": "2024-03-22",
+        "describe": "The AQSS Boulevard longboard is one of the most affordable, easiest to surf and user friendly longboards on the market today. With a subtle amount of entry nose lift this board glides into waves with ease and the fuller outline ensures there is plenty of stability and glide while on the nose.This board features a single concave running from the nose through to the midpoint creating lift and stability while nose riding. A drawn out accentuated double concave through to the tail assists with speed and flow through turns. The unexposed bamboo deck provides a strengthened exo skeleton under superior lamination, the bullet proof construction of the boulevard is made up of a super dense eps foam core and 6oz glass reinforced with bamboo + 6oz and an extra 6oz glass on the deck alone.The Boulevard can be surfed by the novice rider through to the competitor seeking extended nose time and manoeuvrability.Fins not included"
+    },
+    {
+        "id": 6,
+        "name": "Re-evolution by Beau Young Longboard - Caramel",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$829.00",
+        "productTag": "精選商品",
+        "price": 829,
+        "mainImage": "../images/production-images/surfboard/re-evolution-2UP-edited_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/re-evolution-2UP-edited_1000x.webp",
+            "../images/production-preview-images/surfboard/ReEvo001__01411.1516413189.1280.1280_cf06a1c4-7082-4734-b49b-020fe228c987_900x.webp",
+            "../images/production-preview-images/surfboard/ReEvo002__91175.1516413189.1280.1280_696ba8f2-146f-436b-84af-bb8c9b707126_900x.webp"
+        ],
+        "size": [
+            "9'1",
+            "9'4",
+            "9'8"
+        ],
+        "publishDate": "2024-03-22",
+        "describe": "Versatile Performance: Blends vintage style with modern performance, making it suitable for various wave conditions.Expert Design: Created in collaboration with Beau Young, ensuring top-notch design and performance features.Durability and Strength: Constructed with high-quality materials, including a Paulownia stringer, for enhanced strength and durability.Stylish Look: The resin tint, sanded gloss finish, and fabric inlay add an attractive aesthetic to this high-performance longboard."
+    },
+    {
+        "id": 7,
+        "name": "Re-evolution by Beau Young Longboard - Olive",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$799.00",
+        "productTag": "精選商品",
+        "price": 799,
+        "mainImage": "../images/production-images/surfboard/Re-Evolution_No_side_bites__77279.1526447925.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Re-Evolution_No_side_bites__77279.1526447925.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/RE-Evolutionn002__12495.1529386516.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Re-Evolution002__15555.1515735993.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'0",
+            "9'4",
+            "9'8"
+        ],
+        "publishDate": "2024-03-24",
+        "describe": "Versatile Performance: Blends vintage style with modern performance, making it suitable for various wave conditions.Expert Design: Created in collaboration with Beau Young, ensuring top-notch design and performance features.Durability and Strength: Constructed with high-quality materials, including a Paulownia stringer, for enhanced strength and durability.Stylish Look: The resin tint, sanded gloss finish, and fabric inlay add an attractive aesthetic to this high-performance longboard."
+    },
+    {
+        "id": 8,
+        "name": "AQSS Soulstice Longboard 9'1- Sunrise",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$699.00",
+        "productTag": "精選商品",
+        "price": 699,
+        "mainImage": "../images/production-images/surfboard/140022-Soulstice-PalePeach-3UP-f_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/140022-Soulstice-PalePeach-3UP-f_1000x.webp"
+        ],
+        "size": [
+            "9'1"
+        ],
+        "publishDate": "2024-03-26",
+        "describe": "Entry-level longboard designed with beginners in mind One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. Not to mention the price!"
+    },
+    {
+        "id": 9,
+        "name": "Re-Evolution Longboard Starter 9'1",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$829.00",
+        "productTag": "精選商品",
+        "price": 829,
+        "mainImage": "../images/production-images/surfboard/re-evolution-2UP-edited_bce69b2b-a200-4b3d-b6af-2bee276aada1_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/re-evolution-2UP-edited_bce69b2b-a200-4b3d-b6af-2bee276aada1_1000x.webp"
+        ],
+        "size": [
+            "9'1"
+        ],
+        "publishDate": "2024-03-28",
+        "describe": "Entry-level longboard designed with beginners in mind One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. Not to mention the price!"
+    },
+    {
+        "id": 10,
+        "name": "Vintage Log Longboard 9'6 Maroon",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$939.00",
+        "productTag": "精選商品",
+        "price": 939,
+        "mainImage": "../images/production-images/surfboard/WEBcolab-Vintage__63109.1565237528.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/WEBcolab-Vintage__63109.1565237528.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/WEBcolab-Vintage000__01860.1565237559.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/WEBcolab-Vintage001__62747.1565237538.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/vintagelog_image4__75892.1459390666.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'6"
+        ],
+        "publishDate": "2024-03-28",
+        "describe": "Our best nose rider Traditional log Staff favourite"
+    },
+    {
+        "id": 11,
+        "name": "Bronze Whaler by Beau Young",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$899.00",
+        "productTag": "最新商品",
+        "price": 899,
+        "mainImage": "../images/production-images/surfboard/Bronze-whaler-brown-2UP-edited_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Bronze-whaler-brown-2UP-edited_1000x.webp",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-Life001__03569.1544132676.1280.1280_c35f77ea-d653-46a6-afd9-342086e3e067_900x.webp",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-Life000__16774.1544132676.1280.1280_4badeac1-697f-4870-a359-6da518f18db6_900x.webp",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-Life002__04067.1544132676.1280.1280_4558441f-07b7-4df9-9d86-aced6bd60ab6_900x.webp"
+        ],
+        "size": [
+            "9'0",
+            "9'4",
+            "10'0"
+        ],
+        "publishDate": "2024-03-28",
+        "describe": "Our best nose rider Traditional log Staff favourite"
+    },
+    {
+        "id": 12,
+        "name": "AQSS Soulstice XL Longboard 9'6 - Eco-tech",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$899.00",
+        "productTag": "最新商品",
+        "price": 899,
+        "mainImage": "../images/production-images/surfboard/SOULSTICELONGBOARD-PAULOWNIA_1fcb86d2-78d4-4325-b274-feec3e81b5f7_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/SOULSTICELONGBOARD-PAULOWNIA_1fcb86d2-78d4-4325-b274-feec3e81b5f7_1000x.webp"
+        ],
+        "size": [
+            "9'6"
+        ],
+        "publishDate": "2024-03-30",
+        "describe": "Entry-level longboard designed with beginners in mind - Now in big boy dims Suited to surfers over 100kg.One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability."
+    },
+    {
+        "id": 13,
+        "name": "Re-evolution by Beau Young Longboard - Caramel",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$829.00",
+        "productTag": "最新商品",
+        "price": 829,
+        "mainImage": "../images/production-images/surfboard/Funster-Yellow-3-UP_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Funster-Yellow-3-UP_1000x.webp",
+            "../images/production-preview-images/surfboard/ReEvo001__01411.1516413189.1280.1280_cf06a1c4-7082-4734-b49b-020fe228c987_900x.webp",
+            "../images/production-preview-images/surfboard/ReEvo002__91175.1516413189.1280.1280_696ba8f2-146f-436b-84af-bb8c9b707126_900x.webp"
+        ],
+        "size": [
+            "9'1",
+            "9'4",
+            "9'6"
+        ],
+        "publishDate": "2024-03-30",
+        "describe": "Entry-level longboard designed with beginners in mind - Now in big boy dims Suited to surfers over 100kg.One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability."
+    },
+    {
+        "id": 14,
+        "name": "Re-evolution by Beau Young Longboard - Olive",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$799.00",
+        "productTag": "最新商品",
+        "price": 799,
+        "mainImage": "../images/production-images/surfboard/Re-Evolution_No_side_bites__77279.1526447925.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Re-Evolution_No_side_bites__77279.1526447925.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/RE-Evolutionn002__12495.1529386516.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Re-Evolution002__15555.1515735993.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/ReEvo002__91175.1516413189.1280.1280_696ba8f2-146f-436b-84af-bb8c9b707126_900x.webp"
+        ],
+        "size": [
+            "9'0",
+            "9'4",
+            "9'8"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "Entry-level longboard designed with beginners in mind - Now in big boy dims Suited to surfers over 100kg.One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability."
+    },
+    {
+        "id": 15,
+        "name": "AQSS Soulstice Longboard 9'1 - Sunrise",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$699.00",
+        "productTag": "最新商品",
+        "price": 699,
+        "mainImage": "../images/production-images/surfboard/140022-Soulstice-PalePeach-3UP-f_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/140022-Soulstice-PalePeach-3UP-f_1000x.webp"
+        ],
+        "size": [
+            "9'1"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "Entry-level longboard designed with beginners in mindOne of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. Not to mention the price!"
+    },
+    {
+        "id": 16,
+        "name": "Re-Evolution Longboard Starter 9'1",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$829.00",
+        "productTag": "最新商品",
+        "price": 829,
+        "mainImage": "../images/production-images/surfboard/re-evolution-2UP-edited_bce69b2b-a200-4b3d-b6af-2bee276aada1_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/re-evolution-2UP-edited_bce69b2b-a200-4b3d-b6af-2bee276aada1_1000x.webp"
+        ],
+        "size": [
+            "9'1"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "Entry-level longboard designed with beginners in mindOne of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. Not to mention the price!"
+    },
+    {
+        "id": 17,
+        "name": "Vintage Log Longboard 9'6 Maroo",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$939.00",
+        "productTag": "最新商品",
+        "price": 939,
+        "mainImage": "../images/production-preview-images/surfboard/WEBcolab-Vintage__63109.1565237528.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/surfboard/WEBcolab-Vintage__63109.1565237528.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/WEBcolab-Vintage000__01860.1565237559.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/WEBcolab-Vintage001__62747.1565237538.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/vintagelog_image4__75892.1459390666.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'6"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "Our best nose rider.Traditional.logStaff.favourite"
+    },
+    {
+        "id": 18,
+        "name": "Bronze Whaler by Beau Young",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$899.00",
+        "productTag": "最新商品",
+        "price": 899,
+        "mainImage": "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-WEB002__88301.1544132659.1280.1280_900x.jpg",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-WEB003__85271.1544132658.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/Bronze-Whaler-Life002__04067.1544132676.1280.1280_900x.webp"
+        ],
+        "size": [
+            "9'0",
+            "9'4",
+            "10'0"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "The latest brainchild of 2x World Longboard Champion Beau Young. If it's good enough for him, it'll do for you."
+    },
+    {
+        "id": 19,
+        "name": "AQSS Soulstice XL Longboard 9'6 - Eco-tech",
+        "brand": "AQSS",
+        "type": "Longboard",
+        "priceTag": "$899.00",
+        "productTag": "最新商品",
+        "price": 899,
+        "mainImage": "../images/production-images/surfboard/SOULSTICELONGBOARD-PAULOWNIA_1fcb86d2-78d4-4325-b274-feec3e81b5f7_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/SOULSTICELONGBOARD-PAULOWNIA_1fcb86d2-78d4-4325-b274-feec3e81b5f7_1000x.webp"
+        ],
+        "size": [
+            "9'6"
+        ],
+        "publishDate": "2024-04-01",
+        "describe": "Entry-level longboard designed with beginners in mind - Now in big boy dims Suited to surfers over 100kg.One of our best selling shapes.Combines manoeuvrability and stability.Higher rocker compared to traditional logs makes for quick response and easy turning.Contemporary lightweight EPS construction is buoyant, leading to less drag and more speed.Popular with first timer longboarders, due to its light weight and easy manoeuvrability. "
+    },
+    {
+        "id": 20,
+        "name": "Flying Fish Funboard - Clearskin",
+        "brand": "AQSS",
+        "type": "Shortboard",
+        "priceTag": "$439.00",
+        "productTag": "最新商品",
+        "price": 439,
+        "mainImage": "../images/production-images/surfboard/Flying-Fish-Web-Ready_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Flying-Fish-Web-Ready_1000x.webp",
+            "../images/production-preview-images/surfboard/flyingfishlifestyle_1000x.webp"
+        ],
+        "size": [
+            "5'6",
+            "5'8",
+            "6'0",
+            "6'2"
+        ],
+        "publishDate": "2024-04-20",
+        "describe": "AQSS Flying Fish - Our best selling shortboard.Our top recommendation for beginners looking to get into shortboarding and for experienced surfers looking to make the most of weak waves."
+    },
+    {
+        "id": 21,
+        "name": "Zephyr Hybrid Shortboard - Marble",
+        "brand": "VESSEL",
+        "type": "Shortboard",
+        "priceTag": "$609.00",
+        "productTag": "最新商品",
+        "price": 609,
+        "mainImage": "../images/production-images/surfboard/ZephyrMarble-3up_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/ZephyrMarble-3up_900x.webp",
+            "../images/production-preview-images/surfboard/zephyr002__24698.1517528516.1280.1280_6358ccd5-df50-4d58-aade-07eb357b81d0_900x.webp",
+            "../images/production-preview-images/surfboard/zephyr003__61493.1517528516.1280.1280_8ca7e490-f11c-4325-a113-40c45cbf3cde_900x.webp",
+            "../images/production-preview-images/surfboard/zephyr001__64574.1517528516.1280.1280_e8057672-8791-4d64-85c6-3a0d7c0bbc76_900x.webp"
+        ],
+        "size": [
+            "5'4",
+            "5'6",
+            "5'8",
+            "6'0",
+            "6'2",
+            "6'4",
+            "6'8"
+        ],
+        "publishDate": "2024-04-20",
+        "describe":"Ideal hybrid shortboardCarbon for strength and flexThe Vessel Zephyr is fast becoming one of Australia most popular funboards. Our Eco-Tech range features sustainable Paulownia timber full wrap for increased tensile strength, making this the ultimate funboard.The Zephyr offers superior speed through its plan shape and will see you flying down the line with increase speed and precision than you ever would have imagined.  Its shape features a generous amount of volume for its size for added paddle power and increased flow. The plan shape has been refined and tweaked over the past year with the introduction of S*LAB’s Computational Fluid Dynamics testing (CFD). This technology has helped fine tune the boards shape to ensure maximum speed, manoeuvrability and surfing capability.The Zephyr features a lower rocker and wider outline for added stability and easy wave entry.  The double flyer and pin tail allows for increased manouverability and powerful turns.The board is constructed using carbon infused cloth which covers the deck stand area and provides amazing flex qualities with extra drive when top-to-bottom surfing. The board comes with a 5 fin configuration and performs well as both a thruster, quad or even twin fin. These boards are perfect for all wave conditions and a must have for all surfing levels!Best suited for Beginners to Experienced users who want forgiving, fast and progressive hybrid funboard.Fins not includedIdeal hybrid shortboard.Carbon for strength and flex.The Vessel Zephyr is fast becoming one of Australia most popular funboards. Our Eco-Tech range features sustainable Paulownia timber full wrap for increased tensile strength, making this the ultimate funboard.The Zephyr offers superior speed through its plan shape and will see you flying down the line with increase speed and precision than you ever would have imagined.  Its shape features a generous amount of volume for its size for added paddle power and increased flow. The plan shape has been refined and tweaked over the past year with the introduction of S*LAB’s Computational Fluid Dynamics testing (CFD). This technology has helped fine tune the boards shape to ensure maximum speed, manoeuvrability and surfing capability.The Zephyr features a lower rocker and wider outline for added stability and easy wave entry.  The double flyer and pin tail allows for increased manouverability and powerful turns.The board is constructed using carbon infused cloth which covers the deck stand area and provides amazing flex qualities with extra drive when top-to-bottom surfing. The board comes with a 5 fin configuration and performs well as both a thruster, quad or even twin fin. These boards are perfect for all wave conditions and a must have for all surfing levels!Best suited for Beginners to Experienced users who want forgiving, fast and progressive hybrid funboard.Fins not included"
+    },
+    {
+        "id": 22,
+        "name": "Zephyr Hybrid Shortboard - Ecotech",
+        "brand": "VESSEL",
+        "type": "Shortboard",
+        "priceTag": "$549.00",
+        "productTag": "最新商品",
+        "price": 549,
+        "mainImage": "../images/production-images/surfboard/VS_ZEPHYR_PAUL_3up_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/VS_ZEPHYR_PAUL_3up_1000x.webp",
+            "../images/production-preview-images/surfboard/TSBW-EDM-Rectangle-Banner-Board_Talk-Board_Breakdown-ZEPHYR_1000x.webp",
+            "../images/production-preview-images/surfboard/ZephyrPOLWEB008__78246.1547511335.1280.1280_5b94563c-7de1-4f21-8e2d-c15fb700d2ed_900x.webp",
+            "../images/production-preview-images/surfboard/ZephyrPOLWEB007__08366.1547511335.1280.1280_8c0afa77-53b3-46df-b359-9710b5dee028_900x.webp"
+        ],
+        "size": [
+            "5'6",
+            "5'8",
+            "6'0",
+            "6'2"
+        ],
+        "publishDate": "2024-04-20",
+        "describe": "AQSS Flying Fish - Our best selling shortboard.Our top recommendation for beginners looking to get into shortboarding and for experienced surfers looking to make the most of weak waves."
+    },
+    {
+        "id": 23,
+        "name": "Eco Bean III Funboard - Carbon Wrap",
+        "brand": "VESSEL",
+        "type": "Shortboard",
+        "priceTag": "$529.00",
+        "productTag": "最新商品",
+        "price": 529,
+        "mainImage": "../images/production-images/surfboard/Ecobean3_3up_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Ecobean3_3up_900x.webp",
+            "../images/production-preview-images/surfboard/Eco-Bean-3_99f17aed-0236-4a25-9909-03229d40f25f_1000x.webp",
+            "../images/production-preview-images/surfboard/Eco-bean-3_Detail001_2000x1600_a2dc6507-0007-4aaf-84a6-b0d10b145d0e_1000x.webp",
+            "../images/production-preview-images/surfboard/Eco-bean-3_Detail003_2000x1600_3cfaa995-02d4-453a-8036-67e7b7153f64_1000x.webp"
+        ],
+        "size": [
+            "5'4",
+            "5'6",
+            "5'8",
+            "6'0",
+            "6'2",
+            "6'4",
+            "6'6",
+            "6'8"
+        ],
+        "publishDate": "2024-04-22",
+        "describe": "The Eco Bean III is the ultimate choice for surfers seeking a versatile and high-performance funboardCarbon Wrap for Strength and Flex: The Eco Bean III features Vessel's innovative Carbon Wrap Technology, integrating a full 3K carbon wrap around the board. This enhances flexibility, stiffness, and control in critical areas, making it lightweight yet durable for enhanced performance.Ideal for Small to Medium Surf: Our favorite funboard for small to medium surf conditions, the Eco Bean III paddles into waves with ease, turns sharply, and offers stability, making it suitable for surfers of all abilities.5 Fin Single Tab Setup: Equipped with a versatile 5 fin single tab setup, the Eco Bean III allows surfers to customize their fin configuration based on wave conditions and personal preferen"
+    },{
+        "id": 24,
+        "name": "Tajen EPS - Hybrid Shortboard",
+        "brand": "VESSEL",
+        "type": "Shortboard",
+        "priceTag": "$609.00",
+        "productTag": "最新商品",
+        "price": 609,
+        "mainImage": "../images/production-images/surfboard/TajenWhite3up_900x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/TajenWhite3up_900x.webp",
+            "../images/production-preview-images/surfboard/IMG_4580_1000x.webp",
+            "../images/production-preview-images/surfboard/IMG_4633_1000x.webp",
+            "../images/production-preview-images/surfboard/IMG_4745_1000x.webp"
+        ],
+        "size": [
+            "5'4",
+            "5'6",
+            "5'8",
+            "7'0"
+        ],
+        "publishDate": "2024-04-23",
+        "describe": "Essential for all surfing abilities Combines performance with stability Carbon strips for strength and flex.The Tajen is a balance of tradition and modern performance and a must have for any quiver.This board is well suited to the elite level surfer down to the everyday surfer or weekend warrior and is often referred to as the 'one board quiver' for its incredible versatility across all types of surf conditions.  The Tajen outperforms most boards in the industry whether you are surfing summer mush or solid swell in Indo, this board can do it all from 1ft to 8ft barrels with ease.The boards secret is in its high volume profile, with plenty of foam under the chest, this board paddles well whilst still holding plenty of stability and speed when on the wave face.  The lower rocker allows for easy wave entry yet can still handle the steeper drops when tested in good surf.If you are looking for a well-rounded and refined hybrid funboard then the Tajen is certainly worth consideration.Best suited for experienced users who want a forgiving, fast and progressive hybrid shortboard.Fins not included"
+    },
+    {
+        "id": 25,
+        "name": "Delta White - AU MADE",
+        "brand": "VESSEL",
+        "type": "Shortboard",
+        "priceTag": "$769.00",
+        "productTag": "最新商品",
+        "price": 769,
+        "mainImage": "../images/production-preview-images/surfboard/vsdelta_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/surfboard/vsdelta_1000x.webp"
+        ],
+        "size": [
+            "5'2",
+            "5'4",
+            "5'6"
+        ],
+        "publishDate": "2024-04-23",
+        "describe": "The Carbon Jet by 2x World Champ Beau Young is designed with versatility in mind, providing a forgiving shape that works in a variety of conditions."
+    },
+    {
+        "id": 26,
+        "name": "AQSS Carbon Jet 2.9 EPS Funboard by Beau Young - White Carbona",
+        "brand": "AQSS",
+        "type": "Shortboard",
+        "priceTag": "$659.00",
+        "productTag": "最新商品",
+        "price": 659,
+        "mainImage": "../images/production-preview-images/surfboard/CarbonJET3UP_8c89bee5-bde1-41e7-8395-0a5800c4ecd2_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/surfboard/CarbonJET3UP_8c89bee5-bde1-41e7-8395-0a5800c4ecd2_1000x.webp",
+            "../images/production-preview-images/surfboard/CarbonJet2_1000x.webp",
+            "../images/production-preview-images/surfboard/CarbonJet_1000x.webp"
+        ],
+        "size": [
+            "5'8",
+            "6'0",
+            "6'2",
+            "6'4",
+            "6'6",
+            "6'8",
+            "7,0"
+        ],
+        "publishDate": "2024-04-23",
+        "describe": "5 fin twin tab setup:Perfect for small and medium waves.Eco-tech Paulownia timber wrap for strength.A must-have for every surfing ability!"
+    },
+    {
+        "id": 27,
+        "name": "HOTSTUFF Rabbit World Championship Replica",
+        "brand": "Hot Stuff",
+        "type": "Shortboard",
+        "priceTag": "$5,000",
+        "productTag": "最新商品",
+        "price": 5000,
+        "mainImage": "../images/production-images/surfboard/Hotstuff-2-up_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Hotstuff-2-up_1000x.webp",
+            "../images/production-preview-images/surfboard/Hotstuff-3_1000x.webp",
+            "../images/production-preview-images/surfboard/Hotstuff-3-up_1000x.webp"
+        ],
+        "size": [
+            "7'8"
+        ],
+        "publishDate": "2024-04-28",
+        "describe": "78’ WORLD CHAMPION MODEL WAYNE \" RABBIT \" BARTHOLOMEW LIMITED COLLECTORS EDITION ONLY 10 x BOARDS MADE.“Old Faithful standing the test of time”.When I came back from Hawaii in November 1972 and met Gill Glover, I began riding his board made at Hohensee in January 1973 for my first foray into the Opens, winning the first round of the Qld Titles at Burleigh vs PT, MP, and Keith Paull. Gill and I started refining the Bugs squash tail in 1973, winning the 73, 74 & 76 Queensland Title before taking on the World Tour in 77 and coming 2nd to Shaun Tomson for the Title.So, it was already proven against the world’s best, and it all came together in 78, shaped by Gill and glassed by Hot Stuff owner Paul Hallas. Subsequently it was christened Old Faithful for the all-round high performance in diverse waves and all types of conditions.The squash tail back corners provided great hold in hollow barrels, as I had been working towards taking the classic Queensland cutback to the next level, having been heavily influenced by Peter Drouyn and Michael Peterson. It had all come together in readiness to take on my new rivals Shaun Tomson, Mark Richards, Michael Ho and Cheyne Horan and win the 1978 world title.I rode “Old Faithful” exclusively until I started getting boards as well from Al Byrne, deep six channels at Hot Stuff plus Bob Hurley twin fins, both in 81 until Simon’s thruster eclipsed the single fin.DESIGNED & SHAPED BY GILL GLOVER, FINISHED BY HOT STUFF SURFBOARDS"
+    },
+    {
+        "id": 28,
+        "name": "SUNDANCE Funboard - Brown",
+        "brand": "SUNDANCE",
+        "type": "Shortboard",
+        "priceTag": "$435.00",
+        "productTag": "最新商品",
+        "price": 435,
+        "mainImage": "../images/production-images/surfboard/Funboard_Olive_3_ups_1000x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/Funboard_Olive_3_ups_1000x.webp"
+        ],
+        "size": [
+            "5'4",
+            "6'0"
+        ],
+        "publishDate": "2024-04-30",
+        "describe": "The Sundance FunboardIn its natural, earthy brown hue is all about maximising your enjoyment on the waves. This board is crafted for ease of use and maneuverability, making it ideal for beginners and intermediate surfers who want to build confidence or improve their style. Its versatile shape strikes a perfect balance between stability and agility, giving you that sweet spot of control while still allowing for playful turns and cutbacks.With its streamlined design, the Sundance Funboard glides through the water effortlessly, picking up speed with minimal paddling effort. Its generous volume provides stability, especially in smaller waves, but its responsive construction also makes it fun to maneuver when the waves get a bit bigger. Whether you're just starting out or looking to refine your moves, the Sundance Funboard makes catching waves and riding with finesse easier than ever.Fins not included."
+    },
+    {
+        "id": 29,
+        "name": "AQSS Flying Fish - Bamboo",
+        "brand": "AQSS",
+        "type": "Shortboard",
+        "priceTag": "$549.00",
+        "productTag": "最新商品",
+        "price": 549,
+        "mainImage": "../images/production-images/surfboard/flyingfishbamboo3up__54564.1482122829.500.555_400x.webp",
+        "preveiwImages": [
+            "../images/production-images/surfboard/flyingfishbamboo3up__54564.1482122829.500.555_400x.webp",
+            "../images/production-preview-images/surfboard/FLYingFish002__25594.1529383535.1280.1280_900x.webp",
+            "../images/production-preview-images/surfboard/IMG_2371_1_1000x.webp",
+            "../images/production-preview-images/surfboard/IMG_2405_d468e511-642a-401e-8751-0243ba537a68_1000x.webp"
+        ],
+        "size": [
+            "5'6",
+            "5'8"
+        ],
+        "publishDate": "2024-05-11",
+        "describe": "Perfect for knee to head high waves.EPS Epoxy construction - lighter and more buoyant than traditional Polyurethane.Pretty standard fish outline with its wide point forward and bulk of its volume under the chest, where most of your body weight is. Buoyancy under the chest translates to easier paddling, more waves and ultimately progressing faster.Wide tail is inherently buoyant which translates into speed and forward drive when pushed against.Single to double concave; single concave through front creates lift and speed,merging into a double concave through the fins which breaks the water and allows the board to roll rail-to-rail (like a seesaw).5-Fin setup offers maximum versatility;Thruster gives ultimate predictability and consistency.Swap out to a Quad if you like it fast and loose.Wide, low-rockered boards with plenty of concave such as this one are highly versatile, working equally well for beginners in larger sizes as they do for confident surfers in smaller sizes.Fish shapes have long been a go-to for beginner-intermediate boards due to their tendency for easy speed in small waves as well as stability and manoeuvrability.Fairly low (flat) rocker helps to maintain speed through flat sections of the wave and also give the board a larger sweet spot regarding footing position; both major pain points for learners."
+    }
+]

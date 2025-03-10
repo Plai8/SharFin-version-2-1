@@ -1,0 +1,238 @@
+main {
+    width: 100%;
+    padding: 10% 5%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #DFF8F7;
+    letter-spacing: 6px;
+    max-width: 1898px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1898px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 800;
+}
+
+h3 {
+    width: 50%;
+    margin: 2% auto 5% auto;
+    font-size: 15px;
+    color: gray;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.contact-us-container {
+    width: 90%;
+    max-width: 2000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0.5%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 5%;
+}
+
+aside {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 4% 2%;
+    background-color: #05B8B0;
+    border-radius: 20px;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+aside::after {
+    content: '';
+    width: 55%;
+    height: 45%;
+    background-image: radial-gradient(#89DEDA, #66D3CF, #37C7C0);
+    position: absolute;
+    border-radius: 100%;
+    bottom: -10%;
+    right: -15%;
+    z-index: 0;
+}
+
+aside p,
+aside a {
+    color: #fff;
+    margin: 10% 0 15% 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 1;
+    position: relative;
+}
+
+aside i {
+    margin-right: 4%;
+}
+
+.contact-info-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.contact-info-intro {
+    color: #83DCD8;
+    text-align: start;
+    line-height: 25px;
+}
+
+.shop-location {
+    display: block;
+    color: #fff;
+    margin-bottom: 25%;
+    letter-spacing: 4px;
+}
+
+.contact-input-field {
+    width: 60%;
+    padding: 5% 4%;
+    box-sizing: border-box;
+    text-align: start;
+}
+
+.basic-user-info {
+    width: 100%;
+    display: flex;
+}
+
+.input-placeholder {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: #6a6968;
+    position: absolute;
+    top: -30%;
+}
+
+label {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-bottom: 15%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding: 2% 1%;
+    box-sizing: border-box;
+}
+
+label[for='userMessage'] {
+    height: 150px;
+    overflow: hidden;
+}
+
+.userMessage {
+    top: 5%;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    margin-top: 5%;
+}
+
+.submit-Btn {
+    width: 40%;
+    padding: 3% 5%;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    background-color: #05B8B0;
+    cursor: pointer
+}
+
+.submit-Btn:hover {
+    background-color: #6eb1ab;
+}
+
+.selected-title {
+    color: #05B8B0;
+}
+
+.selected-input {
+    border-bottom: 1px solid #05B8B0;
+}
+
+@media screen and (max-width:1024px) {
+    main {
+        padding-top:20% ;
+    }
+    .contact-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+        padding: 5% 10%;
+        margin-bottom: 10%;
+    }
+
+    aside::after {
+        width: 40%;
+    }
+
+    aside p {
+        margin: 5% 0 5% 0;
+        text-align: center;
+    }
+
+    .contact-info-intro {
+        text-align: center;
+    }
+
+    .shop-location {
+        margin-bottom: 10%;
+    }
+
+    .contact-input-field {
+        width: 100%;
+    }
+
+    .submit-Btn {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    label {
+        margin-bottom: 5%;
+    }
+    h3 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    aside {
+        padding:5%;
+    }
+
+    aside p  {
+        font-size:14px
+    }
+}

@@ -1,0 +1,235 @@
+[
+    {
+        "id": 1,
+        "name": "Bundle Product #28",
+        "brand": "Fast Bundle",
+        "type": "accessory",
+        "priceTag": "$55.00",
+        "productTag": "最新商品",
+        "price": 55,
+        "mainImage": "../images/production-preview-images/accessories/125096_a4a54e4a-2e44-4ecd-aa8a-cc660c7087c5_400x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/125096_a4a54e4a-2e44-4ecd-aa8a-cc660c7087c5_400x.webp",
+            "../images/production-preview-images/accessories/125095_400x.webp"
+        ],
+        "describe": "TSBW Intro 2+1 Fin setup"
+    },
+    {
+        "id": 2,
+        "name": "Midlength Starter Kit With 2+1 Fins",
+        "brand": "Fast Bundle",
+        "type": "accessory",
+        "priceTag": "$190.00",
+        "productTag": "精選商品",
+        "price": 190,
+        "mainImage": "../images/production-preview-images/accessories/temp_CHDH6ND_400x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/temp_CHDH6ND_400x.webp",
+            "../images/production-preview-images/accessories/temp_K1ldLSz_1000x.webp",
+            "../images/production-preview-images/accessories/temp_81E9RzN_1000x.webp",
+            "../images/production-preview-images/accessories/temp_82UU6Z1_400x.webp"
+        ],
+        "describe": "TSBW Intro 2+1 Fin setup"
+    },
+    {
+        "id": 3,
+        "name": "FK Travel Cover 5'3",
+        "brand": "FK",
+        "type": "accessory",
+        "priceTag": "$79.95",
+        "productTag": "精選商品",
+        "price": 79.95,
+        "mainImage": "../images/production-preview-images/accessories/AllRounder1_2048x_f49e2fda-9492-4a0e-9b7a-66f496febfa7_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/AllRounder1_2048x_f49e2fda-9492-4a0e-9b7a-66f496febfa7_1000x.webp"
+        ],
+        "size": [
+            "5'3"
+        ],
+        "describe": null
+    },
+    {
+        "id": 4,
+        "name": "Asher Pacey 5.79\" Twin Fin Set - Black Clear",
+        "brand": "Shapers",
+        "type": "accessory",
+        "priceTag": "$149.00",
+        "productTag": "精選商品",
+        "price": 149,
+        "mainImage": "../images/production-preview-images/accessories/579-asher-blackclear-singletab__58349__57015_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/579-asher-blackclear-singletab__58349__57015_900x.webp"
+        ],
+        "describe": "The AP5.79”Twin Fin sets are inspired by Asher Pacey’s stylish and progressive Twin Fin surfing. The AP Twin Fins redefine the traditional approach to flat and lateral twin fin surfing, bridging the gap between Twin Fins and Thrusters. The AP Twin Fins are designed to provide maximum drive, speed and hold through turns whilst maintaining a lively, free flowing ride that is iconic to twin fin surfing.The AP’s come with an optional trailer fin which adds additional drive, stability and maneuverability (ideal for larger waves or vertical surfing). The AP templates have a medium flex pattern with a unique fin tip that allows the AP’s to load up and spring out of turns with speed and momentum.AP5.79” suited traditional outline twin fins, 85kg plus surfers riding performance twin fin boards."
+    },
+    {
+        "id": 5,
+        "name": "Cold Water Wax Starter Kit - Base Coast, Top Coat & Wax Comb",
+        "brand": "Fast Bundle",
+        "type": "accessory",
+        "priceTag": "$15.00",
+        "productTag": "精選商品",
+        "price": 15.00,
+        "mainImage": "../images/production-preview-images/accessories/CoolWax_5a667c19-15e6-46cc-8882-d2c516e057fb_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/CoolWax_5a667c19-15e6-46cc-8882-d2c516e057fb_1000x.webp",
+            "../images/production-preview-images/accessories/temp_fw2CyFN_1000x.webp",
+            "../images/production-preview-images/accessories/IMG_3354_373c6744-9e89-44ee-8e49-de789cad324b_1000x.webp"
+        ],
+        "describe": "The AP5.79”Twin Fin sets are inspired by Asher Pacey’s stylish and progressive Twin Fin surfing. The AP Twin Fins redefine the traditional approach to flat and lateral twin fin surfing, bridging the gap between Twin Fins and Thrusters. The AP Twin Fins are designed to provide maximum drive, speed and hold through turns whilst maintaining a lively, free flowing ride that is iconic to twin fin surfing.The AP’s come with an optional trailer fin which adds additional drive, stability and maneuverability (ideal for larger waves or vertical surfing). The AP templates have a medium flex pattern with a unique fin tip that allows the AP’s to load up and spring out of turns with speed and momentum.AP5.79” suited traditional outline twin fins, 85kg plus surfers riding performance twin fin boards."
+    },
+    {
+        "id": 6,
+        "name": "Beach Days Starter Kit",
+        "brand": "Fast Bundle",
+        "type": "accessory",
+        "priceTag": "$202.00",
+        "productTag": "精選商品",
+        "price": 202.00,
+        "mainImage": "../images/production-preview-images/accessories/temp_fZ0kTkv_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/temp_fZ0kTkv_1000x.webp",
+            "../images/production-preview-images/accessories/temp_Dz6EhOe_400x.webp",
+            "../images/production-preview-images/accessories/temp_tdStl0x_1000x.webp"
+        ],
+        "describe":"Elevate your beach days with our TSBW Umbrella, Hooded Towel & Neoprene Satchel - Ideal for keeping your valubles Safe and out of the elements!The Surfboard Warehouse umbrella features a wide canopy that provides plenty of shade to protect the whole family from adults, children & pets.The Coastlines Neoprene Crossover bag offers you portability for your every day carry and a compact travel solutions for your day to day commutes.The AQSS Surf Poncho is like having your own portable changing room with you wherever you go.Don't forget to grab a beach ball for your next surf trip! It's guaranteed to make a day at the beach all that more interesting and is built tough to take a beating. This large beach ball is easy to store, carry and play catch and fun for the whole family."
+    },
+    {
+        "id": 7,
+        "name": "HUEYS SURF WAX",
+        "brand": "HUEYS",
+        "type": "accessory",
+        "priceTag": "$6.00",
+        "productTag": "精選商品",
+        "price": 6.00,
+        "mainImage": "../images/production-preview-images/accessories/WhatsAppImage2024-04-04at12.51.30PM_900x.webp",
+        "preveiwImages": [],
+        "describe":"HUEYS Surf Wax is a non-toxic product that uses natural ingredients for superior traction.Recyclable packaging & made in AUS!The wax comes in 3 different blends to suit a variety of water temperatures."
+    },
+    {
+        "id": 8,
+        "name": "HUEYS SURF WAX",
+        "brand": "Surf Rack Systems - Surfboard Hanger",
+        "type": "accessory",
+        "priceTag": "$39.00",
+        "productTag": "精選商品",
+        "price": 39.00,
+        "mainImage": "../images/production-preview-images/accessories/Packaging_F_37dfec70-3f03-49e9-b89d-c66c1f0b1ca3_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/Packaging_F_37dfec70-3f03-49e9-b89d-c66c1f0b1ca3_1000x.webp",
+            "../images/production-preview-images/accessories/Packaging_B_51564331-68f7-403c-b390-c27161dea48c_1000x.webp",
+            "../images/production-preview-images/accessories/IMG_9367_1000x.webp",
+            "../images/production-preview-images/accessories/IMG_9368_1000x.webp"
+        ],
+        "describe":"Store your boards like a pro with our patented surfboard hanger. To be used on boards without tailpads.Made from premium materials.These hooks are perfect for all boards with a leash plug up to 18kg.This hook hanger is suitable for any single surfboard - shortboards to longboards."
+    },
+    {
+        "id": 9,
+        "name": "Clear Levitation Surfboard Wall Rack",
+        "brand": "Surf Rack Systems",
+        "type": "accessory",
+        "priceTag": "$99.00",
+        "productTag": "精選商品",
+        "price": 99.00,
+        "mainImage": "../images/production-preview-images/accessories/Packaging_F_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/Packaging_F_1000x.webp",
+            "../images/production-preview-images/accessories/Packaging_B_1000x.webp",
+            "../images/production-preview-images/accessories/Levitator-1_1000x.webp",
+            "../images/production-preview-images/accessories/Levitator-2_1000x.webp"
+        ],
+        "describe":"Store your boards like a pro with our patented surfboard hanger. To be used on boards without tailpads.Made from premium materials.These hooks are perfect for all boards with a leash plug up to 18kg.This hook hanger is suitable for any single surfboard - shortboards to longboards."
+    },{
+        "id": 10,
+        "name": "Safety Flag - Neon Orange",
+        "brand": "The Surfboard Warehouse",
+        "type": "accessory",
+        "priceTag": "$0.99",
+        "productTag": "精選商品",
+        "price": 0.99,
+        "mainImage": "../images/production-preview-images/accessories/WhatsApp_Image_2024-01-09_at_10.30.27-removebg-preview_400x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/WhatsApp_Image_2024-01-09_at_10.30.27-removebg-preview_400x.webp"
+        ],
+        "describe":"Our neon orange safety flag is useful for hanging from the back of your vehicle when you want to warn other people on the road that you are carrying something overhanging, such as a longboard or SUP. In most states there is a legal requirement to have a safety flag such as this when you are on the road- check your local laws."
+    },
+    {
+        "id": 11,
+        "name": "ATLANTIS - ADJUSTABLE ELIXIR CARBON PADDLE - 3 PIECE",
+        "brand": "ATLANTIS",
+        "type": "accessory",
+        "priceTag": "$249.00",
+        "productTag": "精選商品",
+        "price": 249.00,
+        "mainImage": "../images/production-preview-images/accessories/125493_400x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/125493_400x.webp"
+        ],
+        "describe":"PADDLE ATL ELIXIR CARBON ADJUSTABLE THREE PIECE:Perfect for traveling and storage, this three piece adjustable carbon paddle is ideal if you are looking for durable and compact option.The Atlantis Elixir Carbon Paddle offers the ultimate in construction, strength and performance.The Elixir is the second-lightest paddle in our line up and provides superior strength, flexibility and performance when compared to alloy and fiberglass alternatives. This paddle weights approximately half as much as competing alloy paddles. Stay out in the water longer and enjoy your time with a light-weight Atlantis paddle."
+    },
+    {
+        "id": 12,
+        "name": "Swimming Cap",
+        "brand": "Tri-Essentials",
+        "type": "accessory",
+        "priceTag": "$22.50",
+        "productTag": "精選商品",
+        "price": 22.50,
+        "mainImage": "../images/production-preview-images/accessories/cap-tri-essentials_1000x.webp",
+        "size":[
+            "S","M","L"
+        ],
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/cap-tri-essentials_1000x.webp",
+            "../images/production-preview-images/accessories/Coastlines_PhotoOrd-552_36097c04-cbb8-479f-93a9-6553bf2de79f_1000x.webp",
+            "../images/production-preview-images/accessories/Coastlines_PhotoOrd-546_1000x.webp",
+            "../images/production-preview-images/accessories/Coastlines_PhotoOrd-551_f20f5f60-1657-4f1c-8b34-1a34cc79bcf0_1000x.webp"
+        ],
+        "describe":"The Tri-Wetsuits swimming cap is constructed with super stretch Neoprene and features GBS seams and an ergonomic fit. The 2mm Smoothskin Neoprene reduces water friction and ensures your head and ears stay insulated when swimming in the coolest of conditions."
+    },
+    {
+        "id": 13,
+        "name": "RANDOM X 37\" SKIM BOARD",
+        "brand": "Random X",
+        "type": "accessory",
+        "priceTag": "$39.00",
+        "productTag": "精選商品",
+        "price": 39.00,
+        "mainImage": "../images/production-preview-images/accessories/RANDOMX37WOODENSKIMBOARD_BLUE-F_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/RANDOMX37WOODENSKIMBOARD_BLUE-F_1000x.webp"
+        ],
+        "describe":"Random X Skim Boards come in 3 different constructions catering to the newbie skimmer through to the serious shore break wizard.The wooden all-purpose skim board is the real deal when it comes to performance. This construction provides more sensitivity under foot and delivers extra pop and spring when rebounding and turning on waves. Designed with a versatile outline to suit intermediate-to-experienced skimmers looking for a reliable, well-made and affordable board."
+    },
+    {
+        "id": 14,
+        "name": "WETSUIT CHANGING MAT",
+        "brand": "The Surfboard Warehouse",
+        "type": "accessory",
+        "priceTag": "$39.00",
+        "productTag": "精選商品",
+        "price": 39.00,
+        "mainImage": "../images/production-preview-images/accessories/Changematt005_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/Changematt005_900x.webp",
+            "../images/production-preview-images/accessories/Changematt008_900x.webp",
+            "../images/production-preview-images/accessories/Changematt002_900x.webp",
+            "../images/production-preview-images/accessories/ChangeMat003_900x.jpg"
+        ],
+        "describe":"Random X Skim Boards come in 3 different constructions catering to the newbie skimmer through to the serious shore break wizard.The wooden all-purpose skim board is the real deal when it comes to performance. This construction provides more sensitivity under foot and delivers extra pop and spring when rebounding and turning on waves. Designed with a versatile outline to suit intermediate-to-experienced skimmers looking for a reliable, well-made and affordable board."
+    },
+    {
+        "id": 15,
+        "name": "SURFPASTE",
+        "brand": "SURFPASTE TINTED ZINC SPF 30+ 55GM",
+        "type": "accessory",
+        "priceTag": "$31.95",
+        "productTag": "精選商品",
+        "price": 31.95,
+        "mainImage": "../images/production-preview-images/accessories/Screenshot2021-12-08092955_300x.avif",
+        "preveiwImages": [
+            "../images/production-preview-images/accessories/Screenshot2021-12-08092955_300x.avif"
+        ],
+        "describe":"Surfpaste contains all natural, certified organic, vegan, reef safe and cruelty  free ingredients, and has been tested in Australia under our conditions, so we know it works!Surfpaste also complies with Australian standards as a broad spectrum sunscreen.It is suitable for sensitive skin types and won't sting your eyes, is easy tpo apply and lasts for hoursIt features a golden tan colour, perfect for most skin tones, and importantly is safe for you and our oceans."
+    }
+]

@@ -1,0 +1,706 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+  line-height: 20px;
+  color: #000;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section,
+main {
+  width: 100%;
+  padding: 5%;
+  max-width: 1898px;
+  margin: 0 auto;
+}
+
+nav li {
+  font-weight: 600;
+}
+
+header {
+  background-image: url(../images/index-images/header-bgi-pc.png);
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1898px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Aoboshi One", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  line-height: 80px;
+}
+
+.hearder-wave-img {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  width: 100%;
+}
+
+.header-see-more-btn {
+  background-color: rgba(217, 217, 217, 0.5);
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: #fff;
+  transition: .32s ease-in-out;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+  color: #fff;
+  transition: 0.2s linear;
+}
+
+.header-see-more-btn:hover {
+  background-color: rgba(157, 216, 234, 0.3)
+}
+
+.header-see-more-btn:hover .fa-arrow-right {
+  transform: translateX(10px);
+}
+
+/* header波浪動畫 */
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background: url(../images/index-images/wave.png);
+  background-size: 1000px 100px;
+  max-width: 2000px
+}
+
+.wave.wave1 {
+  animation: wave1 15s linear infinite;
+  z-index: 100;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0
+}
+
+.wave.wave2 {
+  animation: wave2 10s linear infinite;
+  z-index: 99;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 0
+}
+
+.wave.wave3 {
+  animation: wave3 10s linear infinite;
+  z-index: 98;
+  opacity: 0.2;
+  animation-delay: -10s;
+  bottom: 15
+}
+
+/* 精選商品 */
+.popular-products-section {
+  padding: 5% 10%;
+  position: relative;
+}
+
+.popular-products-title {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+
+.popular-products-cards-carousel {
+  display: flex;
+  max-width: 2000px;
+  flex-wrap: nowrap;
+  gap: 1%;
+  padding: 2% 0;
+  overflow-x: scroll;
+}
+
+/* 輪播商品卡片 */
+.popular-product-card {
+  padding: 2% 2%;
+  flex: 0 0 24%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+
+.popular-product-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popular-product-card img {
+  width: 100%;
+  margin-bottom: 5%;
+  transition: 0.32s ease-in;
+}
+
+.card-content {
+  letter-spacing: normal;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.popular-product-card img:hover {
+  transform: scale(1.1);
+}
+
+.goods-name {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2.5%;
+  letter-spacing: normal;
+}
+
+.goods-price {
+  text-align: center;
+
+}
+
+.carousel-btn {
+  z-index: 149;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+}
+
+.carousel-btn:hover {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 18px 0 rgba(0, 0, 0, 0.19);
+  ;
+}
+
+.next {
+  right: 7.5%;
+}
+
+.prev {
+  left: 8%;
+}
+
+.popular-products-cards-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.more-product-btn-wrapper {
+  margin-top: 2.5%;
+  text-align: end;
+}
+
+.more-production-btn {
+  font-size: 14px;
+  background-color: #000;
+  padding: 15px;
+  display: inline-block;
+  text-align: end;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* surfing courses section */
+.surfing-courses-section {
+  padding: 0;
+  padding-top: 5%;
+  background-color: #FCFCFE;
+}
+
+.surfing-course-title {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.course-cards-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-card-image {
+  width: 50%;
+  overflow: hidden
+}
+
+.course-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: .32s;
+}
+
+.course-card-image img:hover {
+  transform: scale(1.2);
+}
+
+.course-card-info-content {
+  width: 50%;
+  padding: 15% 10%;
+}
+
+.course-name,
+.course-intro {
+  color: #fff;
+}
+
+.course-name {
+  font-size: 1.5rem;
+  margin-bottom: 2.5%;
+  font-weight: 600;
+}
+
+.course-intro {
+  line-height: 1.8;
+}
+
+.half-day-course {
+  background-color: #9ac0d9;
+}
+
+.one-day-course {
+  background-color: #B3D8A8;
+}
+
+.premium-course {
+  background-color: #9ACBD0;
+}
+
+.see-more-btn {
+  font-size: 14px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  padding: 8px 10px;
+  margin-top: 2.5%;
+  display: inline-block;
+}
+
+/* rental surfing board intro section */
+.rental-board-section {
+  background-color: #FCFCFE;
+  padding: 5% 15%;
+  padding-bottom: 0;
+}
+
+.rental-board-section-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.rental-board-intro {
+  display: flex;
+}
+
+.rental-board-img-wrapper,
+.rental-board-content-field {
+  width: 50%;
+  overflow: hidden;
+}
+
+.rent-board-img {
+  width: 100%;
+  height: 70%;
+
+}
+
+.rental-board-content-field {
+  padding: 5%;
+  padding-right: 0;
+}
+
+.rental-board-content-field h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+
+.rental-board-content-field p {
+  line-height: 1.8;
+  margin-bottom: 5%;
+}
+
+.learn-more-course-btn {
+  color: #000;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.see-more-btn-wrapper {
+  text-align: end;
+}
+
+/* coach-members section */
+.coach-members-intro-section {
+  background-color: #fff;
+}
+
+.coach-members-intro-section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.see-more-coach-btn-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 5% 0;
+}
+
+.see-more-coach-info {
+  color: #5175BD;
+  padding: 0 0px 0 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #5175BD;
+}
+
+.coach-intro-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.coach-intro-card {
+  width: 45%;
+  display: block;
+}
+
+.coach-intro-img-wrapper {
+  overflow: hidden;
+}
+
+.coach-intro-card img {
+  width: 100%;
+  transition: .32s;
+  vertical-align: bottom;
+}
+
+.coach-intro-card img:hover {
+  transform: scale(1.2)
+}
+
+.coach-intro-content {
+  padding: 10% 5%;
+  height: 200px;
+  background-color: #F1F4F9;
+}
+
+.coach-name {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.coach-intro {
+  line-height:1.6
+}
+
+/* about SharFin section */
+.about-SharFin-section {
+  background-image: url(../images/index-images/about-us-bgi-pc.jpg);
+  background-position: center;
+  height: 150vh;
+  position: relative;
+  color: #000;
+  background-repeat: no-repeat;
+}
+
+.about-SharFin-title {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+.about-SharFin-intro-left,
+.about-SharFin-intro-right {
+  width: 35%;
+  position: absolute;
+}
+
+.about-SharFin-intro-left p,
+.about-SharFin-intro-right p {
+  color: #000;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.about-SharFin-intro-left {
+  top: 14%;
+  left: 5%;
+}
+
+.about-SharFin-intro-right {
+  bottom: 30%;
+  right: 5%;
+}
+
+.more-about-SF-btn {
+  display: inline-block;
+  padding: 0.8%;
+  color: #000;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+}
+
+.about-SharFin-img-mobile {
+  display: none;
+  width: 95%;
+  margin: 5% auto;
+}
+
+.about-SharFin-img-mobile img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+@keyframes wave1 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes wave3 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@media screen and (max-width:1134px) {
+  .course-card-info-content {
+    padding: 8% 5%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  header {
+    background-image: url(../images/index-images/banner-background.png);
+    background-position: 50% 90%;
+  }
+
+  .popular-products-section {
+    padding: 5%;
+  }
+
+  .popular-product-card {
+    flex: 0 0 32.5%;
+  }
+
+  .popular-products-cards-carousel {
+    padding: 3% 0;
+  }
+
+  .next {
+    right: 2.5%;
+  }
+
+  .prev {
+    left: 3%;
+  }
+
+  .surfing-course-title {
+    font-size: 1.5rem;
+  }
+
+  .about-SharFin-title,
+  .about-SharFin-intro-left {
+    left: 2.5%;
+  }
+
+  .about-SharFin-intro-right {
+    right: 2.5%
+  }
+
+  .rental-board-section {
+    padding: 8% 5%;
+    padding-bottom: 0;
+  }
+  .coach-members-intro-section {
+    padding: 8% 2.5%;
+  }
+  .coach-intro-cards-wrapper{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .rent-board-img {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .course-card-info-content,
+  .course-card-image {
+    width: 100%;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(1) {
+    order: 1;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(2) {
+    order: 2;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(3) {
+    order: 4;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(4) {
+    order: 3;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(5) {
+    order: 5;
+  }
+
+  .course-cards-list-wrapper>div:nth-child(6) {
+    order: 6;
+  }
+
+  .about-SharFin-section {
+    background-image: none;
+    height: auto;
+    background-color: #FCFCFE;
+  }
+
+  .about-SharFin-img-mobile {
+    display: block;
+  }
+
+  .about-SharFin-title {
+    font-size: 24px;
+    position: static;
+    text-align: center;
+
+  }
+
+  .about-SharFin-intro-left,
+  .about-SharFin-intro-right {
+    position: static;
+    width: 100%;
+  }
+
+  .about-SharFin-intro-right {
+    margin-top: 5%;
+  }
+
+  .see-more-btn-wrapper {
+    width: 100%;
+    margin-top: 5%;
+    text-align: end;
+  }
+
+  .more-about-SF-btn {
+    position: static;
+    display: inline;
+    padding: 10px;
+  }
+
+  .rental-board-intro {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .rent-board-img {
+    border-radius: 20px;
+  }
+
+  .rental-board-img-wrapper,
+  .rental-board-content-field {
+    width: 100%;
+  }
+  .coach-intro-cards-wrapper {
+    margin-top: 5%;
+    flex-direction: column;
+    align-content: center;
+  } 
+  .coach-intro-card {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width:675px) {
+  h1 {
+    font-size: 3rem
+  }
+
+  header {
+    background-position: 45% 90%;
+  }
+
+  .popular-product-card {
+    flex: 0 0 49.5%;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+
+  .surfing-course-title {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width:400px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: normal;
+    }
+  }
+}

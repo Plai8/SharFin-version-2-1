@@ -1,0 +1,480 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.6;
+    color: #000;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section,
+main {
+    width: 100%;
+    padding: 5%;
+    max-width: 1898px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/halfday-courses-image/banner-img-md.jpg);
+    width: 100%;
+    max-width: 1898px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+p {
+    line-height: 1.6
+}
+
+.header-title {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: "Nunito", "Noto Sans TC", sans-serif;
+    letter-spacing: 10px;
+
+}
+
+/* header波浪動畫 */
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: -1%;
+    left: 0;
+    height: 100px;
+    background: url(../images/index-images/wave.png);
+    background-size: 1000px 100px;
+    max-width: 2000px;
+}
+
+.wave.wave1 {
+    animation: wave1 15s linear infinite;
+    z-index: 100;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0
+}
+
+.wave.wave2 {
+    animation: wave2 10s linear infinite;
+    z-index: 99;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 0
+}
+
+.wave.wave3 {
+    animation: wave3 10s linear infinite;
+    z-index: 98;
+    opacity: 0.2;
+    animation-delay: -10s;
+    bottom: 15
+}
+
+@keyframes wave1 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+
+@keyframes wave3 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/* course intro section */
+.course-intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+}
+
+.course-intro-image,
+.course-intro-content {
+    width: 50%;
+}
+
+.course-intro-image img {
+    width: 100%;
+}
+
+.course-intro-content {
+    padding: 5%;
+    padding-right: 2.5%;
+}
+
+.course-title {
+    font-size: 2rem;
+    margin-bottom: 2.5%;
+}
+
+.course-price {
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: #26a69a;
+    color: #fff;
+    margin-top: 2.5%;
+}
+
+.course-schedule-section {
+    padding: 0;
+}
+
+.course-schedule-title-wrapper {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/halfday-courses-image/course-schedule-title-wrapper-img.jpg);
+    background-position: 50% 50%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.course-schedule-title-wrapper h2 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+}
+
+.course-schedule {
+    padding: 5%;
+    padding-left: 0;
+}
+
+.course-schedule h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5%;
+
+}
+
+
+.switch-btn-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+.course-schedule-date-switch-btn {
+    color: #26a69a;
+    background-color: transparent;
+    border: 1px solid #26a69a;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.course-schedule-date-switch-btn:last-child {
+    margin-left: 2.5%;
+}
+
+.course-schedule-date-switch-btn:hover {
+    background-color: #26a69a;
+    color:#fff;
+}
+
+.actived {
+    background-color: #26a69a;
+    color: #fff;
+}
+
+.course-schedule-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-schedule-content-img-wrapper,
+.course-schedule-content {
+    width: 50%;
+}
+
+.course-schedule-content-img-wrapper img {
+    width: 100%;
+}
+
+.course-schedule-content {
+    padding: 5%;
+}
+
+.course-schedule-content > li {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.fee-includes-content-section {
+    padding: 5%;
+    background-color: #FCFCFE;
+}
+
+.fee-includes-content-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.fee-includes-content-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%
+}
+
+.fee-includes-card {
+    width: calc((100% - 5%) / 3);
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.fee-includes-card-img-wrapper {
+    margin-bottom: 20px;
+}
+
+.fee-includes-card-content {
+    padding: 10px 20px;
+}
+
+.fee-includes-card-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.fee-includes-card-content p {
+    font-size: 14px;
+}
+
+/* sign up course section */
+
+.sign-up-course-section {
+    background-image: url('../images/halfday-courses-image/half-day-banner-pc.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+.sign-up-course-input-wrapper {
+    background-color: #fff;
+    padding: 5% 10%;
+    border-radius: 5px;
+}
+
+.sign-up-course-input-wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.sign-up-course-input-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-course-input-field div,
+label {
+    width: 50%;
+    margin-bottom: 35px;
+}
+
+label {
+    letter-spacing: normal;
+    width: 45%;
+    margin-left: 2.5%;
+    position:relative;
+}
+
+.course-time-input-wrapper {
+    width: 50%;
+}
+.course-time-input-wrapper,
+.fee-decription,
+#course-time-2{
+    margin-left: 2.5%;
+}
+
+.total-amout-display-area p {
+    margin-bottom: 5px;
+}
+
+.total-amout-display-area span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-cart-sumit-btn {
+    border: none;
+    background-color: #26a69a;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.add-cart-sumit-btn:hover {
+    background-color: #118175;
+}
+
+.sign-up-course-input-field div:last-child {
+    background-color: #F6F6F6;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5% 2.5%;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.total-amout-display-area p,
+.total-amout-display-area #btn-wrapper {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#btn-wrapper {
+    padding:0 ;
+    margin-top: 2.5%;
+} 
+
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    margin-top: 2.5%;
+    padding: 5px;
+    border: 1px solid #26a69a;
+}
+
+input[type='radio'] {
+    accent-color: green;
+}
+
+.warning-info {
+    position:absolute;
+    color:red;
+    font-weight: 400;
+    bottom:-62.5%;
+    right:0% ;
+    letter-spacing: normal;
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+
+    .course-intro-image,
+    .course-intro-content {
+        width: 100%;
+    }
+
+    .course-intro-section {
+        padding: 5%;
+    }
+
+    .course-title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .course-intro {
+        font-size: 14px;
+    }
+
+    .course-intro-content {
+        padding: 0;
+        margin-bottom: 5%;
+    }
+
+    .course-price {
+        margin: 5% auto;
+    }
+
+    .course-schedule-content-img-wrapper,
+    .course-schedule-content {
+        width: 100%;
+    }
+
+    .course-schedule {
+        padding: 5%;
+    }
+
+    .course-schedule h2 {
+        font-size: 1.8rem;
+        margin-bottom: 5%;
+    }
+
+    .switch-btn-wrapper {
+        margin-bottom: 5%;
+    }
+    .sign-up-course-input-wrapper {
+        padding: 5% 2.5%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .fee-includes-card {
+        width: 47.5%;
+    }
+
+    .sign-up-course-input-field div,
+    label {
+        width: 100%;
+    }
+    .sign-up-course-input-wrapper {
+        padding: 5%;
+    }
+
+    .add-cart-sumit-btn {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .fee-includes-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    input[type="date"],
+    input[type="number"] {
+        width: 60%;
+    }
+
+    .sign-up-course-section {
+        padding: 5% 2.5%;
+    }
+}

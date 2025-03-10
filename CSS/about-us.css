@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header section */
+header {
+    background-image: url(../images/about-us-images/關於我們banner-img.jpg);
+    width: 100%;
+    max-width: 1898px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    max-width: 1898px;
+    padding: 8% 5%;
+    margin: 0 auto;
+}
+
+.header-title {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: "Nunito", "Noto Sans TC", sans-serif;
+    letter-spacing: 10px;
+
+}
+
+@media screen and (max-width:515px) {
+    .header-title {
+        font-size: 2rem;
+    }
+}
+
+/* brand's story */
+.our-story-section {
+    width: 100%;
+    color: #1D2B53;
+}
+
+.story-container {
+    width: 80%;
+    max-width: 2000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-story-img {
+    width: 50%;
+}
+
+.our-story-img>img {
+    width: 100%;
+    height: auto;
+    vertical-align: baseline;
+    object-fit: cover;
+}
+
+.our-story-content {
+    width: 45%;
+}
+
+.our-story-title {
+    font-size: 2rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-family: "Nunito", "Noto Sans TC", sans-serif;
+}
+
+.our-story-content>p {
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: normal;
+    letter-spacing: 5px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* 關於我們中間banner */
+.sub-section-img {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/about-us-images/our-story-banner.jpg");
+    object-fit: cover;
+    background-position: 28% 36%;
+}
+
+/* SharFin標語 */
+.shop-title {
+    width: 100%;
+}
+
+.shop-title-content {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.shop-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.shop-title-content {
+    width: 40%;
+    padding: 40px 0;
+    margin: 0;
+    text-align: start;
+    position: relative;
+}
+
+.shop-title-content>span {
+    position: absolute;
+    font-size: 3rem;
+}
+
+.shop-title-comma-top {
+    top: 5%;
+    left: -10%;
+}
+
+.shop-title-comma-bot {
+    bottom: -110%;
+    right: -10%;
+    position: absolute;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.shop-title-content>h2 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin: 5% 0 3% 0;
+}
+
+.shop-title-content>p {
+    font-size: 0.9rem;
+    color: #A09E9E;
+    font-weight: 900;
+    font-family: "Nunito", "Noto Sans TC", sans-serif;
+    letter-spacing: 5px;
+    line-height: normal;
+    position: relative;
+}
+
+/* SharFin標語圖片 */
+.shop-title-img {
+    width: 50%;
+}
+
+.shop-title-img>img {
+    width: 100%;
+}
+
+/* sharFin's members introduction section   */
+#our-member-section {
+    width: 100%;
+}
+
+#our-member-section>h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #1D2B53;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.our-member-cards-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-member-card {
+    width: 30%;
+    overflow: hidden;
+}
+
+.our-member-card>img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: .32s ease-in-out;
+}
+
+.our-member-intro {
+    color: #000;
+    margin-left: 10%;
+    width: 90%;
+    background-color: #F1F4F9;
+    padding: 10%;
+    padding-top: 20%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.our-member-intro>h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.our-member-title {
+    width: 30%;
+    height: 35%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: -15%;
+    left: -11%
+}
+
+.our-member-title>p {
+    height: 30%;
+    display: block;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.member-social-icon {
+    color: #1D2B53;
+    width: 80%;
+    margin: 20% auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-social-icon>i {
+    cursor: pointer;
+}
+
+.our-member-intro:hover,
+.member-social-icon>i:hover {
+    background-color: #09A99B;
+    color: #fff;
+}
+
+.our-member-card>img:hover {
+    transform: scale(1.3);
+}
+
+/* join us section */
+.recruit-section {
+    padding-top: 5%;
+}
+
+.recruit-container {
+    width: 85%;
+    max-width: 1500px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(../images/about-us-images/recruit-bot-img.jpg);
+    background-position: 100% 20%;
+    background-repeat: no-repeat;
+}
+
+.recruit-title {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Nunito", "Noto Sans TC", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 4;
+}
+
+.recruit-para {
+    color: #fff;
+    width: 38%;
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.recruit-top-img {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+}
+
+.recruit-top-img>img {
+    width: 100%;
+}
+
+.join-us-btn {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 5px;
+    padding: 1.5% 5%;
+    color: #fff;
+    background-color: #26A69A;
+    position: absolute;
+    bottom: 44%;
+    left: 60%;
+    border: none;
+
+}
+
+.join-us-btn:hover {
+    background-color: #33b3a8;
+    opacity: .8;
+
+}
+
+@media screen and (max-width:1200px) {
+    .story-container {
+        display: block;
+    }
+
+    .our-story-img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .our-story-content {
+        width: 100%;
+    }
+
+    .shop-title-container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .shop-title-img {
+        width: 100%;
+    }
+
+    .shop-title-content {
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .our-member-cards-container {
+        flex-wrap: wrap;
+
+    }
+
+    .our-member-card {
+        width: 40%;
+        margin: 5% auto;
+    }
+
+    .recruit-container {
+        width: 100%;
+        padding-left: 10%;
+        box-sizing: border-box;
+    }
+
+    .recruit-para {
+        width: 60%;
+        top: 55%;
+        left: 25%;
+    }
+
+    .recruit-title {
+        top: 20%;
+    }
+
+    .join-us-btn {
+        padding: 1.6% 5%;
+        font-size: .9rem;
+        bottom: 15%;
+        left: 25%;
+    }
+
+    .recruit-top-img {
+        top: 15%;
+        left: 5%;
+    }
+
+    /* footer section  */
+    .footer-section {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sub-section-img {
+        background-position: 35% 36%;
+    }
+
+    .our-story-section {
+        padding: 5% 2.5%;
+    }
+
+    .story-container {}
+
+    .our-member-card {
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .recruit-title {
+        top: 15%;
+    }
+
+    .recruit-para {
+        top: 50%;
+    }
+
+    .join-us-btn {
+        bottom: 13%;
+        padding: 3% 10%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sub-section-img {
+        background-position: 39% 36%;
+    }
+
+    .recruit-imgs {
+        display: none;
+    }
+
+    .recruit-title {
+        left: 5%;
+    }
+
+    .recruit-para {
+        top: 52.5%;
+        left: 5%;
+        width: 80%;
+        font-weight: 700;
+    }
+
+    .join-us-btn {
+        left: 5%;
+        bottom: 12.5%
+    }
+    
+    .recruit-section {
+        padding: 0;
+    }
+
+    .recruit-container {
+        padding: 0;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 | SharFin</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/3912594fe4.js" crossorigin="anonymous"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/member-center.css">
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar-brand-logo">
+                <li>
+                    <a href="./index.html">
+                        <img src="../images/index-images/ShaFin-Logo.svg" alt="SharFin logo圖片">
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-squre">
+                <li>
+                    <i class="fa-regular fa-bell fa-lg" style="color:#000">
+                    </i>
+                </li>
+                <li>
+                    <img src="../images/members-images/user-pic-navbar.svg" alt="使用者大頭貼">
+                </li>
+                <li>
+                    <p class="user-account-name">Peter Lai</p><!--透過API把使用者資料更新上去，目前預設切版使用-->
+                </li>
+                <li class="burger-btn">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu">
+                        <li class="user-mobile-info">
+                            <img src="../images/members-images/user-pic-navbar.svg" alt="使用者大頭貼"
+                            class="user-icon-img-mobile">
+                            <p class="user-account-name-mobile">歡迎,Peter Lai</p><!--透過API把使用者資料更新上去，目前預設切版使用-->
+                        </li>
+                        <li class="asidebar-actived-btn-mobile mobile-asidebar">會員資訊</li>
+                        <li class="mobile-asidebar">我的最愛</li>
+                        <li class="mobile-asidebar">追蹤訂單</li>
+                        <li class="mobile-asidebar">衝浪課程</li>
+                        <li class="mobile-asidebar">租板</li>
+                        <li class="logout-btn-mobile"><i class="fa-solid fa-power-off" style="color:red"></i>登出</li>
+                    </ul>
+            </ul>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="aside-navbar">
+            <ul>
+                <h3 id="aside-navbar-title">會員中心</h3>
+                <li class="asidebar-actived-btn aside-navbar-item"><i class="fa-regular fa-user user-icon"></i>會員資訊</li>
+                <li class="aside-navbar-item"><i class="fa-regular fa-heart"></i>我的最愛</li>
+                <li class="aside-navbar-item"><i class="fa-solid fa-truck"></i>追蹤訂單</li>
+                <li class="aside-navbar-item"><img class="fa-solid" src="../images/members-images/surfing.svg"
+                        alt="">衝浪課程</li>
+                <li class="aside-navbar-item"><img class="fa-solid" src="../images/members-images/surfing-1.svg"
+                        alt="">租板</li>
+                <li class="logout-btn"><i class="fa-solid fa-power-off" style="color:red"></i>登出</li>
+            </ul>
+        </aside>
+        <div class="member-info-display-container">
+            <div class="member-info">
+                <div class="member-info-header">
+                    <img src="../images/members-images/user-pic.svg" alt="使用者照片">
+                    <p>歡迎,<span class="user-name">Peter Lai</span></p>
+                </div>
+                <div class="member-info-body">
+                    <label for="">
+                        名字：
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        姓氏：
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Email:
+                        <input type="email" name="" id="">
+                    </label>
+                    <label for="">
+                        聯絡電話：
+                        <input type="tel" name="" id="">
+                    </label>
+                    <label for="">
+                        地址：
+                        <input type="text" name="" id="">
+                    </label>
+                </div>
+    </main>
+    <!-- 登出提示light box -->
+    <div class="alert-light-box-container">
+        <div class="alert-info">
+            <i class="fa-solid fa-x alert-shutdown-btn"></i>
+            <div class="warning-sign"></div>
+            <h3 class="warning-sign-title">確定要登出？</h3>
+            <button class="cancel-btn">在逛逛</button>
+            <button class="comfirm-btn">確定</button>
+        </div>
+        <div class="alert-info-logout-success">
+            <div class="success-sign"></div>
+            <h3 class="success-sign-title">登出成功</h3>
+            <a href="./index.html" class="go-back-index-btn">確定</a>
+        </div>
+    </div>
+    <script src="../js/member-center.js"></script>
+</body>
+</html>

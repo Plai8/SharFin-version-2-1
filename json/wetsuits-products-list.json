@@ -1,0 +1,342 @@
+[
+    {
+        "id": 1,
+        "name": "Insulator Series Womens 5/4 Hooded Chest Zip Steamer",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$296.00",
+        "productTag": "最新商品",
+        "price": 296.00,
+        "mainImage": "../images/production-preview-images/wetsuits/EDITIMG_2306_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/EDITIMG_2306_900x.webp",
+            "../images/production-preview-images/wetsuits/Artboard1_48ac2ee7-5b6c-47cf-9ee8-8ab0f5ea15a6_900x.webp",
+            "../images/production-preview-images/wetsuits/EDITIMG_2315_900x.webp",
+            "../images/production-preview-images/wetsuits/EDITIMG_2310_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "14"
+        ],
+        "describe": "This suit is designed for the freezing cold. It features a warm, woolly, rapid dry, thermal lining, keeping you warmer and comfier than anyone else in the water. All seams are constructed with a triple seal which consists of gluing, taping, and blind stitching. To top it off this suit has 100% internal taping keeping you fully insulated. This suit is light, warm, soft & stretchy, amplifying your performance in the water."
+    },
+    {
+        "id": 2,
+        "name": "Premium Mens 2/2 Short Sleeve Chest Zip Steamer",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"men",
+        "priceTag": "$232.00",
+        "productTag": "最新商品",
+        "price":232.00,
+        "mainImage": "../images/production-preview-images/wetsuits/shortarmlongleg-Fullbody-.PNG-2_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits//shortarmlongleg-Fullbody-.PNG-2_900x.webp"
+        ],
+        "size": [
+            "S",
+            "M",
+            "XL",
+            "XXL"
+        ],
+        "describe": "The Coastlines 2mm Premium Chest Zip Short Sleeve Steamer is a high performance suit that’s favoured by our Ambassadors and surfers the world over due to the thinner neoprene and reduced weight of the suit. Essentially, this is a ‘barely there’ wetsuits that offers incredible paddle flexibility and overall freedom of movement, while keeping your body and legs warm for longer session times.Our Premium Chest Zip Short Sleeve Steamer is designed with a contemporary cut that contours to your body's natural shape and movements, and is made with 2mm of warm, premium Limestone Super-Stretch Neoprene to keep you warmer and comfier than anyone else in the water."
+    },
+    {
+        "id": 3,
+        "name": "Insulator Series Womens 4/3 Chest Zip Steamer",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$280.00",
+        "productTag": "最新商品",
+        "price":280.00,
+        "mainImage": "../images/production-preview-images/wetsuits/EDITIMG_2268_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/EDITIMG_2268_900x.webp",
+            "../images/production-preview-images/wetsuits/EDITIMG_2250_900x.webp",
+            "../images/production-preview-images/wetsuits/durakneepad_68e61490-1c16-4204-bc05-6353ce9001ee_900x.webp",
+            "../images/production-preview-images/wetsuits/EDITIMG_2226_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "This suit is perfect for those frostbitten, rain-soaked, icey wintry mornings. It features a warm woolly thermal lining, keeping you warmer and comfier than anyone else in the water. All seams are constructed with a durable seal which consists of gluing and blind stitching. In addition, all critical areas are taped. This suit is designed to amplify your performance in the water, a more contemporary cut that contours with your body's natural movements."
+    },
+    {
+        "id": 4,
+        "name": "Insulator Series Youth 4/3 Chest Zip Premium Steamer",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$204.00",
+        "productTag": "最新商品",
+        "price":204.00,
+        "mainImage": "../images/production-preview-images/wetsuits/130777-7_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/130777-7_900x.webp",
+            "../images/production-preview-images/wetsuits/130777-19_900x.webp",
+            "../images/production-preview-images/wetsuits/130777-13_900x.webp",
+            "../images/production-preview-images/wetsuits/130777-28_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "The Coastlines 3mm/2mm Classic Back Zip Steamer is a great all-purpose suit that’s affordable yet stacked with premium features. This suit offers full body protection from the elements, and is made for cool to cold water temperatures and crisp days when the wind chill factor is high.Designed with a contemporary cut that contours to your body's natural shape and movements, and made with warm, premium Limestone Super Stretch Neoprene to keep you warm and surfing for longer. Our new women's range features clean lines and classic details; including our signature Coastlines logo branding which is colour coded in black for a paired back, minimal yet elegant aesthetic."
+    },
+    {
+        "id": 5,
+        "name": "Classic Womens 3/2 Back Zip Steamer",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"yongth",
+        "priceTag": "$124.00",
+        "productTag": "最新商品",
+        "price":124.00,
+        "mainImage": "../images/production-preview-images/wetsuits/13115743thermal-TopZoom-JPG-6copy_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/13115743thermal-TopZoom-JPG-6copy_900x.webp",
+            "../images/production-preview-images/wetsuits/43girlssteamer-Fullbody-JPG-14copy_900x.webp",
+            "../images/production-preview-images/wetsuits/43girlssteamer-Fullbody-JPG-21copy_900x.webp",
+            "../images/production-preview-images/wetsuits/13115743thermal-Fullbody-JPG-13copy_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "Warm, durable, visible & flexible. Coastlines Youth Series Wetsuits are designed to keep your kids warmer in the water for longer while allowing them the freedom to move and enjoy their aquatic activities.The Coastlines Youth Insulator steamer is designed for the Winter and autumn seasons, keeping the body warm and protected from the brisk winter air. It features a warm, woolly thermal lining, keeping you warmer and comfier than anyone else in the water. All seams are constructed with a durable seal which consists of glueing and blind stitching. In addition, all critical areas are taped.Our Super Stretch Neoprene will also maximise the lifetime of the suit by allowing for growth during the season. "
+    },
+    {
+        "id": 6,
+        "name": "Premium Mens 2mm Pullover",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"men",
+        "priceTag": "$116.00",
+        "productTag": "最新商品",
+        "price":116.00,
+        "mainImage": "../images/production-preview-images/wetsuits/130799-9-2_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/130799-9-2_900x.webp",
+            "../images/production-preview-images/wetsuits/130799-10_900x.webp",
+            "../images/production-preview-images/wetsuits/130799-6-2_900x.webp",
+            "../images/production-preview-images/wetsuits/130799-1-2_900x.webp"
+        ],
+        "size": [
+            "S",
+            "M",
+            "XL",
+            "XXL"
+        ],
+        "describe": "The Coastlines 2mm Classic Long Sleeve Front Zip Jacket represents a very ‘on trend’ summer suit for days when the wind chill factor is high, and those early and late sessions when you need a little extra warmth. The Front Zip Jacket also prevents chafing and adds a cushioned layer to your chest and stomach when you want to wear boardies (Trunks). This suit can be easily unzipped out in the water for those wanting to rep the retro vibes.The Classic Long Sleeve Front Zip Jacket is made from Premium Limestone based Neoprene and is designed to amplify your performance in the water with a contemporary cut that contours to your body's natural shape without sacrificing any freedom of movement."
+    },
+    {
+        "id": 7,
+        "name": "Classic Mens 2/2 Jacket",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"men",
+        "priceTag": "$88.00",
+        "productTag": "最新商品",
+        "price":88.00,
+        "mainImage": "../images/production-preview-images/wetsuits/130757-6_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/130757-6_900x.webp",
+            "../images/production-preview-images/wetsuits/130757-4_900x.webp",
+            "../images/production-preview-images/wetsuits/130757-6_900x.webp",
+            "../images/production-preview-images/wetsuits/130757-10_900x.webp"
+        ],
+        "size": [
+            "S",
+            "M",
+            "XL",
+            "XXL"
+        ],
+        "describe": "The Coastlines 2mm Classic Long Sleeve Front Zip Jacket represents a very ‘on trend’ summer suit for days when the wind chill factor is high, and those early and late sessions when you need a little extra warmth. The Front Zip Jacket also prevents chafing and adds a cushioned layer to your chest and stomach when you want to wear boardies (Trunks). This suit can be easily unzipped out in the water for those wanting to rep the retro vibes.The Classic Long Sleeve Front Zip Jacket is made from Premium Limestone based Neoprene and is designed to amplify your performance in the water with a contemporary cut that contours to your body's natural shape without sacrificing any freedom of movement."
+    },
+    {
+        "id": 8,
+        "name": "Olaian Surf Short Wetsuit - Womens",
+        "brand": "OLAIAN",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$55.20",
+        "productTag": "最新商品",
+        "price":55.20,
+        "mainImage": "../images/production-preview-images/wetsuits/2543609_400x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/2543609_400x.webp"
+        ],
+        "size": [
+            "S",
+            "M",
+            "XL",
+            "XXL"
+        ],
+        "describe": "Olaian Womans 100 Neoprene Springsuit (1.5mm). Our team of surfers has developed a shorty suit that is perfectly suited to surfing in warm water, for sessions lasting up to an hour."
+    },
+    {
+        "id": 9,
+        "name": "Classic 2/2 Front Zip Women's Springsuit - Charcoal/Lime",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$128.00",
+        "productTag": "最新商品",
+        "price":128.00,
+        "mainImage": "../images/production-preview-images/wetsuits/womens-springsuit-charcoal_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/womens-springsuit-charcoal_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-22-Front-Zip-Women_s-Springsuit-FRONT_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-22-Front-Zip-Women_s-Springsuit-BACK_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-22-Front-Zip-Women_s-Springsuit-SIDE-1_1000x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "The Coastlines Women's Premium 2mm Chest Zip Cheeky Spring Suit represents style & performance in one. The secret is in our super soft high quality fabrications and flattering fit featuring a sleek shape and piped edges so you can feel, move and perform confidently in the water.This suit is perfect for the warmer seasons when you want to keep your chest, torso and arms warm and protected from the harsh sun and wind, whilst leaving your legs free and unrestricted. This is a popular suit that's enjoyed a revival in recent years, and another favourite with our Ambassadors.Our new women's range features clean lines, classic details and contemporary cuts that contour with your body's natural shape and movements. Our signature Coastlines logo branding is colour coded in black for a paired back, minimal yet elegant aesthetic."
+    },
+    {
+        "id": 10,
+        "name": "Classic Boys 2/2 Back Zip Springsuit - Green",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"yongth",
+        "priceTag": "$110.00",
+        "productTag": "最新商品",
+        "price":110.00,
+        "mainImage": "../images/production-preview-images/wetsuits/160617_F_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/160617_F_900x.webp",
+            "../images/production-preview-images/wetsuits/160617_B_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "Warm, durable, visible & flexible. Coastlines Youth Series Wetsuits are designed to keep your kids warmer in the water for longer while allowing them freedom to move and enjoy their aquatic activities.The Coastlines Youth Classic Spring Suit is designed for the Spring and Summer seasons, keeping the torso warm and protected from the brisk air whilst leaving the arms & legs unrestricted and free to move.Our Super Stretch Neoprene will also maximise the lifetime of the suit by allowing for growth during the season. We’ve also designed our Coastlines Youth Wetsuits with distinctive colours so you can identify your kids in the water and out in the line up."
+    },
+    {
+        "id": 11,
+        "name": "Classic 2/2 Women's Surf Shorts",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$76.00",
+        "productTag": "最新商品",
+        "price":76.00,
+        "mainImage": "../images/production-preview-images/wetsuits/Classic-22-Women_s-Surf-Shorts-FRONT_1000x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/Classic-22-Women_s-Surf-Shorts-FRONT_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-Girls-22-Front-Zip-Long-Sleeve-Springsuit-DETAIL_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-22-Women_s-Surf-Shorts-BACK_1000x.webp",
+            "../images/production-preview-images/wetsuits/Classic-22-Women_s-Surf-Shorts-SIDE_1000x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "The Coastlines Women's Classic Surf Shorts represents style & performance in one. The secret is in our super soft high quality fabrications and flattering fit featuring a sleek shape and piped edges so you can feel, move and perform confidently in the water.This suit is perfect for the warmer seasons when you want freedom of movement while protecting your middle from the cold. The glideskin edges prevent roll-up and curved flatlocked side seams give you a flattering, comfortable fit.Pair with our 2mm jacket to customise your surfing experience when needed.Our new women's range features clean lines, classic details and contemporary cuts that contour with your body's natural shape and movements. Our signature Coastlines logo branding is colour coded in black for a paired back, minimal yet elegant aesthetic."
+    },
+    {
+        "id": 12,
+        "name": "Classic Youth 2/2 Back Zip Springsuit - Green",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"yongth",
+        "priceTag": "$88.00",
+        "productTag": "最新商品",
+        "price":88.00,
+        "mainImage": "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-101_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-101_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-110_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-102_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-111_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "Warm, durable, visible & flexible. Coastlines Youth Series Wetsuits are designed to keep your kids warmer in the water for longer while allowing them freedom to move and enjoy their aquatic activities.The Coastlines Youth Classic Spring Suit is designed for the Spring and Summer seasons, keeping the torso warm and protected from the brisk air whilst leaving the arms & legs unrestricted and free to move.Our Super Stretch Neoprene will also maximise the lifetime of the suit by allowing for growth during the season. We’ve also designed our Coastlines Youth Wetsuits with distinctive colours so you can identify your kids in the water and out in the line up."
+    },
+    {
+        "id": 13,
+        "name": "Classic Womens 2mm Jacket",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"women",
+        "priceTag": "$72.00",
+        "productTag": "最新商品",
+        "price":72.00,
+        "mainImage": "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-52_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-52_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-57_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-46_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-48_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "The Coastlines 2mm Classic Long Sleeve Jacket is a staple item for warm water climates when the wind chill factor is high, and those early and late sessions when you need a little extra warmth. The Jacket also prevents chafing and adds a cushioned layer when surfing in a bikini or surf shorts. This suit is a timeless classic that continues to be a favorite with our Ambassadors.The Long Sleeve Jacket is made from Premium Limestone based Neoprene and is designed to amplify your performance in the water with a contemporary cut that contours to your body's natural shape without sacrificing any freedom of movement.Our new women's range features clean lines and classic details; including our signature Coastlines logo branding which is colour coded in black for a paired back, minimal yet elegant aesthetic."
+    },{
+       
+        "id": 14,
+        "name": "Classic Girls 2/2 Front Zip Springsuit",
+        "brand": "COASTLINES WETSUITS",
+        "type": "wetsuits",
+        "style":"yongth",
+        "priceTag": "$80.00",
+        "productTag": "最新商品",
+        "price":80.00,
+        "mainImage": "../images/production-preview-images/wetsuits/130777-10_900x.webp",
+        "preveiwImages": [
+            "../images/production-preview-images/wetsuits/130777-10_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-57_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-48_900x.webp",
+            "../images/production-preview-images/wetsuits/COA_0001-WetsuitStillSelects-61_900x.webp"
+        ],
+        "size": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "describe": "The Coastlines 2mm Classic Long Sleeve Jacket is a staple item for warm water climates when the wind chill factor is high, and those early and late sessions when you need a little extra warmth. The Jacket also prevents chafing and adds a cushioned layer when surfing in a bikini or surf shorts. This suit is a timeless classic that continues to be a favorite with our Ambassadors.The Long Sleeve Jacket is made from Premium Limestone based Neoprene and is designed to amplify your performance in the water with a contemporary cut that contours to your body's natural shape without sacrificing any freedom of movement.Our new women's range features clean lines and classic details; including our signature Coastlines logo branding which is colour coded in black for a paired back, minimal yet elegant aesthetic."
+     
+    }
+    
+
+]
