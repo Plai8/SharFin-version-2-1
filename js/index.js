@@ -42,8 +42,9 @@ async function fetchData(productType) {
         const productCard = document.createElement('a');
         productCard.href = `./preview-product.html?id=${productData.id}`
         productCard.classList.add('popular-product-card');
+        let convertImgPath = productData.mainImage.slice(3);
         productCard.innerHTML = `
-                <img src="${productData.mainImage}">
+                <img src="${convertImgPath}">
                 <div class="card-content">
                     <h3 class="goods-name">${productData.name}</h3>
                     <p class="goods-price">${productData.priceTag}</p>
