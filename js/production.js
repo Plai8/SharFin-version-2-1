@@ -16,7 +16,7 @@ const currentProductTypeTitle = document.querySelector('.current-display-product
 let productItems = [];// 符合條件的product items
 let perPageData = [];// 每頁所要顯示的product items
 let data;//該類別的全部商品data
-let currentProductName = "surfBoard";//目前商品類別
+let currentProductName = "surfboard";//目前商品類別
 let currentProductPage = 1;//目前所點擊的頁面
 const perPageItem = 6;//商品列內卡片數量
 let totalNum;//分頁最大頁碼
