@@ -9,7 +9,7 @@ const sliderProducts = [];
 // fetch data of products
 async function fetchData(productType) {
     try {
-        const response = await fetch(`../json/${productType}-products-list.json`);
+        const response = await fetch(`json/${productType}-products-list.json`);
         const data = await response.json();
         for (let product of data) {
             if (product.productTag === "精選商品") {
