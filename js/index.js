@@ -3,9 +3,10 @@
 const slider = document.querySelector('.popular-products-cards-carousel');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector(".prev");
-const allProductType = ["surfboard", "wetsuits","other"];
+const allProductType = ["surfboard", "wetsuits", "other"];
 const sliderProducts = [];
-
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
 // fetch data of products
 async function fetchData(productType) {
     try {
@@ -20,25 +21,42 @@ async function fetchData(productType) {
         throw new Error(`fetch fail due to ${err}`)
     }
 }
- async function getSliderData() {
-    localStorage.clear();
+async function getSliderData() {
+    ["currentProductName", "isSearchMode,", "currentProductPage", "currentPage"].forEach(item => {
+        localStorage.removeItem(item);
+    })
     await Promise.all(allProductType.map(type => fetchData(type)));
     showSliderData();
     const popProductsCard = document.querySelectorAll('.popular-product-card');
     popProductsCard.forEach(card => {
         const productName = card.childNodes[3].childNodes[1].textContent;
-        card.addEventListener('click',() => {
-            localStorage.setItem('productName',productName);
+        card.addEventListener('click', () => {
+            localStorage.setItem('productName', productName);
         })
     })
 }
- function showSliderData() {
+function checkUserLogin() {
+    let account;
+    let userInfor = JSON.parse(localStorage.getItem("userInfor"));
+    for(let user of userInfor) {
+        if(user.isLogin) account = {...user};
+        console.log(account);
+    }
+    if(account.isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    }else {
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
+    }
+}
+function showSliderData() {
     // reset of products
-    for(let i = 0;i < sliderProducts.length;i++) {
-       sliderProducts[i].id = i + 1;
+    for (let i = 0; i < sliderProducts.length; i++) {
+        sliderProducts[i].id = i + 1;
     }
     slider.innerHTML = "";
-    for(let productData of sliderProducts){
+    for (let productData of sliderProducts) {
         const productCard = document.createElement('a');
         productCard.href = `./preview-product.html?id=${productData.id}`
         productCard.classList.add('popular-product-card');
@@ -55,17 +73,23 @@ async function fetchData(productType) {
 }
 function changeSlider(direction) {
     let scrolledNumber = slider.scrollLeft;
-    console.log(scrolledNumber,slider.offsetWidth);
+    console.log(scrolledNumber, slider.offsetWidth);
     let scrollAmount = slider.offsetWidth;
-    if(direction === "next") {
+    if (direction === "next") {
         slider.scrollLeft = scrolledNumber + scrollAmount;
-    }else {
-        slider.scrollLeft =  scrolledNumber - scrollAmount
+    } else {
+        slider.scrollLeft = scrolledNumber - scrollAmount
     }
 }
 
-nextBtn.addEventListener('click',() => {
-    changeSlider("next")});
-prevBtn.addEventListener('click',() => {
-        changeSlider("prev")});
-window.addEventListener('load', getSliderData);
+nextBtn.addEventListener('click', () => {
+    changeSlider("next")
+});
+prevBtn.addEventListener('click', () => {
+    changeSlider("prev")
+});
+window.addEventListener('load',() => { 
+    getSliderData();
+    checkUserLogin();
+}
+);

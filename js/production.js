@@ -38,6 +38,8 @@ const cancelSearchBtn = document.querySelector('.close-search-field-btn');
 const searchSubmitBtn = document.querySelector('.search-submit-btn');
 const searchFieldTrigger = document.querySelector('.search-field-trigger');
 let searchMode = false;
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
 // 將畫面自動滑入特定的區域 area為目標元素
 function scrollTo(area) {
     area.scrollIntoView();
@@ -292,6 +294,24 @@ function toggleSearchField() {
         searchFieldLightBox.style.display = "none";
     }
 }
+// 使用者是否登入
+function checkUserLogin() {
+    let account;
+    let userInfor = JSON.parse(localStorage.getItem("userInfor"));
+    for(let user of userInfor) {
+        if(user.isLogin) account = {...user};
+        console.log(account);
+    }
+    // 登入時顯示頭像圖片
+    if(account.isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    }else {
+         // 未登入時顯示頭像icon
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
+    }
+}
 // 事件聆聽
 searchInput.addEventListener('input', () => {
     if (searchInput.value === "") {
@@ -314,7 +334,10 @@ dropDownSMItems.addEventListener("click", (e) => {
 dropDown.addEventListener("click", (e) => {
     e.stopPropagation();
 })
-window.addEventListener('load', fetchData);
+window.addEventListener('load',()=>{
+     fetchData();
+     checkUserLogin();
+});
 // 畫面尺寸切換時，refresh dropdown 與 search field
 window.addEventListener("resize", () => {
     if (window.innerWidth > 1100 && searchInputSM.value !== "") {

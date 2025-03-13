@@ -41,12 +41,12 @@
                 <div class="input-icon-container">
                     <input type="text" name="account" id="userAccount" placeholder="信箱">
                     <i class="fa-solid fa-envelope fa-sm" style="color:#ccc;"></i>
-                    <span class="account-warning-msg">此帳號不存在！</span>
+                    <span class="account-warning-msg"></span>
                 </div>
                 <div class="input-icon-container">
                     <input type="password" name="password" id="userPassword" placeholder="密碼">
                     <i class="fa-solid fa-lock fa-sm" style="color:#ccc;"></i>
-                    <span class="password-warning-msg">密碼錯誤！</span>
+                    <span class="password-warning-msg"></span>
                 </div>
                 <a href="#">忘記密碼？</a><!--忘記密碼頁面-->
                 <div class="divider">or</div>
@@ -67,10 +67,19 @@
             <div class="sign-up-field">
                 <h2>歡迎回來!</h2>
                 <p>登入後開始探索更多新品與<br>有趣課程!</p>
-                <a class="sign-up-btn" href="./Signup.html">註冊</a>
+                <a class="sign-up-btn" href="./signup.html">註冊</a>
             </div>
         </main>
+        <!-- 登入成功提示light box -->
+        <div class="login-alert-msg-wrapper">
+            <div class="alert-msg">
+              <div class="login-success-sign"></div>
+              <h3 class="msg-content">登入成功！</h3>
+              <a href="../index.html" class="go-back-index-btn">確認</a>
+            </div>
+        </div>
     </section>
+    
     <footer class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">

@@ -2,74 +2,53 @@
 // user data
 const userInfor = [
     {
-        id: 1,
-        firstName: "Peter",
-        lastName: "Lai",
-        phoneNumber: "0912345678",
-        address: "abc",
-        email: "a123456@gamil.com",
-        account: "peter01230",
-        password: "plai5likes$$",
-        cart: {
-            products: {
-                surfBoard: {
-                    items: [],
-                    productStatus: null,
-                },
-                accessories: {
-                    items: [],
-                    productStatus: null,
-                },
-                wetsuits: {
-                    items: [],
-                    productStatus: null,
-                },
-                other: {
-                    items: [],
-                    productStatus: null,
-                },
+        "id": 1,
+        "firstName": "Peter",
+        "lastName": "Lai",
+        "phoneNumber": "0912345678",
+        "address": "abc",
+        "email": "a123456@gamil.com",
+        "account": "peter01230",
+        "password": "123456",
+        "cart": {
+            "products": [{
+                "name": "002__95121.1550201513.1280.1280_900x",
+                "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
+                "count": 2,
+                "productStatus": "出貨中",
+                "price": 10000,
+                "priceTag": "$10,000",
+
             },
-            courses: {
-                halfDay: {
-                    amount: 0,
-                    time: "09:30",
-                    reservationDate: null,
-                    isPaidDespoit: true,
-                    price: 1500
-                },
-                oneDay: {
-                    amount: 0,
-                    time: "09:30",
-                    reservationDate: null,
-                    isPaidDespoit: true,
-                    price: 2400,
-                },
-                Vip: {
-                    amount: 0,
-                    time: "09:30",
-                    reservationDate: null,
-                    isPaidDespoit: true,
-                    price: 3880
-                }
-            },
-            rental: {
-                longBoard: {
-                    amount: 0,
-                    reservationDate: null,
-                    price: 600,
-                },
-                shortBoard: {
-                    amount: 0,
-                    reservationDate: null,
-                    price: 300,
-                }
-            },
-            isPaidOff: true,
+            ],
+            "courses": [{
+                "courseName": "半日體驗課程",
+                "mainImage": '../images/index-images/surfing-course-halfday.jpg',
+                "count": 1,
+                "time": "09:30",
+                "reservationDate": "2025-08-16",
+                "isPaidDespoit": true,
+                "price": 1500,
+                "deposit":"$460",
+                "priceTag": "$1500"
+            }],
+            "rental": [
+            //     {
+            //     "boardType": "長板",
+            //     "reservationDate": "2025-08-16",
+            //     "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
+            //     "count": 1,
+            //     "price": 600,
+            //     "deposit":"$460",
+            //     "priceTag": "NT$600"
+            // }
+        ],
+            "isPaidOff": true
         },
-        isLogin: false,
-        notification: null
+        "isLogin": false
     }
 ];
+
 
 //DOM 元素
 const wrapper = document.querySelector(".login-wrapper");
@@ -78,12 +57,13 @@ const signUpField = document.querySelector('.sign-up-field');
 const loginField = document.querySelector('.login-field');
 const userAccount = document.querySelector('#userAccount');
 const userPassword = document.querySelector('#userPassword');
-let usersData = localStorage.getItem('userInfor');
+let usersData;
 const accountWarnSign = document.querySelector('.account-warning-msg');
 const passwordWarnSign = document.querySelector('.password-warning-msg');
 let account;
 const inputFields = document.querySelectorAll("input");
 const submitBtn = document.querySelector('.login-btn');
+const alertMsgWrapper = document.querySelector('.login-alert-msg-wrapper');
 // 頁面功能
 // 滾動至 wrapper
 function scrollToWrapper() {
@@ -124,37 +104,58 @@ function fieldDivide() {
         switchBtns[0].classList.remove('btn-actived');
         switchBtns[1].classList.add('btn-actived');
     }
+
 }
 
 // 會員資料
 // 將使用者資料存入localStorage
 function storeUserData() {
-    if (localStorage.getItem("userInfor") === null) this.localStorage.setItem('userInfor', userInfor);
+    let userInforData = JSON.stringify(userInfor);
+    if (localStorage.getItem("userInfor") === null) localStorage.setItem('userInfor', userInforData);
+    usersData = JSON.parse(localStorage.getItem('userInfor'));
+    fieldDivide();
 };
 
-function checkUserAccount(inputType) {
+function checkUserAccount() {
     // 檢查帳號或信箱是否存在
-    if (inputType === "account") {
-        for (let user in usersData) {
-            if (userAccount.value !==  user.account || userAccount.value !== user.email) {
-                accountWarnSign.style.display = "block";
-                userAccount.style.border = "1px solid red";
-            }else {
-                account = {...user};
-                console.log(account);
-                break;
-            }
+    for (let user of usersData) {
+        if (userAccount.value !== user.email && userAccount.value !== "") {
+            warningMsg("account", "email不存在!!");
+            console.log(userAccount.value, userAccount.value !== user.account);
+        } else if (userAccount.value === "") {
+            warningMsg("account", "請輸入email!!");
+        } else {
+            account = { ...user };
         }
-    }else {
-        // 檢查密碼是否正確
-        if(userPassword.value !== account.password) {
-            userPassword.style.border = "1px solid red";
-            passwordWarnSign.style.display = "block";
+    }
+    // 檢查密碼是否正確
+    if (userPassword.value !== account.password && userPassword.value !== "") {
+        warningMsg("password", "密碼錯誤！！");
+    } else if (userPassword.value === "") {
+        warningMsg("password", "請輸入密碼！！");
+    } else {
+        account.isLogin = true;
+        for (let user of usersData) {
+            console.log(user);
+            if (user.id === account.id) usersData[user.id - 1] = account;
         }
+        localStorage.setItem('userInfor', JSON.stringify(usersData));
+        alertMsgWrapper.style.display = "block";
     }
 }
 
-
+function warningMsg(inputType, msg) {
+    let currentInput = inputType;
+    if (currentInput === "account") {
+        accountWarnSign.style.display = "block";
+        userAccount.style.border = "1px solid red";
+        accountWarnSign.textContent = msg
+    } else {
+        userPassword.style.border = "1px solid red";
+        passwordWarnSign.style.display = "block";
+        passwordWarnSign.textContent = msg;
+    }
+}
 // 事件監聽器
 window.addEventListener("resize", fieldDivide);
 window.addEventListener('DOMContentLoaded', scrollToWrapper);
@@ -166,3 +167,4 @@ inputFields.forEach(input => {
         passwordWarnSign.style.display = "none";
     })
 })
+submitBtn.addEventListener('click', checkUserAccount);

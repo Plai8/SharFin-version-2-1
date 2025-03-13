@@ -34,32 +34,27 @@
             </ul>
             <ul class="menu-squre">
                 <li>
-                    <i class="fa-regular fa-bell fa-lg" style="color:#000">
-                    </i>
-                </li>
-                <li>
                     <img src="../images/members-images/user-pic-navbar.svg" alt="使用者大頭貼">
                 </li>
                 <li>
-                    <p class="user-account-name">Peter Lai</p><!--透過API把使用者資料更新上去，目前預設切版使用-->
+                    <p class="user-account-name">Peter Lai</p>
                 </li>
                 <li class="burger-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" class="burger-toggle-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                     <ul class="menu">
                         <li class="user-mobile-info">
                             <img src="../images/members-images/user-pic-navbar.svg" alt="使用者大頭貼"
-                            class="user-icon-img-mobile">
+                                class="user-icon-img-mobile">
                             <p class="user-account-name-mobile">歡迎,Peter Lai</p><!--透過API把使用者資料更新上去，目前預設切版使用-->
                         </li>
-                        <li class="asidebar-actived-btn-mobile mobile-asidebar">會員資訊</li>
-                        <li class="mobile-asidebar">我的最愛</li>
-                        <li class="mobile-asidebar">追蹤訂單</li>
-                        <li class="mobile-asidebar">衝浪課程</li>
-                        <li class="mobile-asidebar">租板</li>
-                        <li class="logout-btn-mobile"><i class="fa-solid fa-power-off" style="color:red"></i>登出</li>
+                        <li class="asidebar-actived-btn-mobile mobile-asidebar member-info">會員資訊</li>
+                        <li class="mobile-asidebar cart-info">追蹤訂單</li>
+                        <li class="mobile-asidebar course-info">衝浪課程</li>
+                        <li class="mobile-asidebar surfboard-rental-info">租板</li>
+                        <li class="logout-btn-mobile "><i class="fa-solid fa-power-off" style="color:red"></i>登出</li>
                     </ul>
             </ul>
             </li>
@@ -70,18 +65,21 @@
         <aside class="aside-navbar">
             <ul>
                 <h3 id="aside-navbar-title">會員中心</h3>
-                <li class="asidebar-actived-btn aside-navbar-item"><i class="fa-regular fa-user user-icon"></i>會員資訊</li>
-                <li class="aside-navbar-item"><i class="fa-regular fa-heart"></i>我的最愛</li>
-                <li class="aside-navbar-item"><i class="fa-solid fa-truck"></i>追蹤訂單</li>
-                <li class="aside-navbar-item"><img class="fa-solid" src="../images/members-images/surfing.svg"
-                        alt="">衝浪課程</li>
-                <li class="aside-navbar-item"><img class="fa-solid" src="../images/members-images/surfing-1.svg"
-                        alt="">租板</li>
+                <li class="asidebar-actived-btn aside-navbar-item member-info"><i
+                        class="fa-regular fa-user user-icon"></i>會員資訊</li>
+                <li class="aside-navbar-item cart-info"><i class="fa-solid fa-truck"></i>追蹤訂單</li>
+                <li class="aside-navbar-item course-info"><img class="fa-solid"
+                        src="../images/members-images/surfing.svg" alt="">衝浪課程</li>
+                <li class="aside-navbar-item surfboard-rental-info"><img class="fa-solid"
+                        src="../images/members-images/surfing-1.svg" alt="">租板</li>
                 <li class="logout-btn"><i class="fa-solid fa-power-off" style="color:red"></i>登出</li>
             </ul>
         </aside>
-        <div class="member-info-display-container">
-            <div class="member-info">
+
+        <!-- 主要顯示資料區域 -->
+        <!-- 會員資料顯示區域 -->
+        <div class="member-info-display-container main-info-actived member-info">
+            <div class="member-info-field">
                 <div class="member-info-header">
                     <img src="../images/members-images/user-pic.svg" alt="使用者照片">
                     <p>歡迎,<span class="user-name">Peter Lai</span></p>
@@ -89,25 +87,191 @@
                 <div class="member-info-body">
                     <label for="">
                         名字：
-                        <input type="text" name="" id="">
+                        <input type="text" name="user-first-name" id="user-first-name">
                     </label>
                     <label for="">
                         姓氏：
-                        <input type="text">
+                        <input type="text" name="user-last-name" id="user-last-name">
                     </label>
                     <label for="">
                         Email:
-                        <input type="email" name="" id="">
+                        <input type="email" name="user-email" id="user-email">
                     </label>
                     <label for="">
                         聯絡電話：
-                        <input type="tel" name="" id="">
+                        <input type="tel" name="user-phone-number" id="user-phone-number">
                     </label>
                     <label for="">
                         地址：
-                        <input type="text" name="" id="">
+                        <input type="text" name="user-address" id="user-address">
                     </label>
                 </div>
+            </div>
+        </div>
+        <!-- 會員商品顯示區域 -->
+        <div class="member-cart-status-info-container  cart-info">
+            <h3 class="member-center-title">訂單狀態</h3>
+            <div class="cart-info-field">
+                <!-- 沒有購買紀錄 -->
+                <div class="no-item-msg no-cartInfo-msg">
+                    <h2>無購買紀錄</h2>
+                    <a href="./production.html">探索更多商品</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>編號</th>
+                        <th colspan="2">商品</th>
+                        <th>價格</th>
+                        <th>數量</th>
+                        <th>商品狀態</th>
+                    </tr>
+                    <!-- <tr>
+                        <td class="item-number">01</td>
+                        <td class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td class="item-name">AQSS Soulstice Longboard 9'0 - Aqua</td>
+                        <td class="item-price-tag">NT$10,000</td>
+                        <td class="item-amount">1</td>
+                        <td class="item-status"><span class="product-status-sign"></span>出貨中</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td class="item-number">01</td>
+                        <td class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td class="item-name">AQSS Soulstice Longboard 9'0 - Aqua</td>
+                        <td class="item-price-tag">NT$10,000</td>
+                        <td class="item-amount">1</td>
+                        <td class="item-status"><span class="product-status-sign"></span>出貨中</td>
+                    </tr>
+                    <tr>
+                        <td class="item-number">01</td>
+                        <td class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td class="item-name">AQSS Soulstice Longboard 9'0 - Aqua</td>
+                        <td class="item-price-tag">NT$10,000</td>
+                        <td class="item-amount">1</td>
+                        <td class="item-status"><span class="product-status-sign"></span>出貨中</td>
+                    </tr>
+                    <tr>
+                        <td class="item-number">01</td>
+                        <td class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td class="item-name">AQSS Soulstice Longboard 9'0 - Aqua</td>
+                        <td class="item-price-tag">NT$10,000</td>
+                        <td class="item-amount">1</td>
+                        <td class="item-status"><span class="product-status-sign"></span>出貨中</td>
+                    </tr> -->
+                </table>
+                <!-- 平板與手機訂單狀態 -->
+                <div class="cart-info-card-list">
+                    <!-- <div class="cart-item-card">
+                        <p class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></p>
+                        <div class="cart-item-card-content">
+                            <p><span class="item-name">AQSS Soulstice Longboard 9'0 - Aqua</span></p>
+                            <p>金額：<span class="item-price-tag">NT$600</span></p>
+                            <p>商品狀態：<span class="product-status-sign"></span><span class="item-status">出貨中</span></p>
+                            <p>數量：<span class="item-amount">1</span></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- 衝浪課程訂單狀態 -->
+        <div class="surfing-course-info-container course-info">
+            <h2 class="member-center-title">衝浪課程</h2>
+            <div class="course-info-field">
+                <!-- 沒有購買紀錄 -->
+                <div class="no-item-msg no-courseInfo-msg">
+                    <h2>無購買課程紀錄</h2>
+                    <a href="./courses.html">探索更多課程</a>
+                </div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th colspan="2">課程名稱</th>
+                        <th>課程費用</th>
+                        <th>上課日期</th>
+                        <th>出席人數</th>
+                        <th>壓金</th>
+                    </tr>
+                    <!-- <tr>
+                        <td class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td colspan="2">半日體驗衝浪課程</td>
+                        <td>NT$13,000</td>
+                        <td>2025-08-16</td>
+                        <td>5人</td>
+                        <td>NT$450</td>
+                    </tr> -->
+                </table>
+                <!-- 平板與手機訂單狀態 -->
+                <div class="cart-info-card-list course-info-card-list">
+                    <!-- <div class="cart-item-card">
+                        <p class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></p>
+                        <div class="cart-item-card-content">
+                            <p>課程類型：<span class="item-name">半日體驗衝浪課程</span></p>
+                            <p>上課日期：<span class="item-course-date">2025-08-16</span></p>
+                            <p>總金額：<span class="item-price-tag">NT$600</span></p>
+                            <p>押金：<span class="item-deposit">NT$450</span></p>
+                            <p>人數：<span class="item-amount">1</span>人</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+        <!-- 租板訂單狀態 -->
+        <div class="sufing-board-rental-info-container surfboard-rental-info">
+            <h3 class="member-center-title">租板</h3>
+            <div class="sufing-board-rental-info-field">
+                <div class="no-item-msg no-surfingBoardRentalInfo-msg">
+                    <h2>無租賃衝浪板紀錄</h2>
+                    <a href="./surfboard-rental.html">了解更多關於租板</a>
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th colspan="2">衝浪板類型</th>
+                        <th>價格</th>
+                        <th>預約日期</th>
+                        <th>數量</th>
+                    </tr>
+                    <!-- <tr>
+                        <td colspan="2" class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></td>
+                        <td colspan="2">長板</td>
+                        <td>NT$600</td>
+                        <td>2025-08-16</td>
+                        <td>5</td>
+                    </tr> -->
+                </table>
+                <!-- 平板與手機訂單狀態 -->
+                <div class="cart-info-card-list rental-info-card-list">
+                    <!-- <div class="cart-item-card">
+                        <p class="product-img-wrapper"><img class="item-img"
+                                src="../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp"
+                                alt=""></p>
+                        <div class="cart-item-card-content">
+                           <p>租板類型：<span class="item-name">長板</span></p>
+                            <p>預約日期：<span class="item-reservation-date">2025-08-16</span></p>
+                            <p>總金額：<span class="item-price-tag">NT$600</span></p>
+                            <p>數量：<span class="item-amount">5</span></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
     </main>
     <!-- 登出提示light box -->
     <div class="alert-light-box-container">
@@ -124,6 +288,14 @@
             <a href="../index.html" class="go-back-index-btn">確定</a>
         </div>
     </div>
+    <div class="alert-light-box-container go-to-login-msg">
+        <div class="alert-info">
+            <div class="warning-sign"></div>
+            <h3 class="warning-sign-title">請先登入！</h3>
+            <a href="./login.html" class="comfirm-btn">確定</a>
+        </div>
+    </div>
     <script src="../js/member-center.js"></script>
 </body>
+
 </html>
