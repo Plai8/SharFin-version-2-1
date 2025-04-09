@@ -113,7 +113,7 @@ function fieldDivide() {
 // 將使用者資料存入localStorage
 function storeUserData() {
     let userInforData = JSON.stringify(userInfor);
-    if (localStorage.getItem("userInfor") === null) localStorage.setItem('userInfor', userInforData);
+    if (localStorage.getItem("userInfor") === null) localStorage.setItem('userInfor', JSON.stringify(userInforData));
     usersData = JSON.parse(localStorage.getItem('userInfor'));
     console.log(usersData);
     fieldDivide();
