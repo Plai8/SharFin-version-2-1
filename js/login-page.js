@@ -8,43 +8,45 @@ const userInfor = [
         "phoneNumber": "0912345678",
         "address": "abc",
         "email": "a123456@gamil.com",
-        "account": "peter01230",
         "password": "123456",
         "cart": {
             "products": [{
-                "name": "002__95121.1550201513.1280.1280_900x",
+                "name": "AQSS Soulstice Longboard 9'1- Sunrise",
                 "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
-                "count": 2,
+                "count": 1,
                 "productStatus": "出貨中",
                 "price": 10000,
                 "priceTag": "$10,000",
-
+                "brand":"AQSS",
+                "productType":"products",
+                "productSize":"9'7"
             },
             ],
             "courses": [{
-                "courseName": "半日體驗課程",
+                "name": "半日體驗課程",
                 "mainImage": '../images/index-images/surfing-course-halfday.jpg',
                 "count": 1,
                 "time": "09:30",
                 "reservationDate": "2025-08-16",
-                "isPaidDespoit": true,
+                "isPaidDespoit": false,
                 "price": 1500,
-                "deposit":"$460",
-                "priceTag": "$1500"
+                "priceTag": "$1500",
+                "productType":"courses"
             }],
             "rental": [
-            //     {
-            //     "boardType": "長板",
-            //     "reservationDate": "2025-08-16",
-            //     "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
-            //     "count": 1,
-            //     "price": 600,
-            //     "deposit":"$460",
-            //     "priceTag": "NT$600"
-            // }
-        ],
-            "isPaidOff": true
+                    {
+                    "name": "長板",
+                    "reservationDate": "2025-08-16",
+                    "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
+                    "count": 1,
+                    "price": 600,
+                    "priceTag": "NT$600",
+                    "productType":"rental"
+                }
+            ],
+            "orderInfor":null,
         },
+        "order":[],
         "isLogin": false
     }
 ];
@@ -113,20 +115,25 @@ function storeUserData() {
     let userInforData = JSON.stringify(userInfor);
     if (localStorage.getItem("userInfor") === null) localStorage.setItem('userInfor', userInforData);
     usersData = JSON.parse(localStorage.getItem('userInfor'));
+    console.log(usersData);
     fieldDivide();
 };
 
 function checkUserAccount() {
     // 檢查帳號或信箱是否存在
+    let isExist = false;
     for (let user of usersData) {
-        if (userAccount.value !== user.email && userAccount.value !== "") {
-            warningMsg("account", "email不存在!!");
-            console.log(userAccount.value, userAccount.value !== user.account);
-        } else if (userAccount.value === "") {
-            warningMsg("account", "請輸入email!!");
-        } else {
+        if (userAccount.value === user.email) {
+            isExist = true;
+            accountWarnSign.style.display = "none";
+            userAccount.style.border = "none";
             account = { ...user };
+            console.log("帳號",isExist);
+        }else if(!isExist) {
+            warningMsg("account", "email不存在!!");
+            console.log(userAccount.value, userAccount.value !== user.account,isExist);
         }
+        if (userAccount.value === "") warningMsg("account", "請輸入email!!");
     }
     // 檢查密碼是否正確
     if (userPassword.value !== account.password && userPassword.value !== "") {

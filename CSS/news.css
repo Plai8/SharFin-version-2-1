@@ -135,7 +135,6 @@ header {
     padding: 5%;
 }
 .change-page-field button {
-    width: 15%;
     display: inline-block;
     background-color: transparent;
     color: #26a69a;
@@ -168,6 +167,8 @@ header {
         display: flex;
         flex-wrap: wrap;
         gap: 5%;
+        justify-content: space-between;
+
     }
     .news-item-card {
         width: 45%;
@@ -200,9 +201,9 @@ header {
         width: 100%;
     }
     .change-page-field {
-        width: 80%;
+        width: 90%;
     }
     .news-cover-img{
-        height: 400px;
+        height: auto;
     }
 }

@@ -303,6 +303,7 @@ label {
     margin-bottom: 5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 label:last-child {
@@ -352,12 +353,13 @@ label:last-child input {
     text-align: center;
     margin-top: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    top: 30%;
+    left: 0%;
     display: none;
 }
-
+.no-item-msg:last-child {
+    display:block;
+}
 .no-item-msg h2 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -381,7 +383,7 @@ label:last-child input {
 }
 
 .product-img-wrapper {
-    width: 10%;
+    width: 15%;
 }
 
 table {

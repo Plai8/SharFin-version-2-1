@@ -2,7 +2,19 @@
 //DOM存取
 const inputs = document.querySelectorAll('.input-field');
 const spans = document.querySelectorAll('span');
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
+const userInfor = JSON.parse(localStorage.getItem('userInfor'));
 
+userInfor.forEach(account => {
+    if (account.isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    }else {
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
+    }
+});
 //幫inputs增加事件聆聽
     inputs.forEach(input => {
         input.addEventListener('focus', el => {

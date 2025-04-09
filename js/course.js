@@ -1,5 +1,4 @@
 "use strict"
-
 // DOM 
 // 取得網址的課程id
 const queryString = window.location.search;
@@ -14,6 +13,7 @@ const courseScheduleImg = document.querySelector('.course-schedule-content-img-w
 const courseScheduleContentWrapper = document.querySelector('.course-schedule-content-wrapper');
 const courseScheduleContent = document.querySelector(".course-schedule-content");
 const courseReservationTimeWrapper = document.querySelector('.course-time-input-wrapper');
+// reservation input area
 const attendanceInput = document.querySelector('#number-of-attendance');
 const feeDescription = document.querySelector('.fee-description');
 const courseTimeWrapper = document.querySelector('.course-time-input-wrapper');
@@ -47,7 +47,7 @@ const coursesData = [
                 "下課後自由練習",
             ]
         ],
-        courseReservationTime:[ "09:30","13:30"],
+        courseReservationTime:[ "09:30"],
         coursePriceDescription: "1人 NT$1,500。",
         coursePrice: 1500,
         depositFee: 300,
@@ -116,7 +116,39 @@ const coursesData = [
         depositFee: 776,
 
     }
-]
+];
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
+const userInfor = JSON.parse(localStorage.getItem('userInfor'));
+let user;
+const courseInfo = {
+    "name": null,
+    "mainImage": null,
+    "count": 1,
+    "time": null,
+    "reservationDate":null,
+    "isPaidDespoit": false,
+    "price": null,
+    "priceTag": null,
+    "productType":"course"
+}
+
+function getUser() {
+    for(let account of userInfor) {
+        if(account.isLogin) { 
+            user = { ... account};
+            console.log(user);
+            userIcon.style.display = "none";
+            userPic.style.display = "block";
+        }else {
+            userIcon.style.display = "block";
+            userPic.style.display = "none";
+        }
+    };
+    if(checkCourseExist()) {
+        displayReserveCourseInfo();
+    }
+}
 
 function updateCourseContent(id) {
     // 依照課成Id更新課程內容
@@ -172,8 +204,6 @@ function updateSignupField(selectedCourse) {
         <label for="course-time-1">
                         <input type="radio" name="course-time" id="course-time-1" value="09:30" checked>
                         <span>09:30</span>
-                        <input type="radio" name="course-time" id="course-time-2" value="13:30">
-                        <span>13:30</span>
                     </label>
     
     `;
@@ -222,8 +252,53 @@ function checkSignUpData() {
     }
 }
 
-reservationDate.addEventListener("input",checkSignUpData)
-window.addEventListener('load', updateCourseContent(courseID));
+function displayReserveCourseInfo(){
+        let selectedItem = user.cart.courses.filter(item => item.name === coursesData[courseID - 1].courseTitle);
+        attendanceInput.value = selectedItem[0].count;
+        reservationDate.value = selectedItem[0].reservationDate;
+}
+
+function reserveCourse() {
+    console.log(coursesData[courseID - 1]);
+    courseInfo.name = coursesData[courseID - 1].courseTitle;
+    courseInfo.mainImage =coursesData[courseID - 1].courseImages[0];
+    courseInfo.time = "09:30";
+    courseInfo.count = Number(attendanceNum.value);
+    courseInfo.reservationDate = reservationDate.value;
+    courseInfo.price =coursesData[courseID - 1].coursePrice;
+    courseInfo.priceTag = `$${coursesData[courseID - 1].coursePrice}`;
+    console.log(courseInfo);
+    if(!checkCourseExist()) {
+        user.cart.courses.push(courseInfo);
+    }else {
+        for(let item of user.cart.courses) {
+            if(item.name === courseInfo.name) item = { ...courseInfo };
+        }
+    };
+    console.log(user.cart.courses);
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            account = user;
+            console.log(account);
+        }
+    })
+    localStorage.setItem('userInfor', JSON.stringify(userInfor));
+    alert("預約成功！");
+};
+
+function checkCourseExist() {
+    console.log(coursesData[courseID - 1]);
+    return user.cart.courses.find(course => course.name === coursesData[courseID - 1].courseTitle);
+}
+
+reservationDate.addEventListener("input",checkSignUpData);
+addCartBtn.addEventListener('click',reserveCourse);
+window.addEventListener('load', () => 
+    {
+        updateCourseContent(courseID);
+        getUser();
+        checkCourseExist();
+    });
 
 
 

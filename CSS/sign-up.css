@@ -102,6 +102,16 @@ input {
     position: relative;
 }
 
+.warning-msg {
+    position: absolute;
+    bottom:-20px;
+    left:10px;
+    font-size:14px;
+    color:red;
+    letter-spacing: normal;
+    display: none;
+}
+
 .fa-user-icon {
     padding: 0;
 }
@@ -238,6 +248,7 @@ input {
 
     .signUp-section {
         background-image: none;
+        padding: 15% 0%;
     }
 
     .signUp-field {
@@ -286,5 +297,10 @@ input {
 @media screen and (max-width:500px) {
     .signUp-wrapper {
         width: 100%;
+    }
+
+    .signUp-section {
+        background-image: none;
+        padding-top:25% ;
     }
 }

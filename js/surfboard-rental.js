@@ -16,6 +16,19 @@ const shutdownBtn = document.querySelector('.alert-shutdown-btn');
 const confirmBtn = document.querySelector('.confirm-btn');
 const reservationSuccessInfo = document.querySelector('.alert-info-reservation-success');
 const orderconfirmInfo = document.querySelector('.alert-info');
+const spans = document.querySelectorAll('span');
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
+const userInfor = JSON.parse(localStorage.getItem('userInfor'));
+userInfor.forEach(account => {
+    if (account.isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    }else {
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
+    }
+});
 // 新增或是刪除衝浪板數量以及計算租板總金額
 // 函式參數說明：event=>判斷目前是click事件（數量加一或減一）或是input事件(直接輸入數量)。boardType=>判斷租板種類，分別為"long"與"short"。action=>為click事件下，
 //是新增數量還是刪減數量。
@@ -101,12 +114,14 @@ function addcart() {
     }else if(longboardAmount.value === '0' && shortboardAmount.value === "0" ) {
         showConfirmMsg ("fail");
     }else {
+        // alert顯示購物車資訊
         surfboardRentalCart["衝浪板數量"] = longboardAmount.value;
         surfboardRentalCart["浮板數量"]= shortboardAmount.value;
         surfboardRentalCart["預約日期"] = reservationDate.value;
         surfboardRentalCart["總金額"] = parseInt(rentalTotalFee.textContent,10);
         showConfirmMsg ("success");
-    }
+    };
+
    
 }
 // 事件聆聽
@@ -123,6 +138,5 @@ confirmBtn.addEventListener('click',()=> {
     reservationDate.value = "";
     longboardAmount.value = "0";
     shortboardAmount.value = "0"
-    // 傳送至api更新user購物車狀態
 })
 addCartBtn.addEventListener('click', addcart);

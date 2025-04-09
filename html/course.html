@@ -92,8 +92,15 @@
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
                     <div class="red-dot"></div><span id="cart-amount">999+</span>
                 </a>
-                <a href="./login.html">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+                </a>
+                <!-- 未登入下 -->
+                <a href="./login.html" class="user-icon">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <!-- 登入成功下 -->
+                <a href="./member-center.html" id="user-pic">
+                    <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+                </a>
             </div>
         </nav>
         <h2 class="header-title">衝浪課程</h2>
@@ -121,7 +128,8 @@
         <div class="course-schedule">
             <h2>課程時程</h2>
             <div class="switch-btn-wrapper">
-                <button class="course-schedule-date-switch-btn  actived">第1天</button>            </div>
+                <button class="course-schedule-date-switch-btn  actived">第1天</button>
+            </div>
             <div class="course-schedule-content-wrapper">
                 <div class="course-schedule-content-img-wrapper">
                     <img src="../images/halfday-courses-image/half-day-course-schedule-img.jpg" alt="">
@@ -215,7 +223,8 @@
                         <span>13:30</span>
                     </label>
                 </div>
-                <label for="number-of-attendance">預約人數：<input type="number" name="attendance" id="number-of-attendance" value="1" min="1" max="50">
+                <label for="number-of-attendance">預約人數：<input type="number" name="attendance" id="number-of-attendance"
+                        value="1" min="1" max="50">
                     <span class="warning-info">請輸入預約人數</span>
                 </label>
                 <div class="fee-decription">

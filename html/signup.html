@@ -29,7 +29,7 @@
             </a>
         </nav>
     </header>
-    <section class="signUp-section" id="signUp-section">
+    <section class="signUp-section">
         <div class="switch-btns">
             <button class="switch-btn switch-btn-signup btn-actived">註冊</button>
             <button class="switch-btn  switch-btn-login">登入</button>
@@ -53,18 +53,22 @@
                 <div class="input-icon-container">
                     <input type="text" name="FirstName" id="userFirstName" placeholder="姓氏">
                     <i class="fa-solid fa-user fa-sm fa-user-icon" style="color:#ccc;"></i>
+                    <span class="warning-msg">該欄位為必填！</span>
                 </div>
                 <div class="input-icon-container">
-                    <input type="password" name="userLastName" id="userLastName" placeholder="名字">
+                    <input type="text" name="userLastName" id="userLastName" placeholder="名字">
                     <i class="fa-solid fa-user fa-sm  fa-user-icon" style="color:#ccc;"></i>
+                    <span class="warning-msg">該欄位為必填！</span>
                 </div>
                 <div class="input-icon-container">
-                    <input type="password" name="account" id="userAccount" placeholder="信箱">
+                    <input type="email" name="account" id="userAccount" placeholder="信箱">
                     <i class="fa-solid fa-envelope fa-sm" style="color:#ccc;"></i>
+                    <span class="warning-msg">該欄位為必填！</span>
                 </div>
                 <div class="input-icon-container">
                     <input type="password" name="password" id="userPassword" placeholder="密碼">
                     <i class="fa-solid fa-lock fa-sm" style="color:#ccc;"></i>
+                    <span class="warning-msg">該欄位為必填！</span>
                 </div>
                 <div class="submit-btn">送出</div>
             </div>

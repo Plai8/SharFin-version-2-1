@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客戶資訊 | SharFin</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/3912594fe4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/cart-checkout.css">
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cart-checkout-wrapper">
+        <div class="cart-checkout-main-info-container">
+            <main>
+                <section class="client-information-field">
+                    <div class="client-information-header">
+                        <a href="../index.html">
+                            <img src="../images/index-images/ShaFin-Logo.svg" alt="SharFin logo圖片">
+                        </a>
+                    </div>
+                    <div class="client-information-content">
+                        <div class="input-area-wrapper user-info-input-wrapper">
+                            <h2>聯絡方式</h2>
+                            <div class="input-wrapper">
+                                <input type="email" name="user-email" id="user-email" placeholder="Email">
+                                <span class="input-wrapper-title">Email</span>
+                            </div>
+                            <div class="warning-msg">缺少有效聯絡方式！</div>
+                        </div>
+                        <div class="input-area-wrapper">
+                            <h2>運送地址</h2>
+                            <div class="select-drop-down-wrapper">
+                                <p class="delivery-address-area-title">國家/地區</p>
+                                <div class="delivery-address-area">
+                                    <span class="delivery-address-area">台灣</span><i class="fa-solid fa-chevron-down fa-sm" style="color:#d3caca"></i>
+                                </div>
+                                <select name="delivery-address-area" id="address-area">
+                                    <option disabled="disabled">Please Choose ...</option>
+                                    <option value="taiwan">台灣</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="user-info-input-wrappers">
+                            <div class="user-name-input-area-wrapper ">
+                                <div class="user-info-input user-info-input-wrapper">
+                                    <input type="text" name="user-last-name" id="user-last-name" placeholder="姓">
+                                    <label class="input-wrapper-title">姓</label>
+                                </div>
+                                <div class="user-info-input user-info-input-wrapper">
+                                    <input type="text" name="user-first-name" id="user-first-name" placeholder="名">
+                                    <label class="input-wrapper-title">名</label>
+                                </div>
+                                <div class="warning-msg">請輸入姓氏！</div>
+                                <div class="warning-msg">請輸入名字！</div>
+                            </div>
+                        </div>
+                        <div class="delivery-address-input-wrapper user-info-input-wrapper">
+                            <input type="text" name="delivery-address" id="delivery-address" placeholder="地址">
+                            <label class="delivery-address-input-title input-wrapper-title">地址</lable>
+                            </div>
+                            <div class="warning-msg">請輸入地址！</div>
+                        <div class="user-phone-number-wrapper user-info-input-wrapper">
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="聯絡電話">
+                            <label class="phone-number-input-title input-wrapper-title" for="phone-number">聯絡電話</label>
+                            <div class="warning-msg">輸入電話號碼！</div>
+                        </div>
+                        <div class="input-area-wrapper">
+                            <h2>支付方式</h2>
+                            <div class="select-drop-down-wrapper">
+                                <p class="payment-type-title">付款方式</p>
+                                <div><span class="payment-type-placeholder">信用卡/行動支付</span><i
+                                        class="fa-solid fa-chevron-down fa-sm" style="color:#d3caca"></i></div>
+                                <select name="payment-type" id="payment-type">
+                                    <option disabled="disabled">Please Choose ...</option>
+                                    <option value="信用卡/行動支付">信用卡/行動支付</option>
+                                    <option value="取貨付款">取貨付款</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="credit-card-information-wrapper">
+                            <h2>信用卡資訊</h2>
+                            <div class="card-number-container">
+                                <h3 class="card-number-input-title">信用卡號</h3>
+                                <div class="credit-card-type-img-wrapper">
+                                    <span class="credit-card-icon"><img
+                                            src="../images/checkout-images/MasterCard_Logo.svg.png" alt="信用卡的圖片"></span>
+                                    <span class="credit-card-icon"><img src="../images/checkout-images/images.png"
+                                            alt="visa的圖片"></span>
+                                    <span class="credit-card-icon"><img
+                                            src="../images/checkout-images/Apple-Pay-Card-Image.png"
+                                            alt="apple pay圖片"></span>
+                                </div>
+                                <div class="card-number-input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="number" name="credit-card-number-first-four-num"
+                                            class="credit-card-number-input" placeholder="0000">
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="number" name="credit-card-number-second-four-num"
+                                            class="credit-card-number-input" placeholder="0000">
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="number" name="credit-card-number-third-four-num"
+                                            class="credit-card-number-input" placeholder="0000">
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="number" name="credit-card-number-last-four-num"
+                                            class="credit-card-number-input" placeholder="0000">
+                                    </div>
+                                    <div class="credit-card-wrong-num-msg">
+                                        <p>信用卡號碼錯誤</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-expiration-date-CVV-code-container">
+                                <div class="card-expiration-date-input-wrapper">
+                                    <h3>到期日</h3>
+                                    <label class="card-expiration-date-input input-wrapper" for="expiration-date-MM"> 
+                                        <input type="number" name="expiration-date" id="expiration-date-MM"
+                                            class="date-MM" placeholder="MM">
+                                        <span class="expiration-date-divde">/</span>
+                                        <input type="number" name="expiration-date" id="expiration-date-YY"
+                                            class="date-YY" placeholder="YY">
+                                    </label>
+                                    <div class="credit-card-wrong-num-msg">
+                                        <p>信用卡到期日錯誤</p>
+                                    </div>
+                                </div>
+                                <div class="card-CVV-code-input-wrapper">
+                                    <h3>CVV</h3>
+                                    <div class="CVV-code-input">
+                                        <input type="password" name="CVV-code" id="CVV-code" placeholder="***">
+                                    </div>
+                                    <div class="credit-card-wrong-num-msg">
+                                        <p>CVV code錯誤!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn-wrapper">
+                        <button id="comfirm-bitn">結帳</button>
+                    </div>
+                </section>
+            </main>
+            <aside class="cart-item-display-checkout-area">
+                <div class="cart-item-display-card-list-wrapper">
+                    <div class="cart-item-card">
+                        <div class="card-img-wrapper">
+                            <img src="../images/production-images/surfboard/boulevard-22_3up_1000x.webp"
+                                alt="boulevard的圖片">
+                            <span class="cart-item-quantity">1</span>
+                        </div>
+                        <div class="cart-item-content">
+                            <h3 class="cart-item-name">boulevard</h3>
+                            <p class="cart-item-brand">AQSS</p>
+                            <p class="cart-item-size">9'7</p>
+                        </div>
+                        <div class="cart-item-price-wrapper">
+                            <p class="cart-item-price">$750TWD</p>
+                        </div>
+                    </div>
+                    <div class="cart-item-card">
+                        <div class="card-img-wrapper">
+                            <img src="../images/production-images/surfboard/boulevard-22_3up_1000x.webp"
+                                alt="boulevard的圖片">
+                            <span class="cart-item-quantity">1</span>
+                        </div>
+                        <div class="cart-item-content">
+                            <h3 class="cart-item-name">boulevard</h3>
+                            <p class="cart-item-brand">AQSS</p>
+                            <p class="cart-item-size">9'7</p>
+                        </div>
+                        <div class="cart-item-price-wrapper">
+                            <p class="cart-item-price">$750TWD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-summary-area">
+                    <div class="total-price-item-quantity-wrapper">
+                        <p class="total-item-quantity">小計 · <span class="cart-item-total-quantity">2</span>個品項</p>
+                        <p class="total-price">$750</p>
+                    </div>
+                    <div class="shipping-fee-wrapper">
+                        <p>運費</p>
+                        <p class="shipping-fee">免費</p>
+                    </div>
+                    <div class="total-cost-wrapper">
+                        <p>總計：</p>
+                        <p class="total-cost">$750</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="../js/cart-checkout.js"></script>
+
+</body>
+
+</html>

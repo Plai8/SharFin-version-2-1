@@ -23,8 +23,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- <script src="jquery-3.7.1.min.js"></script> -->
-
 </head>
 
 <body>
@@ -94,88 +92,134 @@
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
                     <div class="red-dot"></div><span id="cart-amount">999+</span>
                 </a>
-                <a href="./login.html">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+            </a>
+            <!-- 未登入下 -->
+            <a href="./login.html"  class="user-icon">
+                <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- 登入成功下 -->
+             <a href="./member-center.html" id="user-pic">
+                <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+             </a>
             </div>
         </nav>
-        <h2 class="header-title">購物車</h2>
+        <h1 class="header-title">購物車</h1>
     </header>
-    <main id="cart-item-list">
-        <div class="container">
-            <h1 class="cart-title">購物車</h1>
-            <p><span id="cart-items-qty">0</span>items</p>
-            <div class="cart-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>產品</th>
-                            <th>價格</th>
-                            <th>數量</th>
-                            <th>總價</th>
-                        </tr>
-                    </thead>
-                </table>
-                <!-- <div class="cart-item">
-                    <div class="item-img">
-                        <img src="images/cart-images/FIREWIRE_FRK_6_2_USED_SURFBOARD-transformed.webp" alt="衝浪商品圖">
-                    </div>
-                    <div class="cart-content">
-                        <div class="item-title">
-                            <h2 class="item-title">FIREWIRE FRK 6 2 USED SURFBOARD</h2>
-                            <p class="cart-info">description about product</p>
-                        </div>
-                        <div class="item-price ">NT$1,000
-                            <span class="discount-price">NT$900</span>
-                        </div>
-                        <div class="item-footer">
-                            <div class="item-qty-btn">
-                                <button class="decrease-qty btn">-</button>
-                                <span class="product-qry">0</span>
-                                <button class="increase-qty btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="delete-item">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </div> -->
-            </div>
-    </main>
-    <section class="discount-summary-field">
-        <div class="cart-summary-container">
-            <div class="collapse ">
-                <button type="button" class="collapsible">有折價券?<span><i
-                            class="fa-solid fa-caret-up"></i></span></button>
-                <div class="content">
-                    <form action="">
-                        <input type="text" name="" id="discount-code" placeholder="請輸入優惠碼">
-                        <button class="submit-btn">送出</button>
-                    </form>
-                </div>
-            </div>
-            <div class="cart-summary">
-                <h2>Cart Summary</h2>
-                <div class="summary-field">
-                    <div>小計:<span class="sum-total">NT$40,000</span></div>
-                    <div>運費:<span class="ship-fee"></span></div>
-                    <div>總計:<span class="total"></span></div>
-                    <div class="delivery-field">
-                        <p>運送地址:</p>
-                        <form action="">
-                            <input type="text" id="country" placeholder="請輸入縣市">
-                            <input type="number" id="mail-num" placeholder="郵遞區號">
-                            <input type="text" id="address" placeholder="請輸入地址">
-                        </form>
-                    </div>
-                    <div class="btn-field">
-                        <buttom id="leave-btn">繼續購物</buttom>
-                        <buttom id="check-out">結帳</buttom>
-                    </div>
 
+    <main id="cart-items-display-area">
+        <div class="cart-items-display-area-header">
+            <h3>您的購物車</h3>
+            <a href="../html/production.html" class="go-back-to-product-page-btn">
+                <i class="fa-solid fa-arrow-left" style="color:#000"></i>繼續購物
+            </a>
+        </div>
+        <div class="cart-items-count-wrapper"><span class="cart-items-count">0</span>items</div>
+        <section class="cart-items-list-wrapper">
+            <div class="cart-items-card-list-wrapper">
+                <div class="cart-items-card-list-title">
+                    <h3>商品</h3>
+                    <h3>價格</h3>
+                    <h3>數量</h3>
+                    <h3>總計</h3>
+                </div>
+                <div class="cart-items-card-list">
+                    <p class="no-item-msg">購物車是空的喔！</p>
+                    <a href="./production.html">按這裡開始購物吧</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="cart-summary-display-area">
+            <div class="shipping-section">
+                <h3>選擇取貨方式</h3>
+                <div class="input-selected-items-display"><span class="selected">黑貓寄送</span>
+                    <select name="shipping-type" id="shipping-type">
+                        <option disabled="disabled">Please Choose ...</option>
+                        <option value="黑貓寄送">黑貓寄送</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <h3>選擇付款方式</h3>
+                <div class="input-selected-items-display"><span class="selected">信用卡/行動支付</span>
+                    <select name="payment-type" id="payment-type">
+                        <option disabled="disabled">Please Choose ...</option>
+                        <option value="信用卡/行動支付">信用卡/行動支付</option>
+                        <option value="取貨付款">取貨付款</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="invoice-section">
+                <h3 class="invoice-type-selector">發票類型</h3>
+                <div class="input-selected-items-display"><span class="selected">二聯-電子發票</span>
+                    <select name="invoice-type" id="invoice-type">
+                        <option disabled="disabled">Please Choose ...</option>
+                        <option value="二聯-電子發票">二聯-電子發票</option>
+                        <option value="個人-手機條碼載具">個人-手機條碼載具</option>
+                        <option value="公司-統一編號">公司-統一編號</option>
+                        <option value="捐贈發票">捐贈發票</option>
+                    </select>
+                    <span class="input-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="invioce-msg-wrapper">
+                    <!-- eInvoice information -->
+                    <p class="eInvoice-information selected-msg">依財政部規定發票已託管，將不再開立紙本發票，電子發票以信箱方式寄出。</p>
+                    <!-- mobile invoice code input field -->
+                    <label for="mobile-invoice-code" class="mobileInvoice-input-field ">
+                        <h3>手機條碼載具</h3>
+                        <div class="input-wrapper">
+                            <input type="text" name="mobile-invoice-code" id="mobile-invoice-code"
+                                placeholder="請輸入手機條碼載具">
+                                <span class="warning-msg">此欄位為必填</span>
+                        </div>
+                    </label>
+                    <label for="taxNumber-code" class="taxNumber-input-field">
+                        <h3>統一編號</h3>
+                        <div class="input-wrapper">
+                            <input type="number" name="taxNumber-code" id="taxNumber-code" placeholder="請輸入8碼統一編號">
+                            <span class="warning-msg">此欄位為必填</span>
+                        </div>
+                    </label>
+                    <label for="company-title" class="company-title-input-field">
+                        <h3>抬頭名稱</h3>
+                        <div class="input-wrapper">
+                            <input type="text" name="company-title" id="company-title" placeholder="請輸入完整抬頭名稱">
+                            <span class="warning-msg">此欄位為必填</span>
+                        </div>
+                    </label>
+                    <label for="charity-unity-title" class="charity-unity-title-input-field">
+                        <div class="charity-unity-title-header">
+                            <h3>捐贈單位</h3>
+                            <a href="#" class="charity-check-link">社福單位捐贈碼查詢</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="charity-unity-title" id="charity-unity-title"
+                                placeholder="請輸入社福團體捐贈碼">
+                                <span class="warning-msg">此欄位為必填</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="total-cost-display-section">
+                <div class="product-price-wrapper">
+                    <h4>商品金額：</h4>
+                    <p class="total-price-number">$1,000TWD</p>
+                </div>
+                <div class="product-shipping-fee-wrapper">
+                    <h4>運費：</h4>
+                    <p class="shipping-fee-number">$10TWD</p>
+                </div>
+                <div class="total-cost-wrapper">
+                    <h4>應付金額：</h4>
+                    <p class="total-cost-number">$1,010TWD</p>
+                </div>
+                <div class="submit-btn-wrapper">
+                    <button class="submit-btn">點選下一步：結帳</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">
@@ -188,27 +232,27 @@
             <div class="social-icon-subtitle">
                 <div class="subtitle">
                     <div class="subtitle-line">
-                    <a href="">關於我們</a>
-                    <a href="">常見問題</a>
-                    <a href="">購買須知</a>
-                    <a href="">連絡電話</a>
-                    <a href="">投資人關係</a>
-                </div>
-                <div class="subtitle-line">    
-                    <a href="">隱私權</a>
-                    <a href="">說明中心</a>
-                    <a href="">法律聲明</a>
-                    <a href="">帳戶</a>
-                    <a href="">企業資訊</a>
-                </div>
+                        <a href="">關於我們</a>
+                        <a href="">常見問題</a>
+                        <a href="">購買須知</a>
+                        <a href="">連絡電話</a>
+                        <a href="">投資人關係</a>
+                    </div>
+                    <div class="subtitle-line">
+                        <a href="">隱私權</a>
+                        <a href="">說明中心</a>
+                        <a href="">法律聲明</a>
+                        <a href="">帳戶</a>
+                        <a href="">企業資訊</a>
+                    </div>
                 </div>
                 <div class="social-icon-location">
                     <div class="social-icon">
-                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
                     </div>
                     <div class="company-location">
                         <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Yilan</p>

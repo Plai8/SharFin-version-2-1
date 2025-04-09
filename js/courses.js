@@ -4,6 +4,26 @@ let pre = document.querySelector('#pre');
 let thumbnail = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
 let itemActive = 0;
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
+const userInfor = JSON.parse(localStorage.getItem('userInfor'));
+let isLogin = false;
+userInfor.forEach(account => {
+    if (account.isLogin) {
+        isLogin = true;
+    };
+    showUserPic(isLogin);
+});
+
+function showUserPic(isLogin) {
+    if(isLogin === true) {
+        userPic.style.display = "block";
+        userIcon.style.display = "none";
+    }else {
+        userPic.style.display = "none";
+        userIcon.style.display = "block";
+    }
+}
 next.addEventListener('click',()=> {
     itemActive = itemActive + 1;
     if(itemActive >= countItem) {
@@ -25,7 +45,6 @@ let refreshInterval = setInterval(()=>{
 function showSlider() {
     let itemActiveOld = document.querySelector('.slider .list .item.active')
     let thumbnailOld = document.querySelector('.thumbnail .item.active')
-    console.log(itemActiveOld);
     itemActiveOld.classList.remove('active');
     thumbnailOld.classList.remove('active');
     items[itemActive].classList.add('active');

@@ -449,7 +449,7 @@ nav {
 #cart-amount {
   color: #fff;
   background-color: red;
-  padding: 20% 30%;
+  padding: 15%; 
   border-radius: 50%;
   display: flex;
   flex-wrap: wrap;

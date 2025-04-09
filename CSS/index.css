@@ -427,54 +427,42 @@ h1 {
 
 /* about SharFin section */
 .about-SharFin-section {
-  background-image: url(../images/index-images/about-us-bgi-pc.jpg);
-  background-position: center;
-  height: 150vh;
-  position: relative;
-  color: #000;
-  background-repeat: no-repeat;
+ width: 100%;
+ padding-right: 0;
+padding-bottom: 50px;
+ background-color: #FCFCFE;
 }
 
 .about-SharFin-title {
   font-size: 2rem;
   color: #000;
   font-weight: 500;
-  position: absolute;
-  left: 5%;
-  top: 10%;
 }
-
-.about-SharFin-intro-left,
-.about-SharFin-intro-right {
-  width: 35%;
-  position: absolute;
+.about-SharFin-intro {
+  width: 40%;
+  padding:80px 20px 20px 0 ;
+  line-height: 1.2;
 }
-
-.about-SharFin-intro-left p,
-.about-SharFin-intro-right p {
-  color: #000;
-  line-height: 1.8;
-  font-size: 16px;
+.about-SharFin-intro p {
+  margin-top: 10px;
+  font-size:14px;
 }
-
-.about-SharFin-intro-left {
-  top: 14%;
-  left: 5%;
+.about-SharFin-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.about-SharFin-intro-right {
-  bottom: 30%;
-  right: 5%;
+.about-SharFin-img-wrapper {
+  width: 60%;
 }
-
+.about-SharFin-img-wrapper img{
+  width: 100%;
+}
 .more-about-SF-btn {
   display: inline-block;
   padding: 0.8%;
   color: #000;
   border: 1px solid #000;
-  position: absolute;
-  bottom: 25%;
-  right: 5%;
+  padding: 10px;
 }
 
 .about-SharFin-img-mobile {
@@ -573,6 +561,13 @@ h1 {
   .coach-intro-cards-wrapper{
     width: 100%;
   }
+  .about-SharFin-section {
+    padding-left: 2.5%;
+  }
+  .about-SharFin-intro {
+    padding: 20px;
+  }
+
 }
 
 @media screen and (max-width:880px) {
@@ -674,6 +669,12 @@ h1 {
     width: 80%;
     margin-bottom: 5%;
   }
+  .about-SharFin-img-wrapper {
+    display: none;
+  }
+  .about-SharFin-intro {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:675px) {
@@ -696,11 +697,10 @@ h1 {
   .surfing-course-title {
     font-size: 1.3rem;
   }
-
+}
   @media screen and (max-width:400px) {
     h1 {
       font-size: 2.5rem;
       line-height: normal;
     }
   }
-}

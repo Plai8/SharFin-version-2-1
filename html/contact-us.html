@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
@@ -86,8 +88,14 @@
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
                     <div class="red-dot"></div><span id="cart-amount">999+</span>
                 </a>
-                <a href="./login.html">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+                <!-- 未登入下 -->
+                <a href="./login.html" class="user-icon">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <!-- 登入成功下 -->
+                <a href="./member-center.html" id="user-pic">
+                    <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+                </a>
             </div>
         </nav>
     </header>
@@ -100,27 +108,32 @@
                 <p class="contact-info-intro">無論您有任何疑問、建議或需要客製化的體驗服務，請隨時與我們聯絡。我們的團隊由熱愛大海和極限運動的專家組成，隨時準備幫助您探索最棒的衝浪旅程。
                 </p>
                 <p class="phone-number"><i class="fa-solid fa-phone fa-xl" style="color:#fff"></i>+(886)234-5678</p>
-                <p class="email-address"><i class="fa-solid fa-envelope fa-xl" style="color:#fff"></i>Support@SharFinmail.com</p>
-                <a  href="https://www.google.com.tw/maps/dir//24.873697,121.8394285/@24.8737177,121.8392008,20.77z/data=!4m2!4m1!3e2?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" class="shop-location" target="_blank"><i class="fa-solid fa-location-dot fa-xl" style="color:#fff"></i>Yilan,Taiwan</a>
+                <p class="email-address"><i class="fa-solid fa-envelope fa-xl"
+                        style="color:#fff"></i>Support@SharFinmail.com</p>
+                <a href="https://www.google.com.tw/maps/dir//24.873697,121.8394285/@24.8737177,121.8392008,20.77z/data=!4m2!4m1!3e2?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+                    class="shop-location" target="_blank"><i class="fa-solid fa-location-dot fa-xl"
+                        style="color:#fff"></i>Yilan,Taiwan</a>
             </aside>
             <div class="contact-input-field">
                 <div class="basic-user-info">
                     <label for="userName">
-                    <span class="input-placeholder userName">姓名</span>
-                    <input type="text" name="userName" id="userName" class="userName input-field">
-                </label>
-                <label for="userEmail">
-                    <span class="input-placeholder  userEmail">信箱</span>
-                    <input type="email" name="userEmail" id="userEmail" class="userEmail input-field">
-                </label></div>
-                
+                        <span class="input-placeholder userName">姓名</span>
+                        <input type="text" name="userName" id="userName" class="userName input-field">
+                    </label>
+                    <label for="userEmail">
+                        <span class="input-placeholder  userEmail">信箱</span>
+                        <input type="email" name="userEmail" id="userEmail" class="userEmail input-field">
+                    </label>
+                </div>
+
                 <label for="userSubject">
                     <span class="input-placeholder userSubject">主題</span>
                     <input type="text" name="userSubject" id="userSubject" class="userSubject input-field">
                 </label>
                 <label for="userMessage">
                     <span class="input-placeholder userMessage">內容</span>
-                    <textarea name="userMessage" id="userMessage" rows="5" cols="60" class="userMessage input-field"></textarea>
+                    <textarea name="userMessage" id="userMessage" rows="5" cols="60"
+                        class="userMessage input-field"></textarea>
                 </label>
                 <button class="submit-Btn" type="button">送出</button>
             </div>
@@ -138,27 +151,27 @@
             <div class="social-icon-subtitle">
                 <div class="subtitle">
                     <div class="subtitle-line">
-                    <a href="">關於我們</a>
-                    <a href="">常見問題</a>
-                    <a href="">購買須知</a>
-                    <a href="">連絡電話</a>
-                    <a href="">投資人關係</a>
-                </div>
-                <div class="subtitle-line">    
-                    <a href="">隱私權</a>
-                    <a href="">說明中心</a>
-                    <a href="">法律聲明</a>
-                    <a href="">帳戶</a>
-                    <a href="">企業資訊</a>
-                </div>
+                        <a href="">關於我們</a>
+                        <a href="">常見問題</a>
+                        <a href="">購買須知</a>
+                        <a href="">連絡電話</a>
+                        <a href="">投資人關係</a>
+                    </div>
+                    <div class="subtitle-line">
+                        <a href="">隱私權</a>
+                        <a href="">說明中心</a>
+                        <a href="">法律聲明</a>
+                        <a href="">帳戶</a>
+                        <a href="">企業資訊</a>
+                    </div>
                 </div>
                 <div class="social-icon-location">
                     <div class="social-icon">
-                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
                     </div>
                     <div class="company-location">
                         <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Yilan</p>
@@ -177,4 +190,5 @@
     </footer>
     <script src="../js/contact-us.js"></script>
 </body>
+
 </html>

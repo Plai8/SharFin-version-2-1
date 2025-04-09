@@ -430,6 +430,7 @@ input[type="text"]:hover {
 
     .production-cards-header {
         padding: 0 5%;
+        align-items: center;
     }
 
     .production-search-field {
@@ -453,6 +454,9 @@ input[type="text"]:hover {
     .production-search {
         display: none;
     }
+    #production-search-sm {
+        padding-left: 6%;
+    }
     
 }
 
@@ -469,11 +473,26 @@ input[type="text"]:hover {
     .sub-navbar {
         width: 100%;
     }
+    #production-search-sm {
+        padding-left: 7.5%;
+    }
 }
+@media screen and (max-width:500px) {
+    #production-search-sm {
+        padding-left: 8.5%;
+    }
+}
+
 
 @media screen and (max-width:400px) {
     .change-page-field {
         width: 90%;
         margin: 0 auto;
+    }
+    .production-type-btns {
+        width: 70%;
+    }
+    #production-search-sm {
+        padding-left: 9.5%;
     }
 }

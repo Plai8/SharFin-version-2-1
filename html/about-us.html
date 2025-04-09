@@ -89,8 +89,14 @@
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
                     <div class="red-dot"></div><span id="cart-amount">999+</span>
                 </a>
-                <a href="./login.html">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+              <!-- 未登入下 -->
+              <a href="./login.html"  class="user-icon">
+                <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+            </a>
+            <!-- 登入成功下 -->
+             <a href="./member-center.html" id="user-pic">
+                <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+             </a>
             </div>
         </nav>
         <h2 class="header-title">關於我們</h2>
@@ -204,27 +210,27 @@
             <div class="social-icon-subtitle">
                 <div class="subtitle">
                     <div class="subtitle-line">
-                    <a href="">關於我們</a>
-                    <a href="">常見問題</a>
-                    <a href="">購買須知</a>
-                    <a href="">連絡電話</a>
-                    <a href="">投資人關係</a>
-                </div>
-                <div class="subtitle-line">    
-                    <a href="">隱私權</a>
-                    <a href="">說明中心</a>
-                    <a href="">法律聲明</a>
-                    <a href="">帳戶</a>
-                    <a href="">企業資訊</a>
-                </div>
+                        <a href="">關於我們</a>
+                        <a href="">常見問題</a>
+                        <a href="">購買須知</a>
+                        <a href="">連絡電話</a>
+                        <a href="">投資人關係</a>
+                    </div>
+                    <div class="subtitle-line">
+                        <a href="">隱私權</a>
+                        <a href="">說明中心</a>
+                        <a href="">法律聲明</a>
+                        <a href="">帳戶</a>
+                        <a href="">企業資訊</a>
+                    </div>
                 </div>
                 <div class="social-icon-location">
                     <div class="social-icon">
-                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
                     </div>
                     <div class="company-location">
                         <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Yilan</p>
@@ -241,6 +247,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        const userPic = document.querySelector("#user-pic");
+        const userIcon = document.querySelector('.user-icon');
+        const userInfor = JSON.parse(localStorage.getItem('userInfor'));
+        userInfor.forEach(account => {
+            if (account.isLogin) {
+                userIcon.style.display = "none";
+                userPic.style.display = "block";
+            }else {
+                userIcon.style.display = "block";
+                userPic.style.display = "none";
+            }
+        });
+    </script>
 </body>
 
 </html>

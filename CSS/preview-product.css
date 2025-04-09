@@ -76,20 +76,20 @@ header h1 {
 .product-brand {
     font-size: 14px;
     color:#A09E9E;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 .product-name {
     font-size: 16px;
     color:#000;
     font-weight: 600;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 .reviews {
     font-size: 14px;
     color:#1D2B53;
     font-weight: 600;
     cursor:pointer;
-    margin-bottom: 5%;
+    margin-bottom: w0px;
 }
 .product-ranking {
     margin-left: 5px;
@@ -102,7 +102,7 @@ header h1 {
 label {
     display: inline-block;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom:20px;
 }
 .product-describe {
     font-size: 16px;
@@ -224,7 +224,7 @@ input[type=number]::-webkit-outer-spin-button {
     .product-info-area {
         width: 100%;
         margin: 0 auto;
-        text-align: center;
+        text-align: start;
     }
     .btns-field  {
         justify-content: center;
@@ -240,3 +240,4 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
     }
 }
+
