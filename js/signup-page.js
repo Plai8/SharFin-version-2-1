@@ -89,7 +89,7 @@ function signUpAccount() {
             alert("註冊成功！");
             userInfor.push(newSignupData);
             localStorage.setItem("userInfor",JSON.stringify(userInfor));
-            window.location.assign("http://127.0.0.1:5501/html/login.html")
+            window.location.assign("https://plai8.github.io/SharFin-version-2-1/html/login.html")
         }
         console.log(newSignupData);
     }
