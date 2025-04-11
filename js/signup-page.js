@@ -18,16 +18,11 @@ const newSignupData = {
             "products": [],
             "courses": [],
             "rental": [],
-            "orderInfor":null,
+            "orderInfor":null
         },
         "order":[],
         "isLogin": false
     };
-
-function scrollTo() {
-    wrapper.scrollIntoView();
-}
-
 const switchBtns = document.querySelectorAll('.switch-btn');
 const signupBtn = document.querySelector('.switch-btn-signup');
 const loginBtn = document.querySelector('.switch-btn-login')
@@ -35,6 +30,9 @@ const signUpField = document.querySelector('.signUp-field ')
 const loginField = document.querySelector('.login-field ');
 const signBtn = document.querySelector('.submit-btn');
 
+function scrollTo() {
+    wrapper.scrollIntoView();
+}
 switchBtns.forEach(switchBtn => {
     switchBtn.addEventListener('click',el => {
         //先把全部'btn-actived' class移除。

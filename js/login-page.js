@@ -12,7 +12,7 @@ const userInfor = [
         "cart": {
             "products": [{
                 "name": "AQSS Soulstice Longboard 9'1- Sunrise",
-                "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
+                "mainImage": "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
                 "count": 1,
                 "productStatus": "出貨中",
                 "price": 10000,
@@ -20,11 +20,10 @@ const userInfor = [
                 "brand": "AQSS",
                 "productType": "products",
                 "productSize": "9'7"
-            },
-            ],
+            }],
             "courses": [{
                 "name": "半日體驗課程",
-                "mainImage": '../images/index-images/surfing-course-halfday.jpg',
+                "mainImage": "../images/index-images/surfing-course-halfday.jpg",
                 "count": 1,
                 "time": "09:30",
                 "reservationDate": "2025-08-16",
@@ -37,14 +36,14 @@ const userInfor = [
                 {
                     "name": "長板",
                     "reservationDate": "2025-08-16",
-                    "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
+                    "mainImage": "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
                     "count": 1,
                     "price": 600,
                     "priceTag": "NT$600",
                     "productType": "rental"
                 }
             ],
-            "orderInfor": null,
+            "orderInfor": null
         },
         "order": [],
         "isLogin": false
@@ -116,7 +115,7 @@ function storeUserData() {
     if (localStorage.getItem("userInfor") === null) {
         localStorage.setItem('userInfor', JSON.stringify(userInfor));
     }
-    usersData = JSON.parse(localStorage.getItem('userInfor'));
+    usersData = JSON.parse(localStorage.getItem('userInfor')) || [];
     fieldDivide();
 };
 
