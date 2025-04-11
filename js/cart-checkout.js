@@ -283,7 +283,7 @@ submitBtn.addEventListener("click", () => {
             })
             localStorage.setItem('userInfor',JSON.stringify(usersInfo));
             alert("結帳成功！");
-            window.location.assign("http://127.0.0.1:5501/html/cart.html")
+            window.location.assign("https://plai8.github.io/SharFin-version-2-1/html/cart.html")
         }
     }else {
         if(checkOrderInfo(true) &&  checkCreditInfo()) {

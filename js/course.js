@@ -149,6 +149,15 @@ function showUserPic() {
     }
 }
 
+function getUserInfo() {
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            user = { ...account };
+            console.log(user);
+        }
+    })
+}
+
 function updateCourseContent(id) {
     // 依照課成Id更新課程內容
     let selectedCourse = coursesData[id - 1];
@@ -297,6 +306,7 @@ addCartBtn.addEventListener('click', reserveCourse);
 window.addEventListener('load', () => {
     updateCourseContent(courseID);
     showUserPic();
+    getUserInfo()
 });
 
 
