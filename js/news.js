@@ -10,8 +10,26 @@ const newsItemsWrapper = document.querySelector('.news-items-wrapper');
 const newsTitle = document.querySelector('.news-list-title');
 const pageNumBtns = document.querySelectorAll('.page');
 const mainArea = document.querySelector('.news-list-field');
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
+const userInfor = JSON.parse(localStorage.getItem('userInfor'));
 
-
+function showUserPic() {
+    let isLogin = false;
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            isLogin = true;
+        }
+    });
+    console.log(isLogin)
+    if (isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    } else {
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
+    }
+}
 function scrollTo() {
     mainArea.scrollIntoView();
 }
@@ -64,7 +82,7 @@ function displayNews() {
         <div class="news-content">
         <p class="news-date">${el.date}</p>
                 <h3 class="news-content-title">${el.title}</h3>
-                <a class="read-more-btn" href="./News-content.html?id=${el.id}">閱讀更多<i class="fa-solid fa-arrow-right"></i></a>
+                <a class="read-more-btn" href="./news-content.html?id=${el.id}">閱讀更多<i class="fa-solid fa-arrow-right"></i></a>
             </div>`;
         newsItemsWrapper.append(divEl);
     });
@@ -132,4 +150,7 @@ leftArrow.addEventListener('click', () => {
     changePage('left');
 })
 
-window.addEventListener('load', fetchData);
+window.addEventListener('load', () => {
+    fetchData();
+    showUserPic();
+});

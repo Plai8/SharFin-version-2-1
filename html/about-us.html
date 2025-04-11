@@ -87,16 +87,15 @@
             </ul>
             <div class="cart-user-icon">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
-                    <div class="red-dot"></div><span id="cart-amount">999+</span>
                 </a>
-              <!-- 未登入下 -->
-              <a href="./login.html"  class="user-icon">
-                <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
-            </a>
-            <!-- 登入成功下 -->
-             <a href="./member-center.html" id="user-pic">
-                <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
-             </a>
+                <!-- 未登入下 -->
+                <a href="./login.html" class="user-icon">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <!-- 登入成功下 -->
+                <a href="./member-center.html" id="user-pic">
+                    <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+                </a>
             </div>
         </nav>
         <h2 class="header-title">關於我們</h2>
@@ -251,15 +250,24 @@
         const userPic = document.querySelector("#user-pic");
         const userIcon = document.querySelector('.user-icon');
         const userInfor = JSON.parse(localStorage.getItem('userInfor'));
-        userInfor.forEach(account => {
-            if (account.isLogin) {
+        function showUserPic() {
+            let isLogin = false;
+            userInfor.forEach(account => {
+                if (account.isLogin) {
+                    isLogin = true;
+                }
+            });
+            console.log(isLogin)
+            if (isLogin) {
                 userIcon.style.display = "none";
                 userPic.style.display = "block";
             }else {
                 userIcon.style.display = "block";
                 userPic.style.display = "none";
             }
-        });
+        }
+        window.addEventListener('load',showUserPic);
+
     </script>
 </body>
 

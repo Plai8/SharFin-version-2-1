@@ -531,7 +531,7 @@ td {
 }
 
 .alert-info h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #000;
     font-weight: 400;
     margin: 5% auto 10% 9%;
@@ -795,5 +795,9 @@ td {
         letter-spacing: 1px;
         line-height: 1.1;
         font-size: 16px;
+    }
+    .alert-info,
+    .alert-info-logout-success {
+        width: 80%;
     }
 }

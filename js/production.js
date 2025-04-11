@@ -72,6 +72,7 @@ function dropDownToggle(screenSize) {
 // productType為目前商品類別(透過btn去切換)，透過該引數去fetch特定json的資料
 async function fetchData() {
     scrollTo(mainArea);
+    localStorage.removeItem('productName');
     if(localStorage.getItem("currentProductName") === null) localStorage.setItem("currentProductName",currentProductName)
     // 判斷是否在做搜尋
     if (searchInput.value !== "" || searchInputSM.value !== "") {
@@ -276,6 +277,7 @@ dropdownBtns.forEach(btn => {
 productTypeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         scrollTo(mainArea);
+        // localStorage.removeItem("productName");
         searchInputSM.value = "";
         searchInput.value = "";
         currentProductData = btn.classList[0];

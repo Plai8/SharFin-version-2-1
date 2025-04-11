@@ -17,6 +17,7 @@ async function fetchData(productType) {
                 sliderProducts.push(product);
             }
         }
+        console.log(sliderProducts);
     } catch (err) {
         throw new Error(`fetch fail due to ${err}`)
     }
@@ -38,16 +39,19 @@ async function getSliderData() {
 function checkUserLogin() {
     let account;
     let userInfor = JSON.parse(localStorage.getItem("userInfor"));
+    console.log(userInfor)
     for(let user of userInfor) {
+        console.log(user.isLogin);
         if(user.isLogin) account = {...user};
-        console.log(account);
     }
-    if(account.isLogin) {
-        userIcon.style.display = "none";
-        userPic.style.display = "block";
-    }else {
-        userIcon.style.display = "block";
-        userPic.style.display = "none";
+    if(account !== undefined) {
+        if(account.isLogin) {
+            userIcon.style.display = "none";
+            userPic.style.display = "block";
+        }else {
+            userIcon.style.display = "block";
+            userPic.style.display = "none";
+        }
     }
 }
 function showSliderData() {
@@ -58,7 +62,7 @@ function showSliderData() {
     slider.innerHTML = "";
     for (let productData of sliderProducts) {
         const productCard = document.createElement('a');
-        productCard.href = `./preview-product.html?id=${productData.id}`
+        productCard.href = `html/preview-product.html?id=${productData.id}`
         productCard.classList.add('popular-product-card');
         let convertImgPath = productData.mainImage.slice(3);
         productCard.innerHTML = `

@@ -5,16 +5,21 @@ const spans = document.querySelectorAll('span');
 const userPic = document.querySelector("#user-pic");
 const userIcon = document.querySelector('.user-icon');
 const userInfor = JSON.parse(localStorage.getItem('userInfor'));
-
-userInfor.forEach(account => {
-    if (account.isLogin) {
+function showUserPic() {
+    let isLogin = false;
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            isLogin = true;
+        }
+    });
+    if (isLogin) {
         userIcon.style.display = "none";
         userPic.style.display = "block";
-    }else {
+    } else {
         userIcon.style.display = "block";
         userPic.style.display = "none";
     }
-});
+}
 //幫inputs增加事件聆聽
     inputs.forEach(input => {
         input.addEventListener('focus', el => {
@@ -37,3 +42,5 @@ userInfor.forEach(account => {
             })
         })
     })
+
+window.addEventListener('load',showUserPic)

@@ -46,11 +46,13 @@ async function fetchData() {
     localStorage.getItem("isSearchMode") === "true" ? isSearchMode = true : isSearchMode = false;
     // 判斷是否為主頁精選商品
     try {
+        // 商品頁面商品
         if (isSearchMode === false && localStorage.getItem('productName') === null) {
             let response = await fetch(`../json/${currentProduct}-products-list.json`);
             productData = await response.json();
             console.log(productData);
-        } else {
+        //
+        }else {
             productData = [];
             const allProductType = ["accessories", "surfboard", "wetsuits", "other"];
             for (let i = 0; i < allProductType.length; i++) {
@@ -60,6 +62,7 @@ async function fetchData() {
                     productData.push(receivedData[j]);
                     receivedData[j].id = productData.length;
                 }
+                console.log(productData);
             };
 
         }
@@ -121,9 +124,26 @@ function checkItemExist(itemName) {
 
 //display products 
 function displayProduct() {
-    selectedProduct = productData[id - 1];
+        selectedProduct = productData[id - 1];
+        if (localStorage.getItem('productName') !== null) {
+            // 搜尋下
+            for (let product of productData) {
+                if (product.name === localStorage.getItem('productName')) id = product.id;
+                console.log(id);
+            }
+            selectedProduct = productData[id - 1];
+        } else if (user.cart.products.length !== 0) {
+            for (let cartItem of user.cart.products) {
+                if (cartItem.name === selectedProduct.name) {
+                    console.log(selectedProduct);
+                    productAmount.value = cartItem.count;
+                    productSize.value = cartItem.productSize;
+                    console.log(cartItem.productSize);
+                    console.log(productSize.value);
+                }
+            }
+        };
     // 顯示圖片
-    console.log(selectedProduct)
     mainImage.src = selectedProduct.mainImage;
     let index = 0
     previewImages.forEach(img => {
@@ -148,23 +168,6 @@ function displayProduct() {
             option.value = item;
             option.textContent = item;
             selectTag.append(option);
-        }
-    };
-    if (localStorage.getItem('productName') !== null) {
-        // 搜尋下
-        for (let product of productData) {
-            if (product.name === localStorage.getItem('productName')) id = product.id;
-        }
-        selectedProduct = productData[id - 1];
-    } else if (user.cart.products.length !== 0) {
-        for (let cartItem of user.cart.products) {
-            if (cartItem.name === selectedProduct.name) {
-                console.log(selectedProduct);
-                productAmount.value = cartItem.count;
-                productSize.value = cartItem.productSize;
-                console.log(cartItem.productSize);
-                console.log(productSize.value);
-            }
         }
     };
 }

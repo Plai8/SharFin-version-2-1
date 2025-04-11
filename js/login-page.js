@@ -17,9 +17,9 @@ const userInfor = [
                 "productStatus": "出貨中",
                 "price": 10000,
                 "priceTag": "$10,000",
-                "brand":"AQSS",
-                "productType":"products",
-                "productSize":"9'7"
+                "brand": "AQSS",
+                "productType": "products",
+                "productSize": "9'7"
             },
             ],
             "courses": [{
@@ -31,22 +31,22 @@ const userInfor = [
                 "isPaidDespoit": false,
                 "price": 1500,
                 "priceTag": "$1500",
-                "productType":"courses"
+                "productType": "courses"
             }],
             "rental": [
-                    {
+                {
                     "name": "長板",
                     "reservationDate": "2025-08-16",
                     "mainImage": '../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp',
                     "count": 1,
                     "price": 600,
                     "priceTag": "NT$600",
-                    "productType":"rental"
+                    "productType": "rental"
                 }
             ],
-            "orderInfor":null,
+            "orderInfor": null,
         },
-        "order":[],
+        "order": [],
         "isLogin": false
     }
 ];
@@ -112,10 +112,11 @@ function fieldDivide() {
 // 會員資料
 // 將使用者資料存入localStorage
 function storeUserData() {
-    let userInforData = JSON.stringify(userInfor);
-    if (localStorage.getItem("userInfor") === null) localStorage.setItem('userInfor', JSON.stringify(userInforData));
+    // 假設 userInfor 是已經定義好的物件
+    if (localStorage.getItem("userInfor") === null) {
+        localStorage.setItem('userInfor', JSON.stringify(userInfor));
+    }
     usersData = JSON.parse(localStorage.getItem('userInfor'));
-    console.log(usersData);
     fieldDivide();
 };
 
@@ -128,27 +129,30 @@ function checkUserAccount() {
             accountWarnSign.style.display = "none";
             userAccount.style.border = "none";
             account = { ...user };
-            console.log("帳號",isExist);
-        }else if(!isExist) {
+            console.log("帳號", isExist);
+        } else if (!isExist) {
             warningMsg("account", "email不存在!!");
-            console.log(userAccount.value, userAccount.value !== user.account,isExist);
+            console.log(userAccount.value, userAccount.value !== user.account, isExist);
         }
         if (userAccount.value === "") warningMsg("account", "請輸入email!!");
     }
-    // 檢查密碼是否正確
-    if (userPassword.value !== account.password && userPassword.value !== "") {
-        warningMsg("password", "密碼錯誤！！");
-    } else if (userPassword.value === "") {
-        warningMsg("password", "請輸入密碼！！");
-    } else {
-        account.isLogin = true;
-        for (let user of usersData) {
-            console.log(user);
-            if (user.id === account.id) usersData[user.id - 1] = account;
+    if (isExist) {
+        // 檢查密碼是否正確
+        if (userPassword.value !== account.password && userPassword.value !== "") {
+            warningMsg("password", "密碼錯誤！！");
+        } else if (userPassword.value === "") {
+            warningMsg("password", "請輸入密碼！！");
+        } else {
+            account.isLogin = true;
+            for (let user of usersData) {
+                console.log(user);
+                if (user.id === account.id) usersData[user.id - 1] = account;
+            }
+            localStorage.setItem('userInfor', JSON.stringify(usersData));
+            alertMsgWrapper.style.display = "block";
         }
-        localStorage.setItem('userInfor', JSON.stringify(usersData));
-        alertMsgWrapper.style.display = "block";
     }
+
 }
 
 function warningMsg(inputType, msg) {

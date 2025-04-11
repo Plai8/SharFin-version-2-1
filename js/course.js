@@ -47,7 +47,7 @@ const coursesData = [
                 "下課後自由練習",
             ]
         ],
-        courseReservationTime:[ "09:30"],
+        courseReservationTime: ["09:30"],
         coursePriceDescription: "1人 NT$1,500。",
         coursePrice: 1500,
         depositFee: 300,
@@ -126,27 +126,26 @@ const courseInfo = {
     "mainImage": null,
     "count": 1,
     "time": null,
-    "reservationDate":null,
+    "reservationDate": null,
     "isPaidDespoit": false,
     "price": null,
     "priceTag": null,
-    "productType":"course"
+    "productType": "course"
 }
 
-function getUser() {
-    for(let account of userInfor) {
-        if(account.isLogin) { 
-            user = { ... account};
-            console.log(user);
-            userIcon.style.display = "none";
-            userPic.style.display = "block";
-        }else {
-            userIcon.style.display = "block";
-            userPic.style.display = "none";
+function showUserPic() {
+    let isLogin = false;
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            isLogin = true;
         }
-    };
-    if(checkCourseExist()) {
-        displayReserveCourseInfo();
+    });
+    if (isLogin) {
+        userIcon.style.display = "none";
+        userPic.style.display = "block";
+    } else {
+        userIcon.style.display = "block";
+        userPic.style.display = "none";
     }
 }
 
@@ -198,8 +197,8 @@ function updateCourseScheduleContent(day, selectedCourse) {
 }
 
 function updateSignupField(selectedCourse) {
-    if(courseID === "1" ) {
-            courseTimeWrapper.innerHTML = `
+    if (courseID === "1") {
+        courseTimeWrapper.innerHTML = `
         <span>課程時段 :</span>
         <label for="course-time-1">
                         <input type="radio" name="course-time" id="course-time-1" value="09:30" checked>
@@ -207,8 +206,8 @@ function updateSignupField(selectedCourse) {
                     </label>
     
     `;
-    }else {
-    courseTimeWrapper.innerHTML = `
+    } else {
+        courseTimeWrapper.innerHTML = `
     <span>課程時段 :</span>
         <label for="course-time-1">
                         <input type="radio" name="course-time" id="course-time-1" value="09:30" checked>
@@ -232,7 +231,7 @@ function priceUpdate(selectedCourse) {
             attendanceNum.value = 1;
             currentNum = 1;
         };
-        totalCostNum.textContent = `NT$${Math.max(selectedCourse.coursePrice * currentNum,selectedCourse.coursePrice)}`;
+        totalCostNum.textContent = `NT$${Math.max(selectedCourse.coursePrice * currentNum, selectedCourse.coursePrice)}`;
     })
 }
 
@@ -240,41 +239,40 @@ function checkSignUpData() {
     const reservDate = new Date(reservationDate.value).getTime();
     const today = new Date().getTime();
     console.log(reservDate > today);
-    if(reservDate < today) {
+    if (reservDate < today) {
         warnSign[0].style.display = "block";
-        reservationDate.style.border= "1px solid red";
+        reservationDate.style.border = "1px solid red";
         addCartBtn.disabled = true;
 
-    }else {
+    } else {
         warnSign[0].style.display = "none";
         reservationDate.style.border = "1px solid #26a69a";
         addCartBtn.disabled = false;
     }
 }
 
-function displayReserveCourseInfo(){
-        let selectedItem = user.cart.courses.filter(item => item.name === coursesData[courseID - 1].courseTitle);
-        attendanceInput.value = selectedItem[0].count;
-        reservationDate.value = selectedItem[0].reservationDate;
+function displayReserveCourseInfo() {
+    let selectedItem = user.cart.courses.filter(item => item.name === coursesData[courseID - 1].courseTitle);
+    attendanceInput.value = selectedItem[0].count;
+    reservationDate.value = selectedItem[0].reservationDate;
 }
 
 function reserveCourse() {
     console.log(coursesData[courseID - 1]);
     courseInfo.name = coursesData[courseID - 1].courseTitle;
-    courseInfo.mainImage =coursesData[courseID - 1].courseImages[0];
+    courseInfo.mainImage = coursesData[courseID - 1].courseImages[0];
     courseInfo.time = "09:30";
     courseInfo.count = Number(attendanceNum.value);
-    courseInfo.reservationDate = reservationDate.value;
-    courseInfo.price =coursesData[courseID - 1].coursePrice;
+    if(reservationDate.value === "") {
+        alert("請輸入預約日期");
+        return;
+    }else {
+        courseInfo.reservationDate = reservationDate.value;
+    }
+    courseInfo.price = coursesData[courseID - 1].coursePrice;
     courseInfo.priceTag = `$${coursesData[courseID - 1].coursePrice}`;
     console.log(courseInfo);
-    if(!checkCourseExist()) {
-        user.cart.courses.push(courseInfo);
-    }else {
-        for(let item of user.cart.courses) {
-            if(item.name === courseInfo.name) item = { ...courseInfo };
-        }
-    };
+    user.cart.courses.push(courseInfo);
     console.log(user.cart.courses);
     userInfor.forEach(account => {
         if (account.isLogin) {
@@ -284,21 +282,22 @@ function reserveCourse() {
     })
     localStorage.setItem('userInfor', JSON.stringify(userInfor));
     alert("預約成功！");
+    attendanceInput.value = 1;
+    reservationDate.value = "";
+
 };
 
-function checkCourseExist() {
-    console.log(coursesData[courseID - 1]);
-    return user.cart.courses.find(course => course.name === coursesData[courseID - 1].courseTitle);
-}
+// function checkCourseExist() {
+//     console.log(coursesData[courseID - 1]);
+//     return user.cart.courses.find(course => course.name === coursesData[courseID - 1].courseTitle);
+// }
 
-reservationDate.addEventListener("input",checkSignUpData);
-addCartBtn.addEventListener('click',reserveCourse);
-window.addEventListener('load', () => 
-    {
-        updateCourseContent(courseID);
-        getUser();
-        checkCourseExist();
-    });
+reservationDate.addEventListener("input", checkSignUpData);
+addCartBtn.addEventListener('click', reserveCourse);
+window.addEventListener('load', () => {
+    updateCourseContent(courseID);
+    showUserPic();
+});
 
 
 

@@ -20,15 +20,21 @@ const spans = document.querySelectorAll('span');
 const userPic = document.querySelector("#user-pic");
 const userIcon = document.querySelector('.user-icon');
 const userInfor = JSON.parse(localStorage.getItem('userInfor'));
-userInfor.forEach(account => {
-    if (account.isLogin) {
+function showUserPic() {
+    let isLogin = false;
+    userInfor.forEach(account => {
+        if (account.isLogin) {
+            isLogin = true;
+        }
+    });
+    if (isLogin) {
         userIcon.style.display = "none";
         userPic.style.display = "block";
-    }else {
+    } else {
         userIcon.style.display = "block";
         userPic.style.display = "none";
     }
-});
+}
 // 新增或是刪除衝浪板數量以及計算租板總金額
 // 函式參數說明：event=>判斷目前是click事件（數量加一或減一）或是input事件(直接輸入數量)。boardType=>判斷租板種類，分別為"long"與"short"。action=>為click事件下，
 //是新增數量還是刪減數量。
@@ -140,3 +146,4 @@ confirmBtn.addEventListener('click',()=> {
     shortboardAmount.value = "0"
 })
 addCartBtn.addEventListener('click', addcart);
+window.addEventListener('load',showUserPic);

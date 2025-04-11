@@ -96,8 +96,12 @@ main {
     .news-content-title {
         font-size:28px;
     }
+    .news-img-container::after {
+        display: none;
+    }
     main {
         padding:5% 2.5%;
+        padding-bottom: 15%;
     }
 
     .news-img-container {
