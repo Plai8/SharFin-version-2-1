@@ -5,7 +5,6 @@ const userLastName = document.querySelector("#userLastName");
 const userMail = document.querySelector("#userAccount");
 const passWord = document.querySelector("#userPassword");
 const wrapper = document.querySelector('.signUp-wrapper');
-const userInfo = localStorage.getItem('userInfor');
 const userInfor = JSON.parse(localStorage.getItem('userInfor'));
 const newSignupData = {
         "id": null,
@@ -71,6 +70,7 @@ window.addEventListener("resize",() => {
 // 註冊功能
 function signUpAccount() {
     // 檢查帳號是否已經存在
+    console.log(userInfor,typeof userInfor);
     for(let account of userInfor) {
         if(userMail.value === account.email) {
             alert("此帳號已存在！");

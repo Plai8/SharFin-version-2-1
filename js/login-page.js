@@ -123,6 +123,7 @@ function storeUserData() {
 function checkUserAccount() {
     // 檢查帳號或信箱是否存在
     let isExist = false;
+    console.log(userAccount.value === user.email);
     for (let user of usersData) {
         if (userAccount.value === user.email) {
             isExist = true;
