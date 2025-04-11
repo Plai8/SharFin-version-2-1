@@ -121,40 +121,45 @@ function storeUserData() {
 };
 
 function checkUserAccount() {
-    // 檢查帳號或信箱是否存在
-    let isExist = false;
-    console.log(userAccount.value === user.email);
-    for (let user of usersData) {
-        if (userAccount.value === user.email) {
-            isExist = true;
-            accountWarnSign.style.display = "none";
-            userAccount.style.border = "none";
-            account = { ...user };
-            console.log("帳號", isExist);
-        } else if (!isExist) {
-            warningMsg("account", "email不存在!!");
-            console.log(userAccount.value, userAccount.value !== user.account, isExist);
-        }
-        if (userAccount.value === "") warningMsg("account", "請輸入email!!");
-    }
-    if (isExist) {
-        // 檢查密碼是否正確
-        if (userPassword.value !== account.password && userPassword.value !== "") {
-            warningMsg("password", "密碼錯誤！！");
-        } else if (userPassword.value === "") {
-            warningMsg("password", "請輸入密碼！！");
-        } else {
-            account.isLogin = true;
-            for (let user of usersData) {
-                console.log(user);
-                if (user.id === account.id) usersData[user.id - 1] = account;
-            }
-            localStorage.setItem('userInfor', JSON.stringify(usersData));
-            alertMsgWrapper.style.display = "block";
-        }
+    if (userAccount.value === "") {
+        warningMsg("account", "請輸入email!!");
+        return;
     }
 
+    let account = usersData.find(user => user.email === userAccount.value);
+
+    if (!account) {
+        warningMsg("account", "email不存在!!");
+        console.log(userAccount.value, false);
+        return;
+    }
+
+    // 找到帳號了
+    accountWarnSign.style.display = "none";
+    userAccount.style.border = "none";
+    console.log("帳號存在", true);
+
+    if (userPassword.value === "") {
+        warningMsg("password", "請輸入密碼！！");
+        return;
+    }
+
+    if (userPassword.value !== account.password) {
+        warningMsg("password", "密碼錯誤！！");
+        return;
+    }
+
+    // 登入成功
+    account.isLogin = true;
+    for (let user of usersData) {
+        if (user.id === account.id) {
+            usersData[user.id - 1] = account;
+        }
+    }
+    localStorage.setItem('userInfor', JSON.stringify(usersData));
+    alertMsgWrapper.style.display = "block";
 }
+
 
 function warningMsg(inputType, msg) {
     let currentInput = inputType;
