@@ -89,8 +89,14 @@
             <div class="cart-user-icon">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-cart fa-lg"></i>
                 </a>
-                <a href="./login.html">
-                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></a>
+                 <!-- 未登入下 -->
+                 <a href="./login.html"  class="user-icon">
+                    <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <!-- 登入成功下 -->
+                 <a href="./member-center.html" id="user-pic">
+                    <img src="../images/members-images/user-pic-navbar.svg" alt="使用者頭像">
+                 </a>
             </div>
         </nav>
         <h1>商品</h1>
@@ -167,6 +173,13 @@
                 </div>
                 </div>
         </section>
+        <div class="alert-light-box-container go-to-login-msg">
+            <div class="alert-info">
+                <div class="warning-sign"></div>
+                <h3 class="warning-sign-title">請先登入！</h3>
+                <a href="./login.html" class="comfirm-btn">確定</a>
+            </div>
+        </div>
     </main>
     <footer class="footer-section">
         <div class="footer-container">

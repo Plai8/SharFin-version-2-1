@@ -7,6 +7,55 @@ const allProductType = ["surfboard", "wetsuits", "other"];
 const sliderProducts = [];
 const userPic = document.querySelector("#user-pic");
 const userIcon = document.querySelector('.user-icon');
+const userInfor = [
+    {
+        "id": 1,
+        "firstName": "Peter",
+        "lastName": "Lai",
+        "phoneNumber": "0912345678",
+        "address": "abc",
+        "email": "a123456@gamil.com",
+        "password": "123456",
+        "cart": {
+            "products": [{
+                "name": "AQSS Soulstice Longboard 9'1- Sunrise",
+                "mainImage": "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
+                "count": 1,
+                "productStatus": "出貨中",
+                "price": 10000,
+                "priceTag": "$10,000",
+                "brand": "AQSS",
+                "productType": "products",
+                "productSize": "9'7"
+            }],
+            "courses": [{
+                "name": "半日體驗課程",
+                "mainImage": "../images/index-images/surfing-course-halfday.jpg",
+                "count": 1,
+                "time": "09:30",
+                "reservationDate": "2025-08-16",
+                "isPaidDespoit": false,
+                "price": 1500,
+                "priceTag": "$1500",
+                "productType": "courses"
+            }],
+            "rental": [
+                {
+                    "name": "長板",
+                    "reservationDate": "2025-08-16",
+                    "mainImage": "../images/production-images/surfboard/002__95121.1550201513.1280.1280_900x.webp",
+                    "count": 1,
+                    "price": 600,
+                    "priceTag": "NT$600",
+                    "productType": "rental"
+                }
+            ],
+            "orderInfor": null
+        },
+        "order": [],
+        "isLogin": false
+    }
+];
 // fetch data of products
 async function fetchData(productType) {
     try {
@@ -36,6 +85,14 @@ async function getSliderData() {
         })
     })
 }
+
+// 將使用者資料存入localStorage
+function storeUserData() {
+    // 假設 userInfor 是已經定義好的物件
+    if (localStorage.getItem("userInfor") === null) {
+        localStorage.setItem('userInfor', JSON.stringify(userInfor));
+    }
+};
 function checkUserLogin() {
     let account;
     let userInfor = JSON.parse(localStorage.getItem("userInfor"));
@@ -94,6 +151,7 @@ prevBtn.addEventListener('click', () => {
 });
 window.addEventListener('load',() => { 
     getSliderData();
+    storeUserData();
     checkUserLogin();
 }
 );

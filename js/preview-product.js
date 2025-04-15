@@ -23,6 +23,7 @@ const priceTag = document.querySelector('.product-price-tag');
 const productDescrible = document.querySelector('.product-describe');
 const selectTag = document.querySelector('#product-size');
 let selectedProduct;
+let isLogin = false;
 const productInfo = {
     "name": null,
     "mainImage": null,
@@ -37,6 +38,8 @@ const productInfo = {
 // user's data 
 const usersInfo = JSON.parse(localStorage.getItem('userInfor'));
 let user;
+const userPic = document.querySelector("#user-pic");
+const userIcon = document.querySelector('.user-icon');
 // add cart btn
 const addCartBtn = document.querySelector('.add-cart-btn');
 
@@ -50,9 +53,7 @@ async function fetchData() {
         if (isSearchMode === false && localStorage.getItem('productName') === null) {
             let response = await fetch(`../json/${currentProduct}-products-list.json`);
             productData = await response.json();
-            console.log(productData);
-        //
-        }else {
+        } else {
             productData = [];
             const allProductType = ["accessories", "surfboard", "wetsuits", "other"];
             for (let i = 0; i < allProductType.length; i++) {
@@ -76,12 +77,22 @@ async function fetchData() {
 
 // get user data 
 function getUserInfo() {
+    const loginMsg = document.querySelector('.go-to-login-msg');
     usersInfo.forEach(account => {
         if (account.isLogin) {
+            isLogin = true;
             user = { ...account };
             console.log(user);
         }
-    })
+    });
+    if (!isLogin) {
+        loginMsg.style.display = "block";
+        userPic.style.display = "none";
+        userIcon.style.display = "block";
+    }else {
+        userPic.style.display = "block";
+        userIcon.style.display = "none";
+    }
 }
 
 // add product to cart
@@ -102,16 +113,16 @@ function addCart() {
         }
     })
     console.log(usersInfo);
-        // 若item未存在於cart裡，將productInfo存入
-        checkItemExist(productInfo.name);
-        console.log(checkItemExist(productInfo.name))
-        if(!checkItemExist(productInfo.name)) {
-            user.cart.products.push(productInfo);
-        }else {
-            for(let item of user.cart.products) {
-                if(item.name === productInfo.name) item = { ...productInfo };
-            }
+    // 若item未存在於cart裡，將productInfo存入
+    checkItemExist(productInfo.name);
+    console.log(checkItemExist(productInfo.name))
+    if (!checkItemExist(productInfo.name)) {
+        user.cart.products.push(productInfo);
+    } else {
+        for (let item of user.cart.products) {
+            if (item.name === productInfo.name) item = { ...productInfo };
         }
+    }
     console.log(user.cart);
     console.log(productInfo);
     localStorage.setItem('userInfor', JSON.stringify(usersInfo));
@@ -124,7 +135,8 @@ function checkItemExist(itemName) {
 
 //display products 
 function displayProduct() {
-        selectedProduct = productData[id - 1];
+    selectedProduct = productData[id - 1];
+    if (isLogin) {
         if (localStorage.getItem('productName') !== null) {
             // 搜尋下
             for (let product of productData) {
@@ -143,6 +155,7 @@ function displayProduct() {
                 }
             }
         };
+    }
     // 顯示圖片
     mainImage.src = selectedProduct.mainImage;
     let index = 0
