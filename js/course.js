@@ -153,7 +153,6 @@ function getUserInfo() {
     userInfor.forEach(account => {
         if (account.isLogin) {
             user = { ...account };
-            console.log(user);
         }
     })
 }
@@ -247,7 +246,6 @@ function priceUpdate(selectedCourse) {
 function checkSignUpData() {
     const reservDate = new Date(reservationDate.value).getTime();
     const today = new Date().getTime();
-    console.log(reservDate > today);
     if (reservDate < today) {
         warnSign[0].style.display = "block";
         reservationDate.style.border = "1px solid red";
@@ -267,7 +265,6 @@ function displayReserveCourseInfo() {
 }
 
 function reserveCourse() {
-    console.log(coursesData[courseID - 1]);
     courseInfo.name = coursesData[courseID - 1].courseTitle;
     courseInfo.mainImage = coursesData[courseID - 1].courseImages[0];
     courseInfo.time = "09:30";
@@ -280,13 +277,10 @@ function reserveCourse() {
     }
     courseInfo.price = coursesData[courseID - 1].coursePrice;
     courseInfo.priceTag = `$${coursesData[courseID - 1].coursePrice}`;
-    console.log(courseInfo);
     user.cart.courses.push(courseInfo);
-    console.log(user.cart.courses);
     userInfor.forEach(account => {
         if (account.isLogin) {
             account = user;
-            console.log(account);
         }
     })
     localStorage.setItem('userInfor', JSON.stringify(userInfor));
@@ -295,11 +289,6 @@ function reserveCourse() {
     reservationDate.value = "";
 
 };
-
-// function checkCourseExist() {
-//     console.log(coursesData[courseID - 1]);
-//     return user.cart.courses.find(course => course.name === coursesData[courseID - 1].courseTitle);
-// }
 
 reservationDate.addEventListener("input", checkSignUpData);
 addCartBtn.addEventListener('click', reserveCourse);

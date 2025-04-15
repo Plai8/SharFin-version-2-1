@@ -83,7 +83,6 @@ function checkUserLogin() {
     } else {
         for (let user of userInfor) {
             if (user.isLogin) account = { ...user };
-            console.log(account);
         }
     }
 };
@@ -158,7 +157,6 @@ function displayUserOrderItems() {
             let tr = document.createElement('tr');
             let div = document.createElement('div');
             div.classList.add('cart-item-card');
-            console.log(courses);
             tr.innerHTML = `
             <td class="product-img-wrapper"><img class="item-img"
                     src="${courses[i].mainImage}"

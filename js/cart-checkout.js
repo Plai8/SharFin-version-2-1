@@ -42,7 +42,6 @@ function getUser() {
     usersInfo.forEach(account => {
         if (account.isLogin === true) {
             user = { ...account };
-            console.log(user);
             // 確認是否有訂單
             if (user.cart.orderInfor !== null) {
                 userCartItems = [...user.cart.orderInfor.userCartItems];
@@ -140,7 +139,6 @@ function showOrderItems() {
     cardItemListWrapper.innerHTML = "";
     for (let item of userCartItems) {
         const card = document.createElement("div");
-        console.log(item);
         card.innerHTML = `
          <div class="cart-item-card">
             <div class="card-img-wrapper">
@@ -200,7 +198,6 @@ function showSummary() {
 for (let i = 0; i < creditNumInputs.length; i++) {
     creditNumInputs[i].addEventListener('input', () => {
         let numbers = creditNumInputs[i].value;
-        console.log(numbers);
         if (numbers.length === 4) {
             userCreditInfo.number.push(numbers);
             i === creditNumInputs.length - 1 ? creditNumInputs[i].blur() : creditNumInputs[i + 1].focus();
@@ -225,7 +222,6 @@ for (let i = 0; i < creditNumInputs.length; i++) {
             if (value.length === 2) {
                 userCreditInfo.expirationDate.push(value);
                 expirationDateYear.blur();
-                console.log(userCreditInfo.expirationDate)
             } else if (input.value.length >= 2) {
                 input.value = value.slice(0, 2);
             }
@@ -240,7 +236,6 @@ CVVcode.addEventListener('input', () => {
     if (code.length === 3) {
         userCreditInfo.CVVcode = code;
         CVVcode.blur();
-        console.log(userCreditInfo.CVVcode)
     } else if (code.length >= 3) {
         CVVcode.value = code.slice(0, 3);
         CVVcode.blur();
@@ -278,7 +273,6 @@ submitBtn.addEventListener("click", () => {
                     account.cart.products = [];
                     account.cart.courses = [];
                     account.cart.rental = [];
-                    console.log(account);
                 }
             })
             localStorage.setItem('userInfor',JSON.stringify(usersInfo));
@@ -297,7 +291,6 @@ submitBtn.addEventListener("click", () => {
                     account.cart.products = [];
                     account.cart.courses = [];
                     account.cart.rental = [];
-                    console.log(account);
                 }
             })
             localStorage.setItem('userInfor',JSON.stringify(usersInfo));

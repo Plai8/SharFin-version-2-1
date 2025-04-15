@@ -66,7 +66,6 @@ async function fetchData(productType) {
                 sliderProducts.push(product);
             }
         }
-        console.log(sliderProducts);
     } catch (err) {
         throw new Error(`fetch fail due to ${err}`)
     }
@@ -96,9 +95,7 @@ function storeUserData() {
 function checkUserLogin() {
     let account;
     let userInfor = JSON.parse(localStorage.getItem("userInfor"));
-    console.log(userInfor)
     for(let user of userInfor) {
-        console.log(user.isLogin);
         if(user.isLogin) account = {...user};
     }
     if(account !== undefined) {
@@ -134,7 +131,6 @@ function showSliderData() {
 }
 function changeSlider(direction) {
     let scrolledNumber = slider.scrollLeft;
-    console.log(scrolledNumber, slider.offsetWidth);
     let scrollAmount = slider.offsetWidth;
     if (direction === "next") {
         slider.scrollLeft = scrolledNumber + scrollAmount;

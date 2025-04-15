@@ -49,7 +49,6 @@ function feeComputed(event, boardType, action) {
      // input事件時
     // 防止數量出現小於零的情況
     if (board.value < 0) board.value = 0;
-    console.log(board.value);
     totalFee = shortboardAmount.value * 300 + longboardAmount.value * 600;
     rentalTotalFee.textContent = totalFee;
 }

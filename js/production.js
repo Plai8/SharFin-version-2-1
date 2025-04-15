@@ -302,7 +302,6 @@ function checkUserLogin() {
     let userInfor = JSON.parse(localStorage.getItem("userInfor"));
     for(let user of userInfor) {
         if(user.isLogin) account = {...user};
-        console.log(account);
     }
     // 登入時顯示頭像圖片
     if(account.isLogin) {

@@ -34,7 +34,6 @@ async function fetchData () {
     try {
        let reponse = await fetch('../json/news-list.json');
        reponseData = await reponse.json();
-        console.log(reponseData);
     }catch(err){
         console.error(err)
     }

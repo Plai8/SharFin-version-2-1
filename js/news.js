@@ -21,7 +21,6 @@ function showUserPic() {
             isLogin = true;
         }
     });
-    console.log(isLogin)
     if (isLogin) {
         userIcon.style.display = "none";
         userPic.style.display = "block";
@@ -40,7 +39,6 @@ async function fetchData() {
     try {
         let response = await fetch('../json/news-list.json');
         let data = await response.json();
-        console.log(data);
         newsList = data.reverse();//確保日期由最新排序至最舊
     } catch (err) {
         throw new Error(err);
@@ -48,7 +46,6 @@ async function fetchData() {
     //將目前頁數存入localStorage裡 note:移除localStorage的currentPage時機為，首頁最新消息btn、navbar最新消息btn
     if (currentPage === "") localStorage.removeItem('currentPage');
     localStorage.getItem('currentPage') === null ? localStorage.setItem('currentPage', currentPage) : currentPage = parseInt(localStorage.getItem('currentPage'));
-    console.log(currentPage, typeof currentPage)
     displayPageNum();//顯示分頁頁碼
     displayPageData(currentPage);//將newsList data切分為displayData;
     displayNews();//將displayData資料放置畫面中
@@ -108,10 +105,8 @@ function displayPageNum() {
             currentPage = parseInt(btn.textContent);
             pageNumBtns.forEach(numBtn => {
                 numBtn.classList.remove('actived');
-                console.log(numBtn);
             });
             btn.classList.add('actived');
-            console.log(currentPage)
             updateNews();
             scrollTo();
         })

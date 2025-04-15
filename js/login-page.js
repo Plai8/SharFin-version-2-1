@@ -129,14 +129,12 @@ function checkUserAccount() {
 
     if (!account) {
         warningMsg("account", "email不存在!!");
-        console.log(userAccount.value, false);
         return;
     }
 
     // 找到帳號了
     accountWarnSign.style.display = "none";
     userAccount.style.border = "none";
-    console.log("帳號存在", true);
 
     if (userPassword.value === "") {
         warningMsg("password", "請輸入密碼！！");

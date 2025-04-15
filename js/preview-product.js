@@ -63,7 +63,6 @@ async function fetchData() {
                     productData.push(receivedData[j]);
                     receivedData[j].id = productData.length;
                 }
-                console.log(productData);
             };
 
         }
@@ -82,7 +81,6 @@ function getUserInfo() {
         if (account.isLogin) {
             isLogin = true;
             user = { ...account };
-            console.log(user);
         }
     });
     if (!isLogin) {
@@ -109,13 +107,10 @@ function addCart() {
     usersInfo.forEach(account => {
         if (account.isLogin) {
             account = user;
-            console.log(account);
         }
     })
-    console.log(usersInfo);
     // 若item未存在於cart裡，將productInfo存入
     checkItemExist(productInfo.name);
-    console.log(checkItemExist(productInfo.name))
     if (!checkItemExist(productInfo.name)) {
         user.cart.products.push(productInfo);
     } else {
@@ -123,8 +118,6 @@ function addCart() {
             if (item.name === productInfo.name) item = { ...productInfo };
         }
     }
-    console.log(user.cart);
-    console.log(productInfo);
     localStorage.setItem('userInfor', JSON.stringify(usersInfo));
     alert("加入成功！");
 }
@@ -141,17 +134,13 @@ function displayProduct() {
             // 搜尋下
             for (let product of productData) {
                 if (product.name === localStorage.getItem('productName')) id = product.id;
-                console.log(id);
             }
             selectedProduct = productData[id - 1];
         } else if (user.cart.products.length !== 0) {
             for (let cartItem of user.cart.products) {
                 if (cartItem.name === selectedProduct.name) {
-                    console.log(selectedProduct);
                     productAmount.value = cartItem.count;
                     productSize.value = cartItem.productSize;
-                    console.log(cartItem.productSize);
-                    console.log(productSize.value);
                 }
             }
         };

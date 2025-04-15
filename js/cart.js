@@ -79,7 +79,6 @@ function getUserCartItem() {
                         };
                     }
                 };
-                console.log(user,userCartItems);
                 orderId = user["order"].length + 1;
                 checkCartItem();
             } else {
@@ -111,7 +110,6 @@ function getUserCartItem() {
                 } else {
                     invoiceType.value = "二聯-電子發票";
                 }
-                console.log(invoiceType.value);
                 displayInputTitle(2)
             };
             userIcon.style.display = "none";
@@ -212,7 +210,6 @@ function updateCartItem() {
                for(let product of user.cart[productType]) {
                     if(product.name === item.name) {
                         product = {...item};
-                        console.log(product)
                     }
                }
             }
@@ -236,13 +233,11 @@ function deletecartItem() {
         deleteBtns[i].addEventListener('click', () => {
             userCartItems[i].count = 0;
             userCartItems = userCartItems.filter((item) => item.count !== 0);
-            console.log(userCartItems);
             updateCartItem();
             displayCartItems();
         });
     };
     checkCartItem();
-    console.log(user.cart,userCartItems);
 }
 
 // 將增加與減少按鈕新增事件聆聽
@@ -265,7 +260,6 @@ function addEvent() {
 function displayInputTitle(index) {
     let targetIndex = Number(index);
     selectedMsg[targetIndex].textContent = selects[targetIndex].value;
-    console.log(selectedMsg[targetIndex].textContent)
     if (targetIndex === selects.length - 1) {
         eInvoiceMsg.classList.remove('selected-msg');
         selectedDetailMsg.forEach(msg => {
@@ -304,7 +298,6 @@ function updateOrderInfo() {
     inputs.forEach(input => {
         input.addEventListener('focus', () => {
             for (let i = 0; i < inputs.length; i++) {
-                console.log('focus!!')
                 warningMsg[i].style.display = "none";
                 inputWrappers[i].classList.remove('actived');
             }
@@ -363,7 +356,6 @@ function updateOrderInfo() {
     userInfor.forEach(user => {
         if (user.isLogin) {
             user.cart.orderInfor = orderInfor;
-            console.log(user.cart.orderInfor)
         }
     })
     localStorage.setItem("userInfor", JSON.stringify(userInfor));

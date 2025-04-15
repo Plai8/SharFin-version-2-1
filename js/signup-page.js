@@ -39,7 +39,6 @@ switchBtns.forEach(switchBtn => {
         switchBtns.forEach(el => {
             el.classList.remove('btn-actived');
         })
-        console.log(el.target)
         //新增btn-actived'至被點擊到的btn
         el.target.classList.add('btn-actived');
         if(el.target.classList.contains('switch-btn-signup')){
@@ -68,7 +67,6 @@ window.addEventListener("resize",() => {
 // 註冊功能
 function signUpAccount() {
     // 檢查帳號是否已經存在
-    console.log(userInfor,typeof userInfor);
     for(let account of userInfor) {
         if(userMail.value === account.email) {
             alert("此帳號已存在！");
@@ -91,7 +89,6 @@ function signUpAccount() {
             localStorage.setItem("userInfor",JSON.stringify(userInfor));
             window.location.assign("https://plai8.github.io/SharFin-version-2-1/html/login.html")
         }
-        console.log(newSignupData);
     }
    
 };
